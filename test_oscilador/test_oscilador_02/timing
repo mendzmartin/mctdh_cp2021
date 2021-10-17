@@ -1,0 +1,15 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ BS                       378         0.000           0.1300      50.0
+ Funk-X1                 9184         0.000           0.1200      46.2
+ Output                    64         0.000           0.0200       7.7
+ Startup                    1         0.010           0.0100       3.8
+ genOPER                    1         0.010           0.0100       3.8
+ SIL                      189         0.000           0.0100       3.8
+
+Total (usr,sys,cpu)       0.18     0.08       0.26   (  0h :  0m :  0.26s)
+
+ ---------------------------------------------------------------------------
+ ------ Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
+
+ /home/mendez/MCTDH/test_oscilador/test_oscilador_02

@@ -1,0 +1,29 @@
+Elapsed CPU time
+
+Run 01
+
+	mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_study_02_v1
+		Box Width (L)
+			50
+		Maximum number of grid points (N)
+			501
+		Minimum number of grid points (N)
+			101
+		Frequency fixed value (omega)
+			0.1
+		Allocate time =   4.5000002137458068E-007 [ms]
+		Program time =   1.8420103874907945E-002 [ms]
+		Proportion of allocate time in relation to program time =   2.4429830821289522E-003 %
+		
+	mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_study_02_v2
+		Box Width (L)
+			50
+		Maximum number of grid points (N)
+			501
+		Minimum number of grid points (N)
+			101
+		Frequency fixed value (omega)
+			0.1
+		Allocate time =   5.1000002422370062E-008 [ms]
+		Program time =   1.8530193880136939E-002 [ms]
+		Proportion of allocate time in relation to program time =   2.7522649116498704E-004 %

@@ -1,0 +1,20 @@
+rm -rf test_oscilator/						-> me permite borrar el directorio con las salidas del programa
+mctdh85 -w -mnd input_file.inp				-> correr el input_file (descomentando el keyword geninwf y comentando el keyword propagation)
+cd test_oscilator/							-> ingresar al directorio con las salidas del programa
+vi log										-> ver el logfile para ver que es lo que hizo el programa
+showsys85 -rst								-> el flag -rst se agrega para decirle a MCTDH que muestre la función de onda inicial restart
+mctdh85 -w input_file.inp					-> correr nuevament el input file (descomentando el keyword propagation y comentando el
+											keyword geninwf)
+showd1d85 -a f1								-> muestra la evolución temporal de la coordenada 1 (f1 indica GDL 1) de la densidad de
+											probabilidad, con enter evoluciona
+showd1d85 -a f2								-> muestra la evolución temporal de la coordenada 2 (f2 indica GDL 2) de la densidad de
+											probabilidad, con enter evoluciona
+mctdh85 -w -c -tfinal 4.0 input_file.inp	-> correr nuevament el input file (descomentando el keyword propagation y comentando el
+											keyword geninwf) donde el flag "-c" permite que tome los datos de restart y continue la
+											propagacion con esa funcion de onda inicial y donde l flag "-tfinal 4.0" indica que
+											correra hasta tiempo final igual a 4 femtosecond (1[fs] = 10^-15[s])
+
+
+Notas:
+	test_oscilator/restart	-> tiene la función de onda inicial (al último tiempo)
+	test_oscilator/oper		-> tiene información de los operadores

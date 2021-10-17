@@ -1,0 +1,30 @@
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version =  8.50140
+Created on:
+------ Host: "mendez-famaf" ----------Tue Oct 12 15:47:11 2021
+
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: showsys85
+--------------------------------------------------------------------------------
+
+  *** Memory allocated dynamically ***
+ complex*16 :         429
+ real*8     :        8009
+ integer    :           4
+ logical    :           2
+ complex*8  :           2
+ real*4     :           2
+ Total   :          71200. Bytes ,       0.07 MB
+--------------------------------------------------------------------------------
+
