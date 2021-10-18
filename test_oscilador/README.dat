@@ -1,0 +1,15 @@
+Descripciones breves de los test_oscilador
+
+test_oscilador_01
+	Inicialización y propagación (análisis dinámico) de una partícula libre.
+	Programa básico para entender el funcionamiento.
+
+test_oscilador_02
+	Inicialización y propagación (análisis dinámico) de un oscilador armónico bidimensional.
+	Se prueban distintas funciones de onda inicial, entre ellas estados coherentes y se analiza su "deformabilidad" en el análisis dinámico del problema.
+
+test_oscilador_03
+	Inicialización y propagación (análisis dinámico) de un oscilador armónico bidimensional con interacción entre partículas.
+	Se prueban distintas funciones de onda inicial gaussianas (agregando momentos no nulos a cada una de ellas), entre ellas estados coherentes y se analiza su "deformabilidad" en el análisis dinámico del problema.
+	Se prueba paralelismo y se miden tiempos.
+

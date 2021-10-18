@@ -55,11 +55,11 @@ end-sbasis-section
 ## primitive basis section
 ## aca decimos como se describen cada una de las SPFs
 ## Nomenclatura -> GDL sin N -L L short/long
-## GDL -> grado de libertad o coordenada
-## sin -> keyword que permite hacer una aproximación sine-DVR
-## N -> cantidad de puntos a utilizar
-## [-L,L] -> ancho de la caja Sine-DVR
-## short/long nos dice si los pts extremos estan incluidos o no en la grilla
+## 	GDL -> grado de libertad o coordenada
+## 	sin -> keyword que permite hacer una aproximación sine-DVR
+## 	N -> cantidad de puntos a utilizar
+## 	[-L,L] -> ancho de la caja Sine-DVR
+## 	short/long nos dice si los pts extremos estan incluidos o no en la grilla
 #############################################################
 PBASIS-SECTION
 	X1	sin	51	-10.0	10.0	short
@@ -80,35 +80,12 @@ end-integrator-section
 ## 	x0			-> dónde está centrada la gaussiana
 ## 	p0			-> momento inicial de la gaussiana
 ## 	deltaX		-> dispersión (ancho) de la gaussiana
-##
-## A-coeff	-> especifica la forma que tendran los coeficientes (cómo poblar)
-## 1		-> corresponde al estado fundamental
-## 2		-> corresponde al primer estado excitado
-## si no ponemos nada se asume que todo es cero salvo las primeras exitaciones
-##
-## HO			-> keyword que permite constuir un estado particular del osilador armónico
-## nomenclatura	-> x0,unit	p0,unit	omega,unit	masa,unit	pop=1
-## 	x0			-> dónde está centrado el oscilador
-## 	p0			-> momento inicial del oscilador
-## 	omega		-> frecuencia del oscilador
-## 	masa		-> masa del oscilador
-## 	pop			-> indica a que estado del oscilador corresponde, comenzando desde 1
-##	unit		-> se agrega para especificar alguna unidad
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	gauss	2	0.000	2
-		#X2	gauss	0	1.000	2
-		X2	HO		0	0.000	1	1	pop=1
-		#X2	gauss	10.0	0.0		0.5
-		#X1	eigenf	1eNe	pop=1
-		#X2	eigenf	osc1D	pop=1
+		X1	gauss	1	1.500	2
+		X2	gauss	0	1.000	2
 	end-build
-  
-	#symorb=1,2
-	#A-coeff
-		#1	2	(1.0,0.0)
-	#end-A-coeff
 end-init_wf-section
 
 end-input
