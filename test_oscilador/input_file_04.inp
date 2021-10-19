@@ -7,7 +7,7 @@
 ## time-not-fs	-> se desactivan las unidades en los tiempos (se usan unidades atómicas)
 ############################################################## 
 RUN-SECTION
-	name=test_oscilador_03
+	name=test_oscilador_04
 	propagation
 	#geninwf
 	time-not-fs
@@ -74,17 +74,20 @@ end-integrator-section
 
 ##################COMENTARIOS#################################
 ## Init Wave Function Section (consultar página de MCTDH)
+## Cap. 7 https://www.pci.uni-heidelberg.de/tc/usr/mctdh/guide85.pdf
 ## acá le decimos el estado inicial (con qué va a empezar la evolución)
-## gauus		-> keyword que permite constuir una función gaussiana
-## nomenclatura	-> GDL keyword x0 p0 deltaX
-## 	x0			-> dónde está centrada la gaussiana
-## 	p0			-> momento inicial de la gaussiana
-## 	deltaX		-> dispersión (ancho) de la gaussiana
+## HO			-> keyword que permite constuir un estado particular del osilador armónico
+## nomenclatura	-> x0,unit	p0,unit	omega,unit	masa,unit	pop=1
+## 	x0			-> dónde está centrado el oscilador
+## 	p0			-> momento inicial del oscilador
+## 	omega		-> frecuencia del oscilador
+## 	masa		-> masa del oscilador
+## 	pop			-> indica a que estado del oscilador corresponde, comenzando desde 1
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	gauss	1	1.500	2
-		X2	gauss	0	1.000	2
+		X1	HO		0	1.500	1	1	pop=1
+		X2	HO		0	1.000	1	1	pop=1
 	end-build
 end-init_wf-section
 

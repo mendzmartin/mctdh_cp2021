@@ -1,10 +1,10 @@
-# /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/input_file_03.inp
+# /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/input_file_04.inp
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name=test_oscilador_02
-	#propagation
-	geninwf
+	name=test_oscilador_04
+	propagation
+	#geninwf
 	time-not-fs
             # no-* keywords accordingly to suppress inefficiently
             # parallelized routines.
@@ -18,7 +18,7 @@ RUN-SECTION
 	#energy-not-ev
 end-run-section
 OPERATOR-SECTION
-	opname=operator_file_02
+	opname=operator_file_03
 end-operator-section
 SBASIS-SECTION
 	X1	=	2
@@ -35,8 +35,8 @@ INTEGRATOR-SECTION
 end-integrator-section
 INIT_WF-SECTION
 	build
-		X1	gauss	1	1.500	2
-		X2	gauss	0	1.000	2
+		X1	HO		0	1.500	1	1	pop=1
+		X2	HO		0	1.000	1	1	pop=1
 	end-build
 end-init_wf-section
 end-input
@@ -48,7 +48,7 @@ end-input
 
 OP_DEFINE-SECTION
 	title
-		2D oscilator
+		2D oscilator + interaction
 	end-title
 end-op_define-section
 PARAMETER-SECTION
@@ -68,6 +68,7 @@ HAMILTONIAN-SECTION
 	1.0		|	1	|	KE
 	0.5		|	q^2	|	1
 	0.5		|	1	|	q^2
+	1		|	q	|	q
 	----------------------------------------------------
 end-hamiltonian-section
 end-operator

@@ -1,9 +1,9 @@
 
------- Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
+------ Host: "mendez-famaf" ----------Mon Oct 18 12:03:18 2021
 
- /home/mendez/MCTDH/test_oscilador/test_oscilador_02
+ /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02
 
- PID = 37747
+ PID = 12889
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -26,7 +26,7 @@ Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
 ###############                 NEW RUN                  ###############
 
 ******* OPTIONS ******
--w
+-w -mnd
 
 
 ########################################################################
@@ -35,9 +35,9 @@ Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
 
 ########################################################################
 
-Task: gendvr genoper geninwf propagation
+Task: gendvr genoper geninwf
 
-Opening operator file :/home/mendez/MCTDH/test_oscilador/operator_file_02.op
+Opening operator file :/home/mendez/MCTDH/mctdh_cp2021/test_oscilador/operator_file_02.op
 
 ***** Hamiltonian and title *****
 
@@ -53,29 +53,22 @@ Assigning Operators From Library
 ***** Paths and input files *****
 
 ~.inp  file copied to input in name directory
-name      : /home/mendez/MCTDH/test_oscilador/test_oscilador_02
-input     : /home/mendez/MCTDH/test_oscilador/input_file_02.inp
-DVR file  : /home/mendez/MCTDH/test_oscilador/test_oscilador_02
-.op file  : /home/mendez/MCTDH/test_oscilador/operator_file_02.op
-INWF file : /home/mendez/MCTDH/test_oscilador/test_oscilador_02
-cross-ref : /home/mendez/MCTDH/test_oscilador/test_oscilador_02/restart
+name      : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02
+input     : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/input_file_03.inp
+DVR file  : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02
+.op file  : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/operator_file_02.op
+INWF file : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02
+cross-ref : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02/restart
 
 overwrite enabled
 
- Ratio (tfinal-tinit)/tout must be an integer number
- tfinal changed to :     6.300000 fs
-
-WARNING in subroutine Chkprop:
-Symmetric Hamiltonian and real initial state assumed when calculating
-autocorrelation function. Use "cross" if these conditions are not fulfilled.
-------------------------------------
 
 Timing file opened
 
 ########################################################################
 
- Creating DVR file: /home/mendez/MCTDH/test_oscilador/test_oscilador_02/dvr
-                                                         Oct 12 16:14:07
+ Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02/dvr
+                                                         Oct 18 12:03:18
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -116,8 +109,8 @@ total array memory in mb     (used):         0.1
 
 ########################################################################
 
- Creating OPER file: /home/mendez/MCTDH/test_oscilador/test_oscilador_02/oper
-                                                         Oct 12 16:14:07
+ Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02/oper
+                                                         Oct 18 12:03:18
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -161,13 +154,13 @@ Mode     DOFs
 ########################################################################
 
 Creating RESTART file
-                                                         Oct 12 16:14:07
+                                                         Oct 18 12:03:18
 ########################################################################
 
 
 ****** Initial SPF Functions *********
-  1  X1         gauss   1  p0 =   0.00000  x0 =   2.00000  dx =   0.50000
-  2  X2         gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   1.41421
+  1  X1         gauss   1  p0 =   1.50000  x0 =   1.00000  dx =   0.50000
+  2  X2         gauss   1  p0 =   1.00000  x0 =   0.00000  dx =   0.50000
 
 ***** Length of psi vector *****
 
@@ -198,138 +191,17 @@ total array memory in mb     (used):         0.1
 **** Reading OPER file ****
 		2D oscilator
 Created on:
------- Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
+------ Host: "mendez-famaf" ----------Mon Oct 18 12:03:18 2021
 
 
-########################################################################
-
- Propagating Wavefunction
-                                                         Oct 12 16:14:07
-########################################################################
- hopsdim  =       5305        0.040 MB
- dgldim   =        208        0.003 MB
- pmatdim  =          8        0.000 MB
- hpsidim  =        102        0.002 MB
- hlochdim =          0        0.000 MB
- mfsumdim =        408        0.006 MB
- intpsidim=       2550        0.039 MB
- intrdim  =        208        0.002 MB
- workcdim =        408        0.006 MB
- workrdim =       2808        0.021 MB
-
-***** Memory used in wavefunction PROPAGATION *****
-
-Memory size (used / allocated) (in Mb):      1.039 /    400.380
-
-** Array dimensions **
-
-length of psi/dtpsi    array (used):         208          0.003 MB
-length of complex      array (used):        4409          0.067 MB
-length of real         array (used):       13875          0.106 MB
-length of integer      array (used):           6          0.000 MB
-length of logical      array (used):           3          0.000 MB
-
-total array memory in mb     (used):         0.2
-
-**** Global array sizes ****
-
-Minimum value for maxdim:       2  Present value:     120
-Minimum value for maxsta:       1  Present value:       4
-Minimum value for maxsub:      38  Present value:     400
-Minimum value for maxkoe:       1  Present value:   16000
-
-**** Reading OPER file ****
-		2D oscilator
-Created on:
------- Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
-
-
-**** RSTINFO: Reading RESTART file ****
-Type : wavefunction, file-version =  8.50140
-Created on:
------- Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
-
-
-***** Calculation type *****
-
-Wavefunction propagation.
-Using Schroedinger picture.
-
-***** Integrator algorithm *****
-
-Mean-fields etc. are kept constant.
-CMF stepsize is adaptive (error control for A and phi).
-CMF accuracy: 1.00E-06,      Initial stepsize:  0.100 au
-For SPFs, For spfs, BS integrator
-order:  9,  accuracy: 1.00E-07,  initial step: 5.00E-02 au
-For A-coefficients, SIL integrator
-order:  10,  accuracy: 1.00E-06,  initial step:  0.050 au
-error criterion: standard
-Standard-SIL (real) used.
-The working equation for the spfs reads:
-i dphi/dt = (1-P)(h + ...) phi
-Using standard orbitals.
-Using operator symmetries
-
-***** Numerical parameters *****
-
-Machine precision:                                    2.220E-16
-Parameter used to regularise inverse density matrix:  1.000E-08
-Parameter used to regularise SVD singular values   :  0.000E+00
-Parameter used to regularise natural orbital matrix:  1.000E-08
-
-******** Flags  ********
-
-
-***** Output files *****
-
-Stop        file created
-Output      file opened
-Psi         file opened  (single)
-Check       file opened
-Gridpop     file opened
-Pdensity    file opened
-Speed       file opened
-Auto        file opened  (once)
-Steps       file opened
-Update      file opened
- time[fs]        6.300
-
-***** Integration method *****
-
-Integration method used for the MCTDH-coefficients:
-Short iterative Lanczos (real) with variable order.
-Maximum order employed:   2
-Maximum order allowed:   10
-
-Integration method used for the single-particle functions:
-Bulirsch-Stoer (BS) with polynomial extrapolation.
-Optimal column:  9
-
-Number of succesful large BS steps:              378
-Number of failed but fixed large BS steps:         0
-Total number of small BS steps:                10318
-
-Number of successful Lanczos steps:             189
-Number of failed but fixed Lanczos steps:         0
-
-***** Update times *****
-
-Number of successful update steps:    63
-Number of failed update steps:         0
-Mean update time (in au):        0.10000
-Standard deviation (in au):      0.00000
-
-***** God's final message *****
-
-Program terminated normally.
+Program terminated normally.  (geninwf run)
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.18
-Total system time  [s] :          0.08
-Total time     [h:m:s] :    0 :  0 :  0.26
+Total cpu time     [s] :          0.05
+Total system time  [s] :          0.06
+Total time     [h:m:s] :    0 :  0 :  0.11
 Wall  time     [h:m:s] :    0 :  0 :  0
 
------- Host: "mendez-famaf" ----------Tue Oct 12 16:14:07 2021
+------ Host: "mendez-famaf" ----------Mon Oct 18 12:03:18 2021
 

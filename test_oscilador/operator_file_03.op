@@ -4,7 +4,7 @@
 ##############################################################
 OP_DEFINE-SECTION
 	title
-		2D oscilator
+		2D oscilator + interaction
 	end-title
 end-op_define-section
 
@@ -30,10 +30,8 @@ end-labels-section
 ## sección del hamiltoniano 2
 ## este hamiltoniano es el que se utiliza para evolucionar
 ## KE -> kinetic energy
-## se pueden hacer, de forma sencilla, hamiltonianos que sean producto directo
-## 	de hamiltonianos que vivan en cada subsistema (asociado a X1 y asociado a x2)
-## en este ejemplo definimos un hamiltoniano de una particula bidimensional
-## 	libre (sin potencial).
+## Hamiltoniano de un oscilador armónico 2D, más un potencial de
+##  interacción entre partículas.
 ############################################################## 
 HAMILTONIAN-SECTION
 	-----------------------------------------------------
@@ -43,6 +41,7 @@ HAMILTONIAN-SECTION
 	1.0		|	1	|	KE
 	0.5		|	q^2	|	1     
 	0.5		|	1	|	q^2
+	1		|	q	|	q
 	----------------------------------------------------
 end-hamiltonian-section
 
