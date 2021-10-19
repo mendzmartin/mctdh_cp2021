@@ -13,3 +13,4 @@ test_oscilador_03
 	Se prueban distintas funciones de onda inicial gaussianas (agregando momentos no nulos a cada una de ellas), entre ellas estados coherentes y se analiza su "deformabilidad" en el análisis dinámico del problema.
 	Se prueba paralelismo y se miden tiempos.
 
+test_oscilador_04
