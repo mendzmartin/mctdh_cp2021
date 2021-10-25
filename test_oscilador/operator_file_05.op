@@ -1,0 +1,48 @@
+##################COMENTARIOS#################################
+## sección de definición
+## en este caso solo se definen los títulos
+##############################################################
+OP_DEFINE-SECTION
+	title
+		2D oscilator + interaction perturbativa
+	end-title
+end-op_define-section
+
+##################COMENTARIOS#################################
+## sección de parámetros
+##############################################################
+PARAMETER-SECTION
+	mass_X1 = 1.d0, au
+	mass_X2 = mass_X1
+end-parameter-section
+
+##################COMENTARIOS#################################
+## sección de etiquetas
+## se pueden definir funciones para el hamiltoniano
+############################################################## 
+LABELS-SECTION
+	#1eVNeAgauss = gauss[alphaAe,Aloc]
+	#1eVNeAregcou = regcoul[Aloc,betaAe]
+	#Eaddtrick = gauss[0.0,0.0]
+end-labels-section
+
+##################COMENTARIOS#################################
+## sección del hamiltoniano 2
+## este hamiltoniano es el que se utiliza para evolucionar
+## KE -> kinetic energy
+## Hamiltoniano de un oscilador armónico 2D, más un potencial de
+##  interacción entre partículas. (potencial perturbativo)
+############################################################## 
+HAMILTONIAN-SECTION
+	-----------------------------------------------------
+	modes	|	X1	|	X2   
+	-----------------------------------------------------
+	1.0		|	KE	|	1     
+	1.0		|	1	|	KE
+	0.5		|	q^2	|	1     
+	0.5		|	1	|	q^2
+	0.2		|	q	|	q
+	----------------------------------------------------
+end-hamiltonian-section
+
+end-operator

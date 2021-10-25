@@ -14,3 +14,7 @@ test_oscilador_03
 	Se prueba paralelismo y se miden tiempos.
 
 test_oscilador_04
+
+test_oscilador_05
+	Modificamos el hamiltoniano para que la interacción corresponda a un potencial perturbativo, de esta manera no se obtiene una evolución crítica.
+	Modificamos las funciones de onda inicial para que no tengan momento inicial y no tengamos la necesidad de calcular correlaciones cruzadas.
