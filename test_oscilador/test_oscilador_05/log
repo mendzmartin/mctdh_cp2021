@@ -1,9 +1,9 @@
 
------- Host: "mendez-famaf" ----------Mon Oct 25 18:52:56 2021
+------ Host: "mendez-famaf" ----------Tue Oct 26 16:47:53 2021
 
  /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_05
 
- PID = 52371
+ PID = 68593
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -21,6 +21,7 @@ Included surfaces: lsth
 
 Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
  ###  time-not-fs   is set!  ###
+ ###  energy-not-ev is set!  ###
 --------------------------------------------------------------------------------
 
 ###############                 NEW RUN                  ###############
@@ -63,7 +64,12 @@ cross-ref : /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_05/res
 overwrite enabled
 
  Ratio (tfinal-tinit)/tout must be an integer number
- tfinal changed to :     6.300000 fs
+ tfinal changed to :     6.290000 fs
+### WARNING ###
+updatetime must be smaller than tout.
+tout       =     0.010000
+updatetime =     0.100000
+Setting  updatetime equal to tout.
 
 WARNING in subroutine Chkprop:
 Symmetric Hamiltonian and real initial state assumed when calculating
@@ -75,7 +81,7 @@ Timing file opened
 ########################################################################
 
  Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_05/dvr
-                                                         Oct 25 18:52:56
+                                                         Oct 26 16:47:53
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -117,7 +123,7 @@ total array memory in mb     (used):         0.1
 ########################################################################
 
  Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_05/oper
-                                                         Oct 25 18:52:56
+                                                         Oct 26 16:47:53
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -161,7 +167,7 @@ Mode     DOFs
 ########################################################################
 
 Creating RESTART file
-                                                         Oct 25 18:52:56
+                                                         Oct 26 16:47:53
 ########################################################################
 
 
@@ -198,13 +204,13 @@ total array memory in mb     (used):         0.1
 **** Reading OPER file ****
 		2D oscilator + interaction perturbativa
 Created on:
------- Host: "mendez-famaf" ----------Mon Oct 25 18:52:56 2021
+------ Host: "mendez-famaf" ----------Tue Oct 26 16:47:53 2021
 
 
 ########################################################################
 
  Propagating Wavefunction
-                                                         Oct 25 18:52:56
+                                                         Oct 26 16:47:53
 ########################################################################
  hopsdim  =       5407        0.041 MB
  dgldim   =        208        0.003 MB
@@ -241,13 +247,13 @@ Minimum value for maxkoe:       1  Present value:   16000
 **** Reading OPER file ****
 		2D oscilator + interaction perturbativa
 Created on:
------- Host: "mendez-famaf" ----------Mon Oct 25 18:52:56 2021
+------ Host: "mendez-famaf" ----------Tue Oct 26 16:47:53 2021
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Mon Oct 25 18:52:56 2021
+------ Host: "mendez-famaf" ----------Tue Oct 26 16:47:53 2021
 
 
 ***** Calculation type *****
@@ -259,7 +265,7 @@ Using Schroedinger picture.
 
 Mean-fields etc. are kept constant.
 CMF stepsize is adaptive (error control for A and phi).
-CMF accuracy: 1.00E-06,      Initial stepsize:  0.100 au
+CMF accuracy: 1.00E-06,      Initial stepsize:  0.010 au
 For SPFs, For spfs, BS integrator
 order:  9,  accuracy: 1.00E-07,  initial step: 5.00E-02 au
 For A-coefficients, SIL integrator
@@ -293,32 +299,32 @@ Speed       file opened
 Auto        file opened  (once)
 Steps       file opened
 Update      file opened
- time[fs]        6.300
+ time[fs]        6.290
 
 ***** Integration method *****
 
 Integration method used for the MCTDH-coefficients:
 Short iterative Lanczos (real) with variable order.
-Maximum order employed:   4
+Maximum order employed:   3
 Maximum order allowed:   10
 
 Integration method used for the single-particle functions:
 Bulirsch-Stoer (BS) with polynomial extrapolation.
 Optimal column:  9
 
-Number of succesful large BS steps:              485
+Number of succesful large BS steps:             3774
 Number of failed but fixed large BS steps:         0
-Total number of small BS steps:                 6598
+Total number of small BS steps:                23618
 
-Number of successful Lanczos steps:             216
+Number of successful Lanczos steps:            1887
 Number of failed but fixed Lanczos steps:         0
 
 ***** Update times *****
 
-Number of successful update steps:    72
+Number of successful update steps:   629
 Number of failed update steps:         0
-Mean update time (in au):        0.08750
-Standard deviation (in au):      0.02381
+Mean update time (in au):        0.01000
+Standard deviation (in au):      0.00000
 
 ***** God's final message *****
 
@@ -326,10 +332,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.16
-Total system time  [s] :          0.08
-Total time     [h:m:s] :    0 :  0 :  0.24
+Total cpu time     [s] :          0.57
+Total system time  [s] :          0.23
+Total time     [h:m:s] :    0 :  0 :  0.80
 Wall  time     [h:m:s] :    0 :  0 :  1
 
------- Host: "mendez-famaf" ----------Mon Oct 25 18:52:57 2021
+------ Host: "mendez-famaf" ----------Tue Oct 26 16:47:54 2021
 

@@ -11,6 +11,7 @@ RUN-SECTION
 	propagation
 	#geninwf
 	time-not-fs
+	energy-not-ev
   
 #############################################################
 ##############Paralellization################################
@@ -26,7 +27,7 @@ RUN-SECTION
 ## tout		-> tiempo en el cual va guardando los datos
 ## tpsi		-> lapso de tiempo en el que se va guardando la función de onda
 ############################################################## 
-	tfinal = 6.2832 tout = 0.1 tpsi = 0.1
+	tfinal = 6.2832 tout = 0.01 tpsi = 0.01
 	steps
 	gridpop # para showd1d
 	pdensity # particle density file. Useful to compute quantities after run.
