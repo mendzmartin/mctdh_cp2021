@@ -1,8 +1,8 @@
 initial sequence
-	rm -rf test_oscilator/						->	remove the directory with the program outs
+	rm -rf test_oscillator/						->	remove the directory with the program outs
 	mctdh85 -w -mnd input_file.inp				->	run the input_file (uncomment the geninwf keyword and comment the propagation 
 													keyword)
-	cd test_oscilator/							->	enter to the directory with the program outs
+	cd test_oscillator/							->	enter to the directory with the program outs
 	vi log										->	show the log file to see what the program did
 	showsys85 -rst								->	the flag -rst is added to say to mctdh that show the restar initial wave function
 	mctdh85 -w input_file.inp					->	run again the input file (uncomment the keyword propagation and comment the keyword 
@@ -13,7 +13,8 @@ initial sequence
 													density. Press enter to see the evolution.
 	mctdh85 -w -c -tfinal 4.0 input_file.inp	->	run again the input file (uncomment the propagation keyword and comment the geninwf 
 													keyword). The flag -c allow that mctdh take the restart data and will continue the 
-													propagation with that initial wave function. The flag -tfinal 4.0 denote that the program run until the final time equal to 4 femtosecond (1[fs] = 10^-15[s]).
+													propagation with that initial wave function. The flag -tfinal 4.0 denote that the 
+													program run until the final time equal to 4 femtosecond (1[fs] = 10^-15[s]).
 
 scripts
 	showsys85	->	Enables 2D plotting of the wavefunction or PES.
@@ -25,5 +26,5 @@ scripts
 
 
 Notes
-	test_oscilator/restart	->	have the initial wave function (at zero time).
-	test_oscilator/oper		->	have information about operators.
+	test_oscillator/restart	->	have the initial wave function (at zero time).
+	test_oscillator/oper		->	have information about operators.

@@ -1,4 +1,4 @@
-Descripciones breves de los test_oscilador
+Brief description of the test_oscillators
 
 test_oscilador_01
 	Inicialización y propagación (análisis dinámico) de una partícula libre.
