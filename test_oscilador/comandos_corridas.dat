@@ -19,6 +19,8 @@ initial sequence
 scripts
 	showsys85	->	Enables 2D plotting of the wavefunction or PES.
 	showd1d85	->	To selectively plot 1-dimensional densitites.
+	crosscorr85	->	Calculates the cross-correlation function c(t) = <psi_ref(0)|psi(t)>
+	plauto		->	Plot of the absolut value of the autocorrelation function.
 	autospec85	->	Computation of the spectrum by Fourier-transforming the autocorrelation function.
 	plspec		->	Plot of the spectrum obtained from a fourier transform of the autocorrelation function.
 	plnat		->	Natural population. Also we can use the script rdcheck85. Plot of the natural populations for a given state and mode.

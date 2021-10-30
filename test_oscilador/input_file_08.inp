@@ -7,7 +7,7 @@
 ## time-not-fs	-> se desactivan las unidades en los tiempos (se usan unidades atómicas)
 ############################################################## 
 RUN-SECTION
-	name=test_oscilador_07
+	name=test_oscilador_08
 	propagation
 	#geninwf
 	#time-not-fs
@@ -38,7 +38,7 @@ RUN-SECTION
 end-run-section
 
 OPERATOR-SECTION
-	opname=operator_file_07
+	opname=operator_file_08
 end-operator-section
 
 ##################COMENTARIOS#################################
@@ -87,8 +87,8 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	HO		1	0	1	1	pop=1
-		X2	HO		-5	0	1	1	pop=1
+		X1	HO		1.2		0	1.8	1	pop=1
+		X2	HO		-1.5	0	1.8	1	pop=1
 	end-build
 end-init_wf-section
 
