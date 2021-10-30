@@ -2,7 +2,7 @@
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name=test_oscilador_06
+	name=test_oscillator_06
 	propagation
 	#geninwf
 	#time-not-fs
@@ -42,14 +42,14 @@ INIT_WF-SECTION
 end-init_wf-section
 end-input
 
- -w 
+ -w -mnd 
 
 #******************************************************************************#
                 ### ------ OPERATOR FILE ------ ###
 
 OP_DEFINE-SECTION
 	title
-		2D oscilator
+		2D oscillator
 	end-title
 end-op_define-section
 PARAMETER-SECTION

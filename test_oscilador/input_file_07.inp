@@ -7,7 +7,7 @@
 ## time-not-fs	-> se desactivan las unidades en los tiempos (se usan unidades atómicas)
 ############################################################## 
 RUN-SECTION
-	name=test_oscilador_07
+	name=test_oscillator_07
 	propagation
 	#geninwf
 	#time-not-fs

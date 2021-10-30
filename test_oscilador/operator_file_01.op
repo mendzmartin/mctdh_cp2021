@@ -4,7 +4,7 @@
 ##############################################################
 OP_DEFINE-SECTION
 	title
-		2D oscilator
+		2D oscillator
 	end-title
 end-op_define-section
 

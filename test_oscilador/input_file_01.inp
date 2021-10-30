@@ -6,7 +6,7 @@
 ## ojo! solo debe estar activa propagation o geninwf (no ambas)
 ############################################################## 
 RUN-SECTION
-	name=test_oscilador_01
+	name=test_oscillator_01
 	propagation
 	#geninwf
   

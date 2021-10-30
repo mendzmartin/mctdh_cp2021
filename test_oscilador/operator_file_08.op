@@ -4,7 +4,7 @@
 ##############################################################
 OP_DEFINE-SECTION
 	title
-		2D oscillator + perturbative interaction
+		2D oscillator + perturbative potential
 	end-title
 end-op_define-section
 
