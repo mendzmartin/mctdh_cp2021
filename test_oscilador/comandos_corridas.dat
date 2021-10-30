@@ -1,19 +1,20 @@
-rm -rf test_oscilator/						-> me permite borrar el directorio con las salidas del programa
-mctdh85 -w -mnd input_file.inp				-> correr el input_file (descomentando el keyword geninwf y comentando el keyword propagation)
-cd test_oscilator/							-> ingresar al directorio con las salidas del programa
-vi log										-> ver el logfile para ver que es lo que hizo el programa
-showsys85 -rst								-> el flag -rst se agrega para decirle a MCTDH que muestre la función de onda inicial restart
-mctdh85 -w input_file.inp					-> correr nuevament el input file (descomentando el keyword propagation y comentando el
-											keyword geninwf)
-showd1d85 -a f1								-> muestra la evolución temporal de la coordenada 1 (f1 indica GDL 1) de la densidad de
-											probabilidad, con enter evoluciona
-showd1d85 -a f2								-> muestra la evolución temporal de la coordenada 2 (f2 indica GDL 2) de la densidad de
-											probabilidad, con enter evoluciona
-mctdh85 -w -c -tfinal 4.0 input_file.inp	-> correr nuevament el input file (descomentando el keyword propagation y comentando el
-											keyword geninwf) donde el flag "-c" permite que tome los datos de restart y continue la
-											propagacion con esa funcion de onda inicial y donde l flag "-tfinal 4.0" indica que
-											correra hasta tiempo final igual a 4 femtosecond (1[fs] = 10^-15[s])
-											
+initial sequence
+	rm -rf test_oscilator/						->	remove the directory with the program outs
+	mctdh85 -w -mnd input_file.inp				->	run the input_file (uncomment the geninwf keyword and comment the propagation 
+													keyword)
+	cd test_oscilator/							->	enter to the directory with the program outs
+	vi log										->	show the log file to see what the program did
+	showsys85 -rst								->	the flag -rst is added to say to mctdh that show the restar initial wave function
+	mctdh85 -w input_file.inp					->	run again the input file (uncomment the keyword propagation and comment the keyword 
+													eninwf)
+	showd1d85 -a f1								->	show the temporal evolution of the coordenate 1 (f1 denote GOF 1) of the probability 
+													density. Press enter to see the evolution.
+	showd1d85 -a f2								->	show the temporal evolution of the coordenate 2 (f2 denote GOF 2) of the probability 
+													density. Press enter to see the evolution.
+	mctdh85 -w -c -tfinal 4.0 input_file.inp	->	run again the input file (uncomment the propagation keyword and comment the geninwf 
+													keyword). The flag -c allow that mctdh take the restart data and will continue the 
+													propagation with that initial wave function. The flag -tfinal 4.0 denote that the program run until the final time equal to 4 femtosecond (1[fs] = 10^-15[s]).
+
 scripts
 	showsys85	->	Enables 2D plotting of the wavefunction or PES.
 	showd1d85	->	To selectively plot 1-dimensional densitites.
@@ -24,5 +25,5 @@ scripts
 
 
 Notes
-	test_oscilator/restart	-> have the initial wave function (at zero time).
-	test_oscilator/oper		-> have information about operators.
+	test_oscilator/restart	->	have the initial wave function (at zero time).
+	test_oscilator/oper		->	have information about operators.
