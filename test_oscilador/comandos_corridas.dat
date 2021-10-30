@@ -13,8 +13,16 @@ mctdh85 -w -c -tfinal 4.0 input_file.inp	-> correr nuevament el input file (desc
 											keyword geninwf) donde el flag "-c" permite que tome los datos de restart y continue la
 											propagacion con esa funcion de onda inicial y donde l flag "-tfinal 4.0" indica que
 											correra hasta tiempo final igual a 4 femtosecond (1[fs] = 10^-15[s])
+											
+scripts
+	showsys85	->	Enables 2D plotting of the wavefunction or PES.
+	showd1d85	->	To selectively plot 1-dimensional densitites.
+	autospec85	->	Computation of the spectrum by Fourier-transforming the autocorrelation function.
+	plspec		->	Plot of the spectrum obtained from a fourier transform of the autocorrelation function.
+	plnat		->	Natural population. Also we can use the script rdcheck85. Plot of the natural populations for a given state and mode.
+	rdcheck85	->	Reads the check-file. Analyses the state population and natural weights.
 
 
-Notas:
-	test_oscilator/restart	-> tiene la función de onda inicial (al último tiempo)
-	test_oscilator/oper		-> tiene información de los operadores
+Notes
+	test_oscilator/restart	-> have the initial wave function (at zero time).
+	test_oscilator/oper		-> have information about operators.
