@@ -87,8 +87,8 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	HO		1.2		0	1	1	pop=1
-		X2	HO		-1.5	0	1	1	pop=1
+		X1	HO		5	0	1	1	pop=1
+		X2	HO		-5	0	1	1	pop=1
 	end-build
 end-init_wf-section
 

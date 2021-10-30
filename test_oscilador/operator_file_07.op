@@ -41,7 +41,7 @@ HAMILTONIAN-SECTION
 	1.0		|	1	|	KE
 	0.5		|	q^2	|	1     
 	0.5		|	1	|	q^2
-	1		|	q	|	q
+	0.1		|	q	|	q
 	----------------------------------------------------
 end-hamiltonian-section
 

@@ -1,9 +1,9 @@
 
------- Host: "mendez-famaf" ----------Sat Oct 30 12:25:00 2021
+------ Host: "mendez-famaf" ----------Sat Oct 30 16:01:01 2021
 
  /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_07
 
- PID = 39725
+ PID = 46261
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -72,7 +72,7 @@ Timing file opened
 ########################################################################
 
  Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_07/dvr
-                                                         Oct 30 12:25:00
+                                                         Oct 30 16:01:02
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -114,7 +114,7 @@ total array memory in mb     (used):         0.1
 ########################################################################
 
  Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_07/oper
-                                                         Oct 30 12:25:00
+                                                         Oct 30 16:01:02
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -132,8 +132,8 @@ total array memory in mb     (used):         0.5
 
  *** RUNOPER include-array dimensions ***
 k   :  minkoe, maxkoe       5   16000
-h   :  htmdim, maxhtm      10   16000
-hl  :  hopdim, maxhop       7   16000
+h   :  htmdim, maxhtm      11   16000
+hl  :  hopdim, maxhop       8   16000
 nh  :  minfac, maxfac       2     800
 np  : npesopt, maxpes       0     800
 muld: mulddim,maxmuld       1      64
@@ -158,13 +158,13 @@ Mode     DOFs
 ########################################################################
 
 Creating RESTART file
-                                                         Oct 30 12:25:00
+                                                         Oct 30 16:01:02
 ########################################################################
 
 
 ****** Initial SPF Functions *********
-  1  X1         gauss   1  p0 =   0.00000  x0 =   1.20000  dx =   1.41421
-  2  X2         gauss   1  p0 =   0.00000  x0 =  -1.50000  dx =   1.41421
+  1  X1         gauss   1  p0 =   0.00000  x0 =   5.00000  dx =   1.41421
+  2  X2         gauss   1  p0 =   0.00000  x0 =   5.00000  dx =   1.41421
 
 ***** Length of psi vector *****
 
@@ -195,13 +195,13 @@ total array memory in mb     (used):         0.1
 **** Reading OPER file ****
 		2D oscillator + perturbative interaction
 Created on:
------- Host: "mendez-famaf" ----------Sat Oct 30 12:25:00 2021
+------ Host: "mendez-famaf" ----------Sat Oct 30 16:01:02 2021
 
 
 ########################################################################
 
  Propagating Wavefunction
-                                                         Oct 30 12:25:00
+                                                         Oct 30 16:01:02
 ########################################################################
  hopsdim  =       5407        0.041 MB
  dgldim   =        103        0.002 MB
@@ -238,13 +238,13 @@ Minimum value for maxkoe:       1  Present value:   16000
 **** Reading OPER file ****
 		2D oscillator + perturbative interaction
 Created on:
------- Host: "mendez-famaf" ----------Sat Oct 30 12:25:00 2021
+------ Host: "mendez-famaf" ----------Sat Oct 30 16:01:02 2021
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Sat Oct 30 12:25:00 2021
+------ Host: "mendez-famaf" ----------Sat Oct 30 16:01:02 2021
 
 
 ***** Calculation type *****
@@ -305,7 +305,7 @@ Optimal column:  9
 
 Number of succesful large BS steps:             6000
 Number of failed but fixed large BS steps:         0
-Total number of small BS steps:                36000
+Total number of small BS steps:                72000
 
 Number of successful Lanczos steps:            3000
 Number of failed but fixed Lanczos steps:         0
@@ -323,10 +323,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.63
-Total system time  [s] :          0.24
-Total time     [h:m:s] :    0 :  0 :  0.87
-Wall  time     [h:m:s] :    0 :  0 :  1
+Total cpu time     [s] :          0.84
+Total system time  [s] :          0.31
+Total time     [h:m:s] :    0 :  0 :  1.15
+Wall  time     [h:m:s] :    0 :  0 :  2
 
------- Host: "mendez-famaf" ----------Sat Oct 30 12:25:01 2021
+------ Host: "mendez-famaf" ----------Sat Oct 30 16:01:03 2021
 

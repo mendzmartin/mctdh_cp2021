@@ -36,8 +36,8 @@ INTEGRATOR-SECTION
 end-integrator-section
 INIT_WF-SECTION
 	build
-		X1	HO		1.2		0	1	1	pop=1
-		X2	HO		-1.5	0	1	1	pop=1
+		X1	HO		5	0	1	1	pop=1
+		X2	HO		5	0	1	1	pop=1
 	end-build
 end-init_wf-section
 end-input
@@ -69,7 +69,7 @@ HAMILTONIAN-SECTION
 	1.0		|	1	|	KE
 	0.5		|	q^2	|	1
 	0.5		|	1	|	q^2
-	1		|	q	|	q
+	0.1		|	q	|	q
 	----------------------------------------------------
 end-hamiltonian-section
 end-operator
