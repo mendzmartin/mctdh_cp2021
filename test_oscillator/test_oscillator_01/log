@@ -1,0 +1,336 @@
+
+------ Host: "mendez-famaf" ----------Sat Oct  2 16:10:10 2021
+
+ /home/mendez/MCTDH/test_oscilador/test_oscilador
+
+ PID =  9579
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: mctdh85
+
+Included surfaces: lsth
+
+Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
+--------------------------------------------------------------------------------
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ******
+-w -mnd
+
+
+########################################################################
+
+ Reading Input Files
+
+########################################################################
+
+Task: gendvr genoper geninwf propagation
+
+Opening operator file :/home/mendez/MCTDH/test_oscilador/operator_file.op
+
+***** Hamiltonian and title *****
+
+		2D oscilator
+
+Parameter values taken from .op file
+
+Operator labels taken from .op file 
+
+Assigning Operators From Library
+
+
+***** Paths and input files *****
+
+~.inp  file copied to input in name directory
+name      : /home/mendez/MCTDH/test_oscilador/test_oscilador
+input     : /home/mendez/MCTDH/test_oscilador/input_file.inp
+DVR file  : /home/mendez/MCTDH/test_oscilador/test_oscilador
+.op file  : /home/mendez/MCTDH/test_oscilador/operator_file.op
+INWF file : /home/mendez/MCTDH/test_oscilador/test_oscilador
+cross-ref : /home/mendez/MCTDH/test_oscilador/test_oscilador/restart
+
+overwrite enabled
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /home/mendez/MCTDH/test_oscilador/test_oscilador/dvr
+                                                         Oct  2 16:10:10
+########################################################################
+
+***** Memory used in DVR basis generation *****
+
+Memory size (used / allocated) (in Mb):     14.272 /    413.613
+
+** Array dimensions **
+
+length of complex      array (used):           6          0.000 MB
+length of real         array (used):     1758014         13.413 MB
+length of integer      array (used):           5          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        13.4
+
+
+
+****** Primitive Basis *********
+
+ mode     kappa    DVR    N        xi         xf         dx       p-max
+
+ X1           1    sin  501   -100.000    100.000   0.400000      7.838
+ X2           2    sin  501   -100.000    100.000   0.400000      7.838
+
+
+********* SPF Basis ************
+
+ mode        N    n      dof's
+
+    1      501    2       1
+    2      501    2       2
+
+ Total grid size       :   251001     2.510E+05
+ Length of A-vector    :        4     4.000E+00
+ Length of Phi-vectors :     2004     2.004E+03
+ Length of WF-vector   :     2008     2.008E+03
+
+
+########################################################################
+
+ Creating OPER file: /home/mendez/MCTDH/test_oscilador/test_oscilador/oper
+                                                         Oct  2 16:10:11
+########################################################################
+
+***** Memory used in OPERATOR generation *****
+
+Memory size (used / allocated) (in Mb):     50.707 /    450.048
+
+** Array dimensions **
+
+length of complex      array (used):     1006009         15.350 MB
+length of real         array (used):     4521528         34.497 MB
+length of integer      array (used):           4          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        49.8
+
+ *** RUNOPER include-array dimensions ***
+k   :  minkoe, maxkoe       4   16000
+h   :  htmdim, maxhtm       7   16000
+hl  :  hopdim, maxhop       6   16000
+nh  :  minfac, maxfac       2     800
+np  : npesopt, maxpes       0     800
+muld: mulddim,maxmuld       1      64
+n   :    ndef, maxdef       0     640
+n   :    npar, maxpar       3    3200
+n   :    nrdf, maxrdf       0      96
+See op.log file for final values.
+
+***** Operator details *****
+
+DOF no.    label
+    1       X1
+    2       X2
+
+Mode     DOFs
+   1    1=      X1
+   2    2=      X2
+
+ feb =  0,  meb =  0,   fpb =  0,  mpb =  0,  mkoe =  3
+ leb = F,  lmult = F,  lmulpack = F,  lcap = F
+
+Number of Hamiltonians defined:     2
+    1     system                usediag
+    2     osc1d                  nodiag
+
+########################################################################
+
+Creating RESTART file
+                                                         Oct  2 16:10:11
+########################################################################
+
+
+****** Initial SPF Functions *********
+  1  X1         gauss   1  p0 =   1.00000  x0 = -52.00000  dx =   0.12000
+  2  X2         gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   0.12000
+
+***** Length of psi vector *****
+
+Overall length of A-vector      :        4    4.000E+00
+Length of phi vector for mode   1:     1002
+Length of phi vector for mode   2:     1002
+                                  --------
+Length of wavefunction vector   :     2008    2.008E+03
+
+workcdim   :      1002
+workrdim   :       501
+workidim   :         1
+
+***** Memory used in WAVEFUNCTION generation *****
+
+Memory size (used / allocated) (in Mb):     10.600 /    409.941
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        2008          0.031 MB
+length of complex      array (used):        5546          0.085 MB
+length of real         array (used):     1257539          9.594 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           3          0.000 MB
+
+total array memory in mb     (used):         9.7
+
+**** Reading OPER file ****
+		2D oscilator
+Created on:
+------ Host: "mendez-famaf" ----------Sat Oct  2 16:10:11 2021
+
+
+########################################################################
+
+ Propagating Wavefunction
+                                                         Oct  2 16:10:11
+########################################################################
+ hopsdim  =     754006        5.753 MB
+ dgldim   =       2008        0.031 MB
+ pmatdim  =          8        0.000 MB
+ hpsidim  =       1002        0.015 MB
+ hlochdim =          8        0.000 MB
+ mfsumdim =       4008        0.061 MB
+ intpsidim=     250500        3.822 MB
+ intrdim  =       2008        0.015 MB
+ workcdim =       4008        0.061 MB
+ workrdim =     253008        1.930 MB
+
+***** Memory used in wavefunction PROPAGATION *****
+
+Memory size (used / allocated) (in Mb):     16.564 /    415.905
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        2008          0.031 MB
+length of complex      array (used):      268117          4.091 MB
+length of real         array (used):     1514076         11.551 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           3          0.000 MB
+
+total array memory in mb     (used):        15.7
+
+**** Global array sizes ****
+
+Minimum value for maxdim:       2  Present value:     120
+Minimum value for maxsta:       1  Present value:       4
+Minimum value for maxsub:      38  Present value:     400
+Minimum value for maxkoe:       1  Present value:   16000
+
+**** Reading OPER file ****
+		2D oscilator
+Created on:
+------ Host: "mendez-famaf" ----------Sat Oct  2 16:10:11 2021
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version =  8.50140
+Created on:
+------ Host: "mendez-famaf" ----------Sat Oct  2 16:10:11 2021
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+Using Schroedinger picture.
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are kept constant.
+CMF stepsize is adaptive (error control for A and phi).
+CMF accuracy: 1.00E-06,      Initial stepsize:  0.100 fs
+For SPFs, For spfs, BS integrator
+order:  9,  accuracy: 1.00E-07,  initial step: 5.00E-02 fs
+For A-coefficients, SIL integrator
+order:  10,  accuracy: 1.00E-06,  initial step:  0.050 fs
+error criterion: standard
+Standard-SIL (real) used.
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  0.000E+00
+Parameter used to regularise natural orbital matrix:  1.000E-08
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Pdensity    file opened
+Speed       file opened
+Auto        file opened  (once)
+Steps       file opened
+Update      file opened
+ time[fs]        3.000
+
+***** Integration method *****
+
+Integration method used for the MCTDH-coefficients:
+Short iterative Lanczos (real) with variable order.
+Maximum order employed:   2
+Maximum order allowed:   10
+
+Integration method used for the single-particle functions:
+Bulirsch-Stoer (BS) with polynomial extrapolation.
+Optimal column:  9
+
+Number of succesful large BS steps:             1763
+Number of failed but fixed large BS steps:      1365
+Total number of small BS steps:               165560
+
+Number of successful Lanczos steps:              90
+Number of failed but fixed Lanczos steps:         0
+
+***** Update times *****
+
+Number of successful update steps:    30
+Number of failed update steps:         0
+Mean update time (in fs):        0.10000
+Standard deviation (in fs):      0.00000
+
+***** God's final message *****
+
+Program terminated normally.
+
+***** Overall Timing *****
+
+Total cpu time     [s] :         97.63
+Total system time  [s] :          0.83
+Total time     [h:m:s] :    0 :  1 : 38.46
+Wall  time     [h:m:s] :    0 :  1 : 41
+
+------ Host: "mendez-famaf" ----------Sat Oct  2 16:11:51 2021
+

@@ -1,0 +1,11 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ Startup                    1         0.020           0.0200      18.2
+ genOPER                    1         0.020           0.0200      18.2
+
+Total (usr,sys,cpu)       0.05     0.06       0.11   (  0h :  0m :  0.11s)
+
+ ---------------------------------------------------------------------------
+ ------ Host: "mendez-famaf" ----------Mon Oct 18 12:03:18 2021
+
+ /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/test_oscilador_02
