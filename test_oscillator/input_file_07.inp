@@ -48,8 +48,8 @@ end-operator-section
 ## en este caso usamos Sine-DVR
 ############################################################## 
 SBASIS-SECTION
-	X1	=	1
-	X2	=	1
+	X1	=	10
+	X2	=	10
 end-sbasis-section
 
 ##################COMENTARIOS#################################
@@ -87,7 +87,7 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	HO		1	0	1	1	pop=1
+		X1	HO		5	0	1	1	pop=1
 		X2	HO		-5	0	1	1	pop=1
 	end-build
 end-init_wf-section

@@ -1,0 +1,38 @@
+mendez@mendez-famaf:~/MCTDH/mctdh_cp2021/test_oscillator/test_oscillator_08$ plnat 
+ State = ?   (electronic state)
+1
+ mode = ?   (mode (or particle) for which the natpops are to be shown)
+2
+
+********************************************************************************
+
+ Analyse program "rdcheck" (Read check file)
+--------------------------------------------------------------------------------
+ Natpop-file for electronic state: ns =  1
+ Natpop-file for mode: nmd =  2
+ The inputfile is  :
+/home/mendez/MCTDH/mctdh_cp2021/test_oscillator/test_oscillator_08/check
+ Check file version =  8.5014
+ No outputfile  (chk.pl) written.
+ The natpopfile is : /tmp/nat_mendez_43892.pl
+ No file for <q> and <dq> (qdq.pl) written.
+--------------------------------------------------------------------------------
+ Number of degrees of freedom:   2
+ Number of combined modes    :   2
+ Number of electronic states :   1
+
+ mode dof  dim   DVR     modelabel
+   1    1   51   sin     X1        
+   2    2   51   sin     X2        
+
+ mode: No. of SPFs per state : modelabels
+   1 :  2 :  X1 
+   2 :  2 :  X2 
+
+ tinit =      0.000 fs,    tout =      0.001 fs
+--------------------------------------------------------------------------------
+ Maximum over time of lowest nat.-weight;    time :       1.00 fs
+ mode    s = 1
+   1   1.648E-01
+   2   1.648E-01
+--------------------------------------------------------------------------------

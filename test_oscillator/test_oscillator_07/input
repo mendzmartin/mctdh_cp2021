@@ -1,8 +1,8 @@
-# /home/mendez/MCTDH/mctdh_cp2021/test_oscilador/input_file_07.inp
+# /home/mendez/MCTDH/mctdh_cp2021/test_oscillator/input_file_07.inp
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name=test_oscilador_07
+	name=test_oscillator_07
 	propagation
 	#geninwf
 	#time-not-fs
@@ -22,8 +22,8 @@ OPERATOR-SECTION
 	opname=operator_file_07
 end-operator-section
 SBASIS-SECTION
-	X1	=	1
-	X2	=	1
+	X1	=	10
+	X2	=	10
 end-sbasis-section
 PBASIS-SECTION
 	X1	sin	51	-10.0	10.0	short
@@ -37,19 +37,19 @@ end-integrator-section
 INIT_WF-SECTION
 	build
 		X1	HO		5	0	1	1	pop=1
-		X2	HO		5	0	1	1	pop=1
+		X2	HO		-5	0	1	1	pop=1
 	end-build
 end-init_wf-section
 end-input
 
- -w -mnd 
+ -w 
 
 #******************************************************************************#
                 ### ------ OPERATOR FILE ------ ###
 
 OP_DEFINE-SECTION
 	title
-		2D oscillator + perturbative interaction
+		2D oscillator + perturbative potential
 	end-title
 end-op_define-section
 PARAMETER-SECTION

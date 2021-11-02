@@ -48,8 +48,8 @@ end-operator-section
 ## en este caso usamos Sine-DVR
 ############################################################## 
 SBASIS-SECTION
-	X1	=	1
-	X2	=	1
+	X1	=	10
+	X2	=	10
 end-sbasis-section
 
 ##################COMENTARIOS#################################
