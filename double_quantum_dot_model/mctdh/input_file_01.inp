@@ -1,3 +1,6 @@
+## mctdh85 -w -mnd -p V_L 1.1 input_file_01.inp
+## 
+
 ##################COMENTARIOS#################################
 ## name		-> keyword for directory name
 ## geninwf	-> keywords to generate de initial wave function
@@ -5,6 +8,7 @@
 RUN-SECTION
 	name = double_qd_model_01
 	geninwf
+	#propagation
   
 #############################################################
 ##############Paralellization################################

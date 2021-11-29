@@ -1,0 +1,148 @@
+
+------ Host: "mendez-famaf" ----------Mon Nov 29 16:28:44 2021
+
+ /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/double_qd_model_01
+
+ PID =378135
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: mctdh85
+
+Included surfaces: lsth
+
+Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
+--------------------------------------------------------------------------------
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ******
+-w -mnd -p V_L 1.1
+
+
+########################################################################
+
+ Reading Input Files
+
+########################################################################
+
+Task: gendvr genoper geninwf
+
+Opening operator file :/home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/operator_file_01.op
+
+***** Hamiltonian and title *****
+
+		double quantum dot model
+		hamiltonian without interaction (heff)
+
+Parameter values taken from .op file
+
+WARNING in subroutine Heinpara:
+Parameter-Section. Unknown function : -exp
+------------------------------------
+
+WARNING in subroutine Heinpara:
+Parameter-Section. Unknown function : -exp
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+WARNING in subroutine Heinterms (reading operator-file):
+No brackets allowed in Hamiltonian-Section! Use Labels-Section.
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+The wrong keyword reads: [
+------------------------------------
+
+WARNING in subroutine heinterms (reading operator-file):
+There must be no blanks or brackets within an operator symbol
+------------------------------------
+
+Operator labels taken from .op file 
+
+Assigning Operators From Library
+
+
+***** Paths and input files *****
+
+~.inp  file copied to input in name directory
+name      : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/double_qd_model_01
+input     : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/input_file_01.inp
+DVR file  : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/double_qd_model_01
+.op file  : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/operator_file_01.op
+INWF file : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/double_qd_model_01
+cross-ref : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/double_qd_model_01/restart
+
+overwrite enabled
+
+
+ERROR in subroutine MCTDH (file.inp):
+Finished with input error. See log file.
+------------------------------------

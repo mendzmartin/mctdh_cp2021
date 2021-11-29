@@ -114,11 +114,11 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Mon Nov 29 09:44:29 2021"
+@timestamp def "Mon Nov 29 15:20:40 2021"
 @with string
 @    string on
 @    string loctype view
-@    string 0.351715686275, 0.180147058824
+@    string 0.450980392157, 0.177696078431
 @    string color 1
 @    string rot 0
 @    string font 0
@@ -128,7 +128,17 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.759803921569, 0.47181372549
+@    string 0.859068627451, 0.966911764706
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "Sine-DVR (L=50, N=500)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.656862745098, 0.470588235294
 @    string color 1
 @    string rot 0
 @    string font 0
@@ -181,7 +191,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world -11, -1.2, 11, 0
+@    world -25, -1.2, 25, 0
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
@@ -189,7 +199,7 @@
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle "(V_R=0.6;b_L=0.22;b_R=1.0;R=9.0)"
+@    subtitle "(V_R=0.6;V_L=1.1,b_L=0.22;b_R=1.0;R=9.0)"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
@@ -212,7 +222,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 1
+@    xaxis  tick major 2
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
