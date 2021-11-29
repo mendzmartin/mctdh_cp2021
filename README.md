@@ -1,4 +1,4 @@
-# mctdh_cp2021
+# mctdh_cp2021 repository (mctdh c-omputación p-aralela 2021)
 
 (M)ulti (C)onfiguration (T)ime (D)ependent (H)artree
 

@@ -114,7 +114,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Sat Nov 27 13:45:54 2021"
+@timestamp def "Mon Nov 29 09:54:43 2021"
 @with line
 @    line on
 @    line loctype world
@@ -128,6 +128,16 @@
 @    line arrow length 1.000000
 @    line arrow layout 1.000000, 1.000000
 @line def
+@with string
+@    string on
+@    string loctype view
+@    string 0.898284313725, 0.96568627451
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "Sine-DVR (L=50, N=500)"
 @r0 off
 @link r0 to g0
 @r0 type above
