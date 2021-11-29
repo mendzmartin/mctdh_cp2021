@@ -1,6 +1,6 @@
-# mctdh_cp2021 repository (mctdh c-omputación p-aralela 2021)
+# mctdh_cp2021 repository
 
-(M)ulti (C)onfiguration (T)ime (D)ependent (H)artree
+## (M)ulti (C)onfiguration (T)ime (D)ependent (H)artree
 
 " MCTDH is a general algorithm to solve the time-dependent Schrödinger equation for multidimensional dynamical systems consisting of distinguishable particles.
   MCTDH can thus determine the quantal motion of the nuclei of a molecular system evolving on one or several coupled electronic potential energy surfaces.
