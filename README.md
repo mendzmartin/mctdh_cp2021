@@ -23,7 +23,7 @@ from Faculty of Mathematic, Astronomy, Physics and Computation (FaMAF) of Nation
   * Here we used MCTDH package to study Harmonic Oscillator with/without interaction potential.
 
 * double_quantum_dot_model
-  * Here we used MCTDH package and Sine DVR program to analyse the double quantum dot model.
+  * Here we used MCTDH package and Sine DVR program to analyse the double quantum dot model
 
 ## Useful links
 
