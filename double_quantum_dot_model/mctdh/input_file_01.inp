@@ -1,5 +1,6 @@
 ## mctdh85 -w -mnd -p V_L 1.1 input_file_01.inp
-## 
+## cd double_qd_model_01/ -> showsys85 -rst
+## mctdh85 -w -p V_L 1.1 input_file_01.inp
 
 ##################COMENTARIOS#################################
 ## name		-> keyword for directory name
@@ -34,7 +35,7 @@ RUN-SECTION
 end-run-section
 
 OPERATOR-SECTION
-	oppath = /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh
+	# oppath = /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh
 	opname = operator_file_01
 end-operator-section
 
@@ -82,8 +83,14 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	eigenf	heff pop=1
-		X2	eigenf	heff pop=1
+		X1	eigenf	heff	pop=1
+		X2	map		X1
 	end-build
+	
+	A-coeff
+		2	1	( 1.0, 0.0 )
+		1	2	( 1.0, 0.0 )
+	end-A-coeff
 end-init_wf-section
+
 end-input
