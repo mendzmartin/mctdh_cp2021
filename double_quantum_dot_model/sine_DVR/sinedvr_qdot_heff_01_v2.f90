@@ -35,7 +35,11 @@ program sindvr1d
 	!------------------------------------------------------
 	real( 8 ) ::				depthVL_max, delta_depthVL
 	integer						depthVL_max_integer, depthVL_integer
-	integer						index_file, number_file_even, number_file_odd
+	!------------------------------------------------------
+	! Writing multiple output files
+	!------------------------------------------------------
+	integer						index_file
+	integer						number_file_even, number_file_odd
 	character(len=70) ::		filename_odd, filename_even
 	!------------------------------------------------------
 	! LAPACK (Linear Algebra PACKage) variables
@@ -93,9 +97,8 @@ program sindvr1d
 		depthVL = depthVL_integer * delta_depthVL
 
 		!-------------------------------------------------------------------------------------------------
-		! Writing multiple output files in Fortran
+		! Writing multiple output files
 		! secuency for create the wave functions for each value of depthVL
-		! Referncias: https://stackoverflow.com/questions/6146516/writing-multiple-output-files-in-fortran
 		!-------------------------------------------------------------------------------------------------
 		index_file = depthVL_integer - 40	! index_file = { 0,1,2,... }
 		number_file_even = 100 + index_file	! Warning ( 20 - 100 ) have to be less than ( depthVL_max_integer - depthVL_integer )
@@ -305,3 +308,5 @@ end subroutine initsin
 ! 2)	Federico M Pont et al 2020 J. Phys.: Condens. Matter 32 065302
 !		Predicting the performance of the inter-Coulombic electron capture from single-electron quantities
 !		link: https://iopscience.iop.org/article/10.1088/1361-648X/ab41a9
+! 3)	Writing multiple output files
+!		link: https://stackoverflow.com/questions/6146516/writing-multiple-output-files-in-fortran
