@@ -2,10 +2,10 @@
 ! Sine DVR TO APPROXIMATE heff of double quantum dot model
 ! Compilation comands
 !----------------------------------------------------------
-! 1) create out-data-folder: mkdir data_qdot_heff_01
+! 1) create out-data-folder: mkdir data_qdot_heff_01_v1
 ! 2) compile subrutine: gfortran -c mmlib.f
-! 3) compile program: gfortran sinedvr_qdot_heff_01.f90 mmlib.o -L/home/mendez/lapack-3.10.0 -llapack -lrefblas -o sinedvr_qdot_heff_01
-! 4) run: ./sinedvr_qdot_heff_01
+! 3) compile program: gfortran sinedvr_qdot_heff_01_v1.f90 mmlib.o -L/home/mendez/lapack-3.10.0 -llapack -lrefblas -o sinedvr_qdot_heff_01_v1
+! 4) run: ./sinedvr_qdot_heff_01_v1
 
 program sindvr1d
 	
@@ -67,12 +67,12 @@ program sindvr1d
 	lwork = diag( 1 ) ! element 1 of diag( ) array
 	allocate( work( lwork ) )
 
-	open( 10, file = 'data_qdot_heff_01/wave_function_even.dat' )
-	open( 11, file = 'data_qdot_heff_01/probability_density_function_even.dat' )
-	open( 20, file = 'data_qdot_heff_01/wave_function_odd.dat' )
-	open( 21, file = 'data_qdot_heff_01/probability_density_function_odd.dat' )
-	open( 30, file = 'data_qdot_heff_01/eigenvals_even_vs_depthVL.dat' )
-	open( 40, file = 'data_qdot_heff_01/eigenvals_odd_vs_depthVL.dat' )
+	open( 10, file = 'data_qdot_heff_01_v1/wave_function_even.dat' )
+	open( 11, file = 'data_qdot_heff_01_v1/probability_density_function_even.dat' )
+	open( 20, file = 'data_qdot_heff_01_v1/wave_function_odd.dat' )
+	open( 21, file = 'data_qdot_heff_01_v1/probability_density_function_odd.dat' )
+	open( 30, file = 'data_qdot_heff_01_v1/eigenvals_even_vs_depthVL.dat' )
+	open( 40, file = 'data_qdot_heff_01_v1/eigenvals_odd_vs_depthVL.dat' )
 	
 	!------------------------------------------------------
 	! Grid parameters
@@ -95,7 +95,7 @@ program sindvr1d
 		depthVL = depthVL_integer * delta_depthVL
 	
 		call initsin( trafo, ort, dif2mat, dif1mat, gdim, xi, xf, workr)
-		open( 1, file = 'data_qdot_heff_01/dvrpoints.dat' )
+		open( 1, file = 'data_qdot_heff_01_v1/dvrpoints.dat' )
 		do g1 = 1, gdim
 			write( 1, * ) ort( g1 )
 		enddo
@@ -109,7 +109,7 @@ program sindvr1d
 		sizebR	=	1.0d0	! parameterize the sizes of the right qdot
 		R		=	9.0d0	! distance between centers of qdots
 		
-		open( 1, file = 'data_qdot_heff_01/potential.dat' )
+		open( 1, file = 'data_qdot_heff_01_v1/potential.dat' )
 		do g1 = 1, gdim
 		
 			do g2 = 1, ( g1 - 1 )

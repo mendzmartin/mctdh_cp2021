@@ -89,10 +89,10 @@ program sindvr1d
 	! proportional factor to gate wave function
 	weight = sqrt(1/deltax)
 
-	delta_depthVL = 0.02d0
+	delta_depthVL = 0.05d0
 	depthVL_max_integer = nint( depthVL_max / delta_depthVL )
 	
-	do depthVL_integer = 40, depthVL_max_integer
+	do depthVL_integer = 8, depthVL_max_integer
 		
 		depthVL = depthVL_integer * delta_depthVL
 
@@ -100,7 +100,7 @@ program sindvr1d
 		! Writing multiple output files
 		! secuency for create the wave functions for each value of depthVL
 		!-------------------------------------------------------------------------------------------------
-		index_file = depthVL_integer - 40	! index_file = { 0,1,2,... }
+		index_file = depthVL_integer - 8	! index_file = { 0,1,2,... }
 		number_file_even = 100 + index_file	! Warning ( 20 - 100 ) have to be less than ( depthVL_max_integer - depthVL_integer )
 		number_file_odd = 200 + index_file	! Warning ( 20 - 100 ) have to be less than ( depthVL_max_integer - depthVL_integer )
 		
