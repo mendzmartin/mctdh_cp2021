@@ -2,10 +2,10 @@
 ! Sine DVR TO APPROXIMATE heff of double quantum dot model
 ! Compilation comands
 !----------------------------------------------------------
-! 1) create out-data-folder: mkdir data_qdot_heff_01
+! 1) create out-data-folder: mkdir data_qdot_heff_01_v2
 ! 2) compile subrutine: gfortran -c mmlib.f
-! 3) compile program: gfortran sinedvr_qdot_heff_01.f90 mmlib.o -L/home/mendez/lapack-3.10.0 -llapack -lrefblas -o sinedvr_qdot_heff_01
-! 4) run: ./sinedvr_qdot_heff_01
+! 3) compile program: gfortran sinedvr_qdot_heff_01_v2.f90 mmlib.o -L/home/mendez/lapack-3.10.0 -llapack -lrefblas -o sinedvr_qdot_heff_01_v2
+! 4) run: ./sinedvr_qdot_heff_01_v2
 
 program sindvr1d
 	
@@ -35,6 +35,8 @@ program sindvr1d
 	!------------------------------------------------------
 	real( 8 ) ::				depthVL_max, delta_depthVL
 	integer						depthVL_max_integer, depthVL_integer
+	integer						index_file, number_file_even, number_file_odd
+	character(len=70) ::		filename_odd, filename_even
 	!------------------------------------------------------
 	! LAPACK (Linear Algebra PACKage) variables
 	!------------------------------------------------------
@@ -67,12 +69,8 @@ program sindvr1d
 	lwork = diag( 1 ) ! element 1 of diag( ) array
 	allocate( work( lwork ) )
 
-	open( 10, file = 'data_qdot_heff_01/wave_function_even.dat' )
-	open( 11, file = 'data_qdot_heff_01/probability_density_function_even.dat' )
-	open( 20, file = 'data_qdot_heff_01/wave_function_odd.dat' )
-	open( 21, file = 'data_qdot_heff_01/probability_density_function_odd.dat' )
-	open( 30, file = 'data_qdot_heff_01/eigenvals_even_vs_depthVL.dat' )
-	open( 40, file = 'data_qdot_heff_01/eigenvals_odd_vs_depthVL.dat' )
+	open( 10, file = 'data_qdot_heff_01_v2/eigenvals_even_vs_depthVL.dat' )
+	open( 20, file = 'data_qdot_heff_01_v2/eigenvals_odd_vs_depthVL.dat' )
 	
 	!------------------------------------------------------
 	! Grid parameters
@@ -93,9 +91,27 @@ program sindvr1d
 	do depthVL_integer = 40, depthVL_max_integer
 		
 		depthVL = depthVL_integer * delta_depthVL
-	
+
+		!-------------------------------------------------------------------------------------------------
+		! Writing multiple output files in Fortran
+		! secuency for create the wave functions for each value of depthVL
+		! Referncias: https://stackoverflow.com/questions/6146516/writing-multiple-output-files-in-fortran
+		!-------------------------------------------------------------------------------------------------
+		index_file = depthVL_integer - 40	! index_file = { 0,1,2,... }
+		number_file_even = 100 + index_file	! Warning ( 20 - 100 ) have to be less than ( depthVL_max_integer - depthVL_integer )
+		number_file_odd = 200 + index_file	! Warning ( 20 - 100 ) have to be less than ( depthVL_max_integer - depthVL_integer )
+		
+		write( filename_even, '( "data_qdot_heff_01_v2/wave_function_even_",i0,".dat" )' ) index_file
+		write( filename_odd, '( "data_qdot_heff_01_v2/wave_function_odd_",i0,".dat" )' ) index_file
+
+		open( number_file_even, file = filename_even )
+		open( number_file_odd, file = filename_odd )
+		
+		!--------------------------------------------------
+		! Grid points of sine DVR
+		!--------------------------------------------------
 		call initsin( trafo, ort, dif2mat, dif1mat, gdim, xi, xf, workr)
-		open( 1, file = 'data_qdot_heff_01/dvrpoints.dat' )
+		open( 1, file = 'data_qdot_heff_01_v2/dvrpoints.dat' )
 		do g1 = 1, gdim
 			write( 1, * ) ort( g1 )
 		enddo
@@ -109,7 +125,7 @@ program sindvr1d
 		sizebR	=	1.0d0	! parameterize the sizes of the right qdot
 		R		=	9.0d0	! distance between centers of qdots
 		
-		open( 1, file = 'data_qdot_heff_01/potential.dat' )
+		open( 1, file = 'data_qdot_heff_01_v2/potential.dat' )
 		do g1 = 1, gdim
 		
 			do g2 = 1, ( g1 - 1 )
@@ -151,36 +167,28 @@ program sindvr1d
 		endif
 		
 		! eigenvals even (energy even) vs potential depth value of left qdot
-		write( 30, * ) depthVL, aval( 1: number_values: 2)
+		write( 10, * ) depthVL, aval( 1: number_values: 2)
 		! eigenvals odd (energy odd) vs potential depth value of left qdot
-		write( 40, * ) depthVL, aval( 2: number_values: 2 )
+		write( 20, * ) depthVL, aval( 2: number_values: 2 )
 		
 		do g2 = 1, gdim
 		
 			psi( g2, 1: number_values: 2 ) = weight * H( g2, 1: number_values: 2 ) ! wave function
 			psi( g2, 2: number_values: 2 ) = weight * H( g2, 2: number_values: 2 ) ! wave function
 			
-			! rho( g2, 1: number_values: 2 ) = abs( weight * H( g2, 1: number_values: 2 ) )**2 ! probability density function
-			! rho( g2, 2: number_values: 2 ) = abs( weight * H( g2, 2: number_values: 2 ) )**2 ! probability density function
-			
 			! wave_function_even.dat and wave_function_odd.dat
-			write( 10, * ) ort( g2 ), psi( g2, 1: number_values: 2 )
-			write( 20, * ) ort( g2 ), psi( g2, 2: number_values: 2 )
-			
-			! probability_density_function_even even and probability_density_function_odd
-			write( 11, * ) ort( g2 ), psi( g2, 1: number_values: 2 )
-			write( 21, * ) ort( g2 ), psi( g2, 2: number_values: 2 )
+			write( number_file_even, * ) ort( g2 ), psi( g2, 1: number_values: 2 )
+			write( number_file_odd, * ) ort( g2 ), psi( g2, 2: number_values: 2 )
 			
 		enddo
-		
+	
+		close( number_file_even )	! wave_function_even.dat
+		close( number_file_odd )	! wave_function_odd.dat
+	
     enddo
-
-	close( 10 ) ! wave_function_even.dat
-	close( 11 ) ! probability_density_function_even.dat
-	close( 20 ) ! wave_function_odd.dat
-	close( 21 ) ! probability_density_function_odd.dat
-	close( 30 ) ! eigenvals_even_vs_depthVL.dat
-	close( 40 ) ! eigenvals_odd_vs_depthVL.dat
+    
+	close( 10 ) ! eigenvals_even_vs_depthVL.dat
+	close( 20 ) ! eigenvals_odd_vs_depthVL.dat
       
 endprogram sindvr1d
 
