@@ -114,11 +114,21 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Dec  9 18:46:49 2021"
+@timestamp def "Fri Dec 10 12:24:00 2021"
 @with ellipse
 @    ellipse on
 @    ellipse loctype view
 @    ellipse 0.942401960785, 0.356617647059, 1.07720588235, 0.4375
+@    ellipse linestyle 3
+@    ellipse linewidth 1.0
+@    ellipse color 1
+@    ellipse fill color 1
+@    ellipse fill pattern 0
+@ellipse def
+@with ellipse
+@    ellipse on
+@    ellipse loctype view
+@    ellipse 0.140931372549, 0.411764705882, 0.180147058824, 0.38112745098
 @    ellipse linestyle 3
 @    ellipse linewidth 1.0
 @    ellipse color 1
@@ -158,6 +168,16 @@
 @    string just 0
 @    string char size 1.000000
 @    string def "Repulsion"
+@with string
+@    string on
+@    string loctype view
+@    string 0.182598039215, 0.421568627451
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "Degeneracy"
 @r0 off
 @link r0 to g0
 @r0 type above

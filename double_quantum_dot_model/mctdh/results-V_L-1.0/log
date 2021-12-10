@@ -1,0 +1,390 @@
+
+------ Host: "mendez-famaf" ----------Fri Dec 10 16:08:46 2021
+
+ /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0
+
+ PID = 45198
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: mctdh85
+
+Included surfaces: lsth
+
+Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
+--------------------------------------------------------------------------------
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ******
+-D results-V_L-1.0 -w -mnd -p V_L 1.0
+
+
+########################################################################
+
+ Reading Input Files
+
+########################################################################
+
+Task: gendvr genoper geninwf
+
+Opening operator file :/home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/operator_file_01.op
+
+***** Hamiltonian and title *****
+
+		double quantum dot model
+		hamiltonian without interaction (heff)
+
+Parameter values taken from .op file
+
+Operator labels taken from .op file 
+
+Assigning Operators From Library
+
+
+***** Paths and input files *****
+
+~.inp  file copied to input in name directory
+name      : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0
+input     : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/input_file_01.inp
+DVR file  : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0
+.op file  : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/operator_file_01.op
+INWF file : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0
+cross-ref : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0/restart
+
+overwrite enabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0/dvr
+                                                         Dec 10 16:08:46
+########################################################################
+
+***** Memory used in DVR basis generation *****
+
+Memory size (used / allocated) (in Mb):     14.219 /    413.560
+
+** Array dimensions **
+
+length of complex      array (used):           6          0.000 MB
+length of real         array (used):     1751005         13.359 MB
+length of integer      array (used):           5          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        13.4
+
+
+
+****** Primitive Basis *********
+
+ mode     kappa    DVR    N        xi         xf         dx       p-max
+
+ X1           1    sin  500    -25.000     25.000   0.100200     31.291
+ X2           2    sin  500    -25.000     25.000   0.100200     31.291
+
+
+********* SPF Basis ************
+
+ mode        N    n      dof's
+
+    1      500   10       1
+    2      500   10       2
+
+ Total grid size       :   250000     2.500E+05
+ Length of A-vector    :      100     1.000E+02
+ Length of Phi-vectors :    10000     1.000E+04
+ Length of WF-vector   :    10100     1.010E+04
+
+
+########################################################################
+
+ Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-1.0/oper
+                                                         Dec 10 16:08:46
+########################################################################
+
+***** Memory used in OPERATOR generation *****
+
+Memory size (used / allocated) (in Mb):     50.508 /    449.849
+
+** Array dimensions **
+
+length of complex      array (used):     1002001         15.289 MB
+length of real         array (used):     4503503         34.359 MB
+length of integer      array (used):           4          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        49.6
+
+ *** RUNOPER include-array dimensions ***
+k   :  minkoe, maxkoe       6   16000
+h   :  htmdim, maxhtm       9   16000
+hl  :  hopdim, maxhop       8   16000
+nh  :  minfac, maxfac       2     800
+np  : npesopt, maxpes       0     800
+muld: mulddim,maxmuld       1      64
+n   :    ndef, maxdef       2     640
+n   :    npar, maxpar      10    3200
+n   :    nrdf, maxrdf       0      96
+See op.log file for final values.
+
+***** Operator details *****
+
+DOF no.    label
+    1       X1
+    2       X2
+
+Mode     DOFs
+   1    1=      X1
+   2    2=      X2
+
+ feb =  0,  meb =  0,   fpb =  0,  mpb =  0,  mkoe =  3
+ leb = F,  lmult = F,  lmulpack = F,  lcap = F
+
+Number of Hamiltonians defined:     2
+    1     system                usediag
+    2     heff                  usediag
+
+########################################################################
+
+Creating RESTART file
+                                                         Dec 10 16:08:46
+########################################################################
+
+
+****** Initial SPF Functions *********
+  1  X1        eigenf  pop =  1  sym =  0      ham =   2  heff
+  2  X2           map     f-map =   1
+
+***** Length of psi vector *****
+
+Overall length of A-vector      :      100    1.000E+02
+Length of phi vector for mode   1:     5000
+Length of phi vector for mode   2:     5000
+                                  --------
+Length of wavefunction vector   :    10100    1.010E+04
+
+workcdim   :    500000
+workrdim   :    500500
+workidim   :       500
+
+***** Memory used in WAVEFUNCTION generation *****
+
+Memory size (used / allocated) (in Mb):     20.463 /    419.804
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):       10100          0.154 MB
+length of complex      array (used):      513111          7.829 MB
+length of real         array (used):     1502625         11.464 MB
+length of integer      array (used):         505          0.002 MB
+length of logical      array (used):           3          0.000 MB
+
+total array memory in mb     (used):        19.6
+
+**** Reading OPER file ****
+		double quantum dot model
+		hamiltonian without interaction (heff)
+Created on:
+------ Host: "mendez-famaf" ----------Fri Dec 10 16:08:46 2021
+
+
+*** VEIGEN ***  operator: h =   10 heff , DOF = X1       state =  1, type =  8
+
+   1. Eigenvalue     0.178774908[eV]    0.006569857275[au] ,   1. spf
+   2. Eigenvalue     0.395868899[eV]    0.014547914998[au] ,   2. spf
+   3. Eigenvalue     0.713694253[eV]    0.026227782332[au] ,   3. spf
+   4. Eigenvalue     1.573325397[eV]    0.057818646958[au] ,   4. spf
+   5. Eigenvalue     1.600610308[eV]    0.058821349026[au] ,   5. spf
+   6. Eigenvalue     2.832763937[eV]    0.104102163698[au] ,   6. spf
+   7. Eigenvalue     3.503261001[eV]    0.128742478496[au] ,   7. spf
+   8. Eigenvalue     4.401150005[eV]    0.161739293649[au] ,   8. spf
+   9. Eigenvalue     6.140822587[eV]    0.225671087476[au] ,   9. spf
+  10. Eigenvalue     6.294881917[eV]    0.231332663895[au] ,  10. spf
+  11. Eigenvalue     8.500589775[eV]    0.312390939704[au]
+  12. Eigenvalue     9.430466792[eV]    0.346563292793[au]
+  13. Eigenvalue    11.004610664[eV]    0.404412018181[au]
+  14. Eigenvalue    13.302391841[eV]    0.488853926352[au]
+  15. Eigenvalue    13.793365761[eV]    0.506896886693[au]
+  16. Eigenvalue    16.824607454[eV]    0.618292974020[au]
+  17. Eigenvalue    17.695539796[eV]    0.650299150059[au]
+  18. Eigenvalue    20.109298587[eV]    0.739003157308[au]
+  19. Eigenvalue    22.411999351[eV]    0.823625856969[au]
+  20. Eigenvalue    23.676269726[eV]    0.870086940374[au]
+  21. Eigenvalue    26.825995258[eV]    0.985837228846[au]
+  22. Eigenvalue    28.066406708[eV]    1.031421512869[au]
+  23. Eigenvalue    30.990558481[eV]    1.138882117870[au]
+  24. Eigenvalue    33.222432297[eV]    1.220901975005[au]
+  25. Eigenvalue    35.705284773[eV]    1.312145128551[au]
+  26. Eigenvalue    38.551462903[eV]    1.416740254805[au]
+  27. Eigenvalue    41.136547061[eV]    1.511740353696[au]
+  28. Eigenvalue    44.171850993[eV]    1.623285725585[au]
+  29. Eigenvalue    47.107207915[eV]    1.731158112259[au]
+  30. Eigenvalue    50.246627798[eV]    1.846529675111[au]
+  31. Eigenvalue    53.486392720[eV]    1.965588850423[au]
+  32. Eigenvalue    56.804973449[eV]    2.087544453509[au]
+  33. Eigenvalue    60.271667969[eV]    2.214943138470[au]
+  34. Eigenvalue    63.816062357[eV]    2.345197241172[au]
+  35. Eigenvalue    67.486094631[eV]    2.480068451432[au]
+  36. Eigenvalue    71.257724071[eV]    2.618673289021[au]
+  37. Eigenvalue    75.136556211[eV]    2.761217753472[au]
+  38. Eigenvalue    79.126096389[eV]    2.907830663658[au]
+  39. Eigenvalue    83.219731400[eV]    3.058268988740[au]
+  40. Eigenvalue    87.422940402[eV]    3.212734084081[au]
+  41. Eigenvalue    91.732211793[eV]    3.371096900672[au]
+  42. Eigenvalue    96.148901174[eV]    3.533407255915[au]
+  43. Eigenvalue   100.672788792[eV]    3.699657074044[au]
+  44. Eigenvalue   105.303410612[eV]    3.869829302087[au]
+  45. Eigenvalue   110.041223516[eV]    4.043940730187[au]
+  46. Eigenvalue   114.885811324[eV]    4.221976063955[au]
+  47. Eigenvalue   119.837341107[eV]    4.403941443171[au]
+  48. Eigenvalue   124.895715419[eV]    4.589833286752[au]
+  49. Eigenvalue   130.060899557[eV]    4.779650319370[au]
+  50. Eigenvalue   135.332904468[eV]    4.973392943343[au]
+  51. Eigenvalue   140.711676117[eV]    5.171059172911[au]
+  52. Eigenvalue   146.197217755[eV]    5.372649127542[au]
+  53. Eigenvalue   151.789502952[eV]    5.578161835992[au]
+  54. Eigenvalue   157.488519289[eV]    5.787596841807[au]
+  55. Eigenvalue   163.294255118[eV]    6.000953716961[au]
+  56. Eigenvalue   169.206696302[eV]    6.218231941904[au]
+  57. Eigenvalue   175.225834138[eV]    6.439431196879[au]
+  58. Eigenvalue   181.351657978[eV]    6.664551090501[au]
+  59. Eigenvalue   187.584159581[eV]    6.893591319956[au]
+  60. Eigenvalue   193.923331076[eV]    7.126551595964[au]
+  61. Eigenvalue   200.369165208[eV]    7.363431651956[au]
+  62. Eigenvalue   206.921655626[eV]    7.604231254496[au]
+  63. Eigenvalue   213.580796315[eV]    7.848950182534[au]
+  64. Eigenvalue   220.346581911[eV]    8.097588238980[au]
+  65. Eigenvalue   227.219007448[eV]    8.350145241315[au]
+  66. Eigenvalue   234.198068381[eV]    8.606621022504[au]
+  67. Eigenvalue   241.283760545[eV]    8.867015429513[au]
+  68. Eigenvalue   248.476080095[eV]    9.131328321026[au]
+  69. Eigenvalue   255.775023499[eV]    9.399559567229[au]
+  70. Eigenvalue   263.180587491[eV]    9.671709048134[au]
+  71. Eigenvalue   270.692769057[eV]    9.947776652946[au]
+  72. Eigenvalue   278.311565407[eV]   10.227762279154[au]
+  73. Eigenvalue   286.036973956[eV]   10.511665831766[au]
+  74. Eigenvalue   293.868992308[eV]   10.799487222691[au]
+  75. Eigenvalue   301.807618235[eV]   11.091226370107[au]
+  76. Eigenvalue   309.852849668[eV]   11.386883197943[au]
+  77. Eigenvalue   318.004684680[eV]   11.686457635391[au]
+  78. Eigenvalue   326.263121476[eV]   11.989949616467[au]
+  79. Eigenvalue   334.628158380[eV]   12.297359079622[au]
+  80. Eigenvalue   343.099793829[eV]   12.608685967382[au]
+  81. Eigenvalue   351.678026360[eV]   12.923930226030[au]
+  82. Eigenvalue   360.362854607[eV]   13.243091805306[au]
+  83. Eigenvalue   369.154277289[eV]   13.566170658143[au]
+  84. Eigenvalue   378.052293205[eV]   13.893166740428[au]
+  85. Eigenvalue   387.056901229[eV]   14.224080010774[au]
+  86. Eigenvalue   396.168100303[eV]   14.558910430324[au]
+  87. Eigenvalue   405.385889434[eV]   14.897657962562[au]
+  88. Eigenvalue   414.710267688[eV]   15.240322573148[au]
+  89. Eigenvalue   424.141234185[eV]   15.586904229759[au]
+  90. Eigenvalue   433.678788096[eV]   15.937402901951[au]
+  91. Eigenvalue   443.322928642[eV]   16.291818561024[au]
+  92. Eigenvalue   453.073655084[eV]   16.650151179909[au]
+  93. Eigenvalue   462.930966727[eV]   17.012400733049[au]
+  94. Eigenvalue   472.894862916[eV]   17.378567196307[au]
+  95. Eigenvalue   482.965343028[eV]   17.748650546862[au]
+  96. Eigenvalue   493.142406476[eV]   18.122650763133[au]
+  97. Eigenvalue   503.426052706[eV]   18.500567824691[au]
+  98. Eigenvalue   513.816281189[eV]   18.882401712188[au]
+  99. Eigenvalue   524.313091428[eV]   19.268152407292[au]
+ 100. Eigenvalue   534.916482949[eV]   19.657819892613[au]
+ 101. Eigenvalue   545.626455303[eV]   20.051404151662[au]
+ 102. Eigenvalue   556.443008064[eV]   20.448905168777[au]
+ 103. Eigenvalue   567.366140828[eV]   20.850322929085[au]
+ 104. Eigenvalue   578.395853210[eV]   21.255657418453[au]
+ 105. Eigenvalue   589.532144844[eV]   21.664908623440[au]
+ 106. Eigenvalue   600.775015383[eV]   22.078076531258[au]
+ 107. Eigenvalue   612.124464494[eV]   22.495161129738[au]
+ 108. Eigenvalue   623.580491863[eV]   22.916162407288[au]
+ 109. Eigenvalue   635.143097189[eV]   23.341080352866[au]
+ 110. Eigenvalue   646.812280186[eV]   23.769914955943[au]
+ 111. Eigenvalue   658.588040580[eV]   24.202666206480[au]
+ 112. Eigenvalue   670.470378111[eV]   24.639334094899[au]
+ 113. Eigenvalue   682.459292530[eV]   25.079918612054[au]
+ 114. Eigenvalue   694.554783600[eV]   25.524419749215[au]
+ 115. Eigenvalue   706.756851093[eV]   25.972837498039[au]
+ 116. Eigenvalue   719.065494792[eV]   26.425171850550[au]
+ 117. Eigenvalue   731.480714490[eV]   26.881422799125[au]
+ 118. Eigenvalue   744.002509989[eV]   27.341590336469[au]
+ 119. Eigenvalue   756.630881098[eV]   27.805674455602[au]
+ 120. Eigenvalue   769.365827635[eV]   28.273675149842[au]
+ 121. Eigenvalue   782.207349427[eV]   28.745592412788[au]
+ 122. Eigenvalue   795.155446307[eV]   29.221426238309[au]
+ 123. Eigenvalue   808.210118115[eV]   29.701176620529[au]
+ 124. Eigenvalue   821.371364697[eV]   30.184843553811[au]
+ 125. Eigenvalue   834.639185906[eV]   30.672427032751[au]
+ 126. Eigenvalue   848.013581601[eV]   31.163927052164[au]
+ 127. Eigenvalue   861.494551648[eV]   31.659343607073[au]
+ 128. Eigenvalue   875.082095915[eV]   32.158676692697[au]
+ 129. Eigenvalue   888.776214277[eV]   32.661926304448[au]
+ 130. Eigenvalue   902.576906616[eV]   33.169092437915[au]
+ 131. Eigenvalue   916.484172815[eV]   33.680175088860[au]
+ 132. Eigenvalue   930.498012764[eV]   34.195174253206[au]
+ 133. Eigenvalue   944.618426355[eV]   34.714089927037[au]
+ 134. Eigenvalue   958.845413487[eV]   35.236922106581[au]
+ 135. Eigenvalue   973.178974061[eV]   35.763670788210[au]
+ 136. Eigenvalue   987.619107981[eV]   36.294335968434[au]
+ 137. Eigenvalue  1002.165815156[eV]   36.828917643888[au]
+ 138. Eigenvalue  1016.819095498[eV]   37.367415811334[au]
+ 139. Eigenvalue  1031.578948923[eV]   37.909830467652[au]
+ 140. Eigenvalue  1046.445375347[eV]   38.456161609836[au]
+ 141. Eigenvalue  1061.418374693[eV]   39.006409234985[au]
+ 142. Eigenvalue  1076.497946885[eV]   39.560573340306[au]
+ 143. Eigenvalue  1091.684091848[eV]   40.118653923104[au]
+ 144. Eigenvalue  1106.976809513[eV]   40.680650980777[au]
+ 145. Eigenvalue  1122.376099810[eV]   41.246564510816[au]
+ 146. Eigenvalue  1137.881962675[eV]   41.816394510798[au]
+ 147. Eigenvalue  1153.494398042[eV]   42.390140978384[au]
+ 148. Eigenvalue  1169.213405852[eV]   42.967803911317[au]
+ 149. Eigenvalue  1185.038986044[eV]   43.549383307415[au]
+ 150. Eigenvalue  1200.971138562[eV]   44.134879164569[au]
+ 151. Eigenvalue  1217.009863349[eV]   44.724291480742[au]
+ 152. Eigenvalue  1233.155160352[eV]   45.317620253965[au]
+ 153. Eigenvalue  1249.407029520[eV]   45.914865482334[au]
+ 154. Eigenvalue  1265.765470802[eV]   46.516027164009[au]
+ 155. Eigenvalue  1282.230484150[eV]   47.121105297206[au]
+ 156. Eigenvalue  1298.802069516[eV]   47.730099880203[au]
+ 157. Eigenvalue  1315.480226856[eV]   48.343010911332[au]
+ 158. Eigenvalue  1332.264956126[eV]   48.959838388979[au]
+ 159. Eigenvalue  1349.156257283[eV]   49.580582311580[au]
+ 160. Eigenvalue  1366.154130285[eV]   50.205242677623[au]
+ 161. Eigenvalue  1383.258575094[eV]   50.833819485641[au]
+ 162. Eigenvalue  1400.469591669[eV]   51.466312734214[au]
+ 163. Eigenvalue  1417.787179975[eV]   52.102722421964[au]
+ 164. Eigenvalue  1435.211339974[eV]   52.743048547559[au]
+ 165. Eigenvalue  1452.742071632[eV]   53.387291109707[au]
+ 166. Eigenvalue  1470.379374914[eV]   54.035450107153[au]
+ 167. Eigenvalue  1488.123249787[eV]   54.687525538682[au]
+ 168. Eigenvalue  1505.973696219[eV]   55.343517403116[au]
+
+Mapping s =  1 ;   1 ->  2 , ishift =   0
+
+**** A-coefficients taken from input ****
+     2  ( 0.707107, 0.000000)    2  1
+    11  ( 0.707107, 0.000000)    1  2
+
+
+Program terminated normally.  (geninwf run)
+
+***** Overall Timing *****
+
+Total cpu time     [s] :          1.40
+Total system time  [s] :          0.09
+Total time     [h:m:s] :    0 :  0 :  1.49
+Wall  time     [h:m:s] :    0 :  0 :  1
+
+------ Host: "mendez-famaf" ----------Fri Dec 10 16:08:47 2021
+

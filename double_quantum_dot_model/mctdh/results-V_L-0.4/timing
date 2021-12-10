@@ -1,0 +1,13 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ Startup                    1         1.470           1.4700      96.7
+ initWF                     1         0.800           0.8000      52.6
+ genDVR                     1         0.560           0.5600      36.8
+ genOPER                    1         0.100           0.1000       6.6
+
+Total (usr,sys,cpu)       1.42     0.10       1.52   (  0h :  0m :  1.52s)
+
+ ---------------------------------------------------------------------------
+ ------ Host: "mendez-famaf" ----------Fri Dec 10 16:08:38 2021
+
+ /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh/results-V_L-0.4
