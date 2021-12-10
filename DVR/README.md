@@ -9,9 +9,10 @@
 ## Repository contents
 
 * data_ho
+  * **En esta carpeta se guardan los resultados de las simulaciones, gráficas, autovalores, autovectores, potencial, puntos de la grilla, scripts, etc.**
   * Se estudió el oscilador armónico unidimensional, el cual es un hamiltoniano muy conocido y del cual sabemos admite resolución exacta con lo cual se pueden comparar los resultados obtenidos.
   * Se graficaron autovalores (o energías) y autovectores (o funciones de onda) del hamiltoniano; potencial armónico
-  * Se llevaron a cabo 5 corridas donde en el archivo "configuracion _de_corridas.dat" se pueden observar las diferencias entre cada una de ellas.
+  * Se llevaron a cabo 5 corridas donde en el archivo "configuracion _de_corridas.md" se pueden observar las diferencias entre cada una de ellas.
   * La idea general fue comprobar que las autoenergía no dependen del parámetro "beta" (pues no interviene en la física del problema), la paridad de las autofunciones, los valores que esperamos para las energías y el potencial.
   * En la carpeta "Otras" se agregaron otras gráficas de autofunciones.
 * data_ho_study_01
@@ -20,6 +21,8 @@
 * data_ho_study_03
 * data_ho_study_04
 * sine_DVR
+  * **En esta carpeta se guardan los programas en lenguaje FORTRAN y los archivos binarios (ejecutables)**
+  * Se llevaron a cabo 7 programas donde, en el archivo "identificacion_programas.md" se pueden conocer las características y diferencias entre cada uno de ellos.
 * sinedvr_NeHeplus
   
   
