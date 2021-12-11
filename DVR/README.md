@@ -8,28 +8,16 @@
 
 ## Repository contents
 
-* data_ho
-  * ***En esta carpeta se guardan los resultados de las simulaciones, gráficas, autovalores, autovectores, potencial, puntos de la grilla, scripts, etc.***
-  * Se estudió el oscilador armónico unidimensional, el cual es un hamiltoniano muy conocido y del cual sabemos admite resolución exacta con lo cual se pueden comparar los resultados obtenidos.
-  * Se graficaron autovalores (o energías) y autovectores (o funciones de onda) del hamiltoniano; potencial armónico
-  * Se llevaron a cabo 5 corridas donde en el archivo *"configuracion _de_corridas.md"* se pueden observar las diferencias entre cada una de ellas.
-  * La idea general fue comprobar que las autoenergía no dependen del parámetro "beta" (pues no interviene en la física del problema), la paridad de las autofunciones, los valores que esperamos para las energías y el potencial.
-  * En la carpeta "Otras" se agregaron otras gráficas de autofunciones.
-* data_ho_study_01
-* data_ho_study_02_v1
-* data_ho_study_02_v2
-* data_ho_study_03
-* data_ho_study_04
-* sine_DVR
-  * ***En esta carpeta se guardan los programas en lenguaje FORTRAN y los archivos binarios (ejecutables)***
-  * Se llevaron a cabo 7 programas donde, en el archivo *"identificacion_programas.md"* se pueden conocer las características y diferencias entre cada uno de ellos.
-* sinedvr_NeHeplus
-  
-  
-## Useful links
+### data_ho; data_ho_study_01; data_ho_study_02_v1; data_ho_study_02_v2; data_ho_study_03; data_ho_study_04; sinedvr_NeHeplus
 
-* [MCTDH software package](https://www.pci.uni-heidelberg.de/cms/mctdh.html)
+* ***En estas carpetas se guardan los resultados de las simulaciones, gráficas, autovalores, autovectores, potencial, puntos de la grilla, scripts, etc.***
+* Se estudió el oscilador armónico unidimensional, el cual es un hamiltoniano muy conocido y del cual sabemos admite resolución exacta con lo cual se pueden comparar los resultados obtenidos.
+* Se graficaron autovalores (o energías) y autovectores (o funciones de onda) del hamiltoniano; potencial armónico
+* Se llevaron a cabo 5 corridas donde en el archivo *"README.md"* se pueden observar las diferencias entre cada una de ellas.
+* La idea general fue comprobar que las autoenergía no dependen del parámetro "beta" (pues no interviene en la física del problema), la paridad de las autofunciones, los valores que esperamos para las energías y el potencial. Además, se llevaron a cabo estudios de performance dependiendo del manejo de alocación de memoria en los programas de FORTRAN, y se estudiaron los comportamientos de los resultados respecto de los parámetros que entran en juego en el métodos sine DVR.
+* Para mayor información ver la carpeta Sine_DVR.
 
-* [Faculty of Mathematic, Astronomy, Physics and Computation (FaMAF) web site](https://www.famaf.unc.edu.ar/)
+### sine_DVR
 
-* [The Enrique Gaviola Institute of Physics (IFEG) web site](http://ifeg.famaf.unc.edu.ar/en/)
+* ***En esta carpeta se guardan los programas en lenguaje FORTRAN y los archivos binarios (ejecutables)***
+* Se llevaron a cabo 7 programas donde, en el archivo *"README.md"* se pueden conocer las características y diferencias entre cada uno de ellos.
