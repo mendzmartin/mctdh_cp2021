@@ -1,6 +1,7 @@
-Configuración de corridas
+# Configuración de corridas
 
-CORRIDA N°1
+## CORRIDA N°1
+'''
 
 mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3 
 	Total grid size = 50 prop L=100
@@ -8,11 +9,13 @@ mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3
 	Frequency value = 1
 	Initial beta value = 0.01
 	Final beta value = 0.1
-	DeltaX =   0.80321285140562249     
+	DeltaX =   0.80321285140562249 
 	L =    201.60642570281124      MAL
 	N =          250
-	
-CORRIDA N°2 (variando N para grid size fijo)
+
+'''
+
+## CORRIDA N°2 (variando N para grid size fijo)
 
 mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3 
 	Total grid size = 50
@@ -24,7 +27,7 @@ mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3
 	L =    200.80160320641284     
 	N =          500
 	
-CORRIDA N°3 (variando N para L fijo aprox (corrida N°2) )
+## CORRIDA N°3 (variando N para L fijo aprox (corrida N°2) )
 
 mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3 
 	Total grid size = 50
@@ -38,7 +41,7 @@ mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3
 
 	Nota: aumento mucho más el tiempo de corrida
 	
-CORRIDA N°4 (variando L para N fijo (corrida N°2) )
+## CORRIDA N°4 (variando L para N fijo (corrida N°2) )
 
 mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3 
 	Total grid size = 100
@@ -50,7 +53,7 @@ mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3
 	L =    401.60320641282567     
 	N =          500
 	
-CORRIDA N°5 (variando frecuencia para L y N fijo (corrida N°2) )
+## CORRIDA N°5 (variando frecuencia para L y N fijo (corrida N°2) )
 
 mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3 
 	Total grid size = 50
@@ -61,5 +64,3 @@ mendez@mendez-famaf:~/MCTDH/DVR/sine_DVR$ ./sinedvr_ho_v3
 	DeltaX =   0.40080160320641284     
 	L =    200.80160320641284     
 	N =          500
-
-	
