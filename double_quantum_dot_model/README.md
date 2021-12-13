@@ -2,21 +2,20 @@
   
 ## Goal
 
-> I have created this repository to make a final proyect of the postgraduate course called Parallel Computation
-from Faculty of Mathematic, Astronomy, Physics and Computation (FaMAF) of National University of Córdoba (UNC).
+> Estudio y análisis (con las herramientas aprendidas hasta ahora) de un hamiltoniano para modelar un punto cuántico con dos electrones.
+> Este problema, en principio, sería el utilizado para hacer estudio de performance con lo visto en el curso de Computación Paralela.
+> El modelo cuenta con un potencial armónico bidimensional.
 
 ## Repository contents
 
 * mctdh folder
-  * Here we used *Sine DVR* and *Lapack* to represent and diagonalize different Hamiltonian operators.
+  * Hamiltoniano efectivo para dos electrones sin considerar interacción.
+  * Análisis mediante el paquete de MCTDH. Graficas de las energías individuales vs parámetro V_L.
 
 * sine_DVR folder
-  * Here we used *MCTDH* package to study Harmonic Oscillator with/without interaction potential.
+  * Hamiltoniano efectivo individual sin considerar interacción.
+  * Análisis mediante representación sine DVR. Graficas de las energías individuales vs parámetro V_L.
 
 ## Useful links
 
-* [MCTDH software package](https://www.pci.uni-heidelberg.de/cms/mctdh.html)
-
-* [Faculty of Mathematic, Astronomy, Physics and Computation (FaMAF) web site](https://www.famaf.unc.edu.ar/)
-
-* [The Enrique Gaviola Institute of Physics (IFEG) web site](http://ifeg.famaf.unc.edu.ar/en/)
+* [Pont, F.M., Molle, A., Berikaa, E.R., Bubeck, S. and Bande, A., 2019. Predicting the performance of the inter-Coulombic electron capture from single-electron quantities. Journal of Physics: Condensed Matter, 32(6), p.065302.](https://iopscience.iop.org/article/10.1088/1361-648X/ab41a9)
