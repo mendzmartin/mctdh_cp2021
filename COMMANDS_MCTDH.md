@@ -8,7 +8,7 @@
 * ```mctdh85 -w input_file.inp```					->	run again the input file (uncomment the keyword propagation and comment the keyword eninwf)
 * ```showd1d85 -a f1```								->	show the temporal evolution of the coordenate 1 (f1 denote GOF 1) of the probability density. Press enter to see the evolution.
 * ```showd1d85 -a f2```								->	show the temporal evolution of the coordenate 2 (f2 denote GOF 2) of the probability density. Press enter to see the evolution.
-* ```mctdh85 -w -c -tfinal 4.0 input_file.inp```	->	run again the input file (uncomment the propagation keyword and comment the geninwf keyword). The flag "-c" allow that mctdh take the restart data and will continue the propagation with that initial wave function. The flag ```-tfinal 4.0``` denote that the program run until the final time equal to 4 femtosecond (1[fs] = 10^-15[s]).
+* ```mctdh85 -w -c -tfinal 4.0 input_file.inp```	->	run again the input file (uncomment the propagation keyword and comment the geninwf keyword). The flag ```-c``` allow that mctdh take the restart data and will continue the propagation with that initial wave function. The flag ```-tfinal 4.0``` denote that the program run until the final time equal to 4 femtosecond (1[fs] = 10^-15[s]).
 
 ## flags to run with mctdh85 command
 
