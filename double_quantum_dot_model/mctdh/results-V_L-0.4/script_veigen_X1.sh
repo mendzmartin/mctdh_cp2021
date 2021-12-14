@@ -7,6 +7,9 @@
 
 # awk -F"        " 'NR==5, NR==13 {print $3}' veigen_X1 >> first_20_eigenvalues-V_L-0.4_.dat
 
-awk -F"        " 'NR==5, NR==13 {print $3}' veigen_X1
-awk -F"        " 'NR==14, NR==16 {print $3}' veigen_X1
-awk -F"       " 'NR==17, NR==24 {print $3}' veigen_X1
+#awk -F"        " 'NR==5, NR==13 {print $3}' veigen_X1
+#awk -F"        " 'NR==14, NR==16 {print $3}' veigen_X1
+#awk -F"       " 'NR==17, NR==24 {print $3}' veigen_X1
+
+
+awk 'NR==5, NR==20 {print $3}' veigen_X1 >> first_20_eigenvalues-V_L-0.4_.dat
