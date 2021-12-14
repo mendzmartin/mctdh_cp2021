@@ -114,7 +114,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Dec 10 12:24:00 2021"
+@timestamp def "Tue Dec 14 13:14:58 2021"
 @with ellipse
 @    ellipse on
 @    ellipse loctype view
@@ -178,6 +178,16 @@
 @    string just 0
 @    string char size 1.000000
 @    string def "Degeneracy"
+@with string
+@    string on
+@    string loctype view
+@    string 0.912990196079, 0.294117647059
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "avoided crossing"
 @r0 off
 @link r0 to g0
 @r0 type above
