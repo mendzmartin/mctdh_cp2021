@@ -23,13 +23,22 @@ for i in $(seq $index_min $delta_index $index_max)
 		# crear un array de elementos que hay dentro de un archivo
 		energy=($(awk 'NR==5,NR==24 {print $3}' veigen_X1))
 		
+		cd ..
+		
 		# escribir todos los elementos del array
 		# también funcionaría ${array[@]:s:n} que escribe n elementos contando desde el elemento s
-		echo ${i} ${energy[@]}
+		#guardar datos en document.dat
 		
-		cd ..
+		echo ${i} ${energy[@]} >> energy-vs-V_L.dat
 done
 
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
 #echo +++				END SCRIPT				+++
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Notes:
+
+# take from XX-row to YY-row from XXXXX file and save data in XXXXX.dat
+# -F, tells awk to use , as the field separator on input. This is equivalent to but much briefer than BEGIN {FS = ","}.
+# NR := Number of Record
+# print $3 tells awk to print the third column.
