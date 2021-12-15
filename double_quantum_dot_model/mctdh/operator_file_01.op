@@ -12,7 +12,7 @@ end-op_define-section
 ##################COMENTARIOS#################################
 ## Parameter section
 ## Numerical constants
-## from the command line, by starting the program with mctdh<ver> -p apar rpar ???
+## from the command line, by starting the program with mctdh<ver> -p apar rpar
 ##############################################################
 PARAMETER-SECTION
 	mass_X1	=	1.d0, au			## electron mass 1
