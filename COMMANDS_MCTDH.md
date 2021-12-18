@@ -1,4 +1,4 @@
-## initial sequence
+## Initial sequence
 
 * ```rm -rf directory_name/```						->	remove the directory with the program outs
 * ```mctdh85 -w -mnd input_file.inp```				->	run the input_file (uncomment the geninwf keyword and comment the propagation keyword)
