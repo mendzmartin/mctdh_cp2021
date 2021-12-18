@@ -30,6 +30,8 @@ for i in $(seq $index_min $delta_index $index_max)
 		#guardar datos en document.dat
 		
 		echo ${i} ${energy[@]} >> energy-vs-V_L.dat
+		
+		rm results-V_L-$i
 done
 
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
