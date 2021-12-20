@@ -20,23 +20,14 @@ rm -f energy-vs-V_L.dat
 
 for i in $(seq $index_min $delta_index $index_max)
 	do
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ REMOVE EXISTING DIRECTORIES
-		# +++++++++++++++++++++++++++++++++++++++++++++
+		# REMOVE EXISTING DIRECTORIES
 		rm -Rf results-V_L-$i
 		
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ START EXECUTION
-		# +++++++++++++++++++++++++++++++++++++++++++++
+		# START EXECUTION
 		mctdh85 -D results-V_L-$i -w -mnd -p V_L $i input_file_01.inp
 
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ END EXECUTION
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ START COLLECTION OF ENERGIES
-		# +++++++++++++++++++++++++++++++++++++++++++++
+		# START COLLECTION OF ENERGIES
+		# -------------------------------------------------------------------
 		cd results-V_L-$i
 		
 		# crear un array de elementos que hay dentro de un archivo
@@ -49,13 +40,9 @@ for i in $(seq $index_min $delta_index $index_max)
 		#guardar datos en document.dat
 		
 		echo ${i} ${energy[@]} >> energy-vs-V_L.dat
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ END COLLECTION OF ENERGIES
-		# +++++++++++++++++++++++++++++++++++++++++++++
-
-		# +++++++++++++++++++++++++++++++++++++++++++++
-		# +++ REMOVE EXISTING DIRECTORIES
-		# +++++++++++++++++++++++++++++++++++++++++++++
+		# -------------------------------------------------------------------
+		
+		# REMOVE EXISTING DIRECTORIES
 		rm -Rf results-V_L-$i
 done
 
