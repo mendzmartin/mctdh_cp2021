@@ -1,0 +1,23 @@
+eff2dcou.o : $(PATH_SURFACES)/eff2dcou.f
+	$(FC) $(FFLAGS) -c -o $@ $?
+
+
+# This file, user_surfaces, is included into the Makefile.
+#
+# Add here new potential energy surfaces. If a PES depends on include or
+# other files, this dependency must be accounted for here! E.g.:
+#
+# newpes.o : $(PATH_SURFACES)/newpes.F   $(PATH_INC)/paths.inc
+#	  $(FC) $(FFLAGS) -c -o $@ $(PATH_SURFACES)/newpes.F
+#
+# In general, a simpler form is sufficient:
+#
+# newpes.o : $(PATH_SURFACES)/newpes.f
+#	  $(FC) $(FFLAGS) -c -o $@ $?
+#
+# Note that the second line MUST start with a TAP and not with a series
+# of blanks!
+#
+# Do not forget to include the corresponding default PES (DEF_...)
+# in file install/user_surfdef and in the source/surfaces directory.
+

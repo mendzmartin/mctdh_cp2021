@@ -1,0 +1,20 @@
+RUN-SECTION
+name=scouVee
+end-run-section
+
+OPERATOR-SECTION
+pes=scou{alpha=0.02 beta=0.01 masscoef=1.0 }
+end-operator-section
+
+PBASIS-SECTION
+   X1   sin 1001 -200.00 200.00 short
+   X2   sin 1001 -200.00 200.00 short
+end-pbasis-section
+
+NATPOT-BASIS-SECTION
+  X1 = contr
+  X2 = 1001
+end-natpot-basis-section
+
+end-input
+

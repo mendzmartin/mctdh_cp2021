@@ -1,0 +1,9 @@
+# This file, user_surfdef,  will be included into the Makefile.
+# List here all the default surfaces you have added to the surface directory.
+# EXAMPLE:
+# SURFDF1 = $(AR_SURFDEF)($(PATH_SURFACES)/DEF_new.v1.o) \
+#           $(AR_SURFDEF)($(PATH_SURFACES)/DEF_new.v2.o) 
+#
+#
+SURFDF1 = $(AR_SURFDEF)($(PATH_SURFACES)/DEF_eff2dcou.o)
+
