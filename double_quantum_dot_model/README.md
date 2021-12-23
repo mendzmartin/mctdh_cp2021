@@ -11,6 +11,9 @@
 * qdot_01 folder
   * Se analiza el hamiltoniano efectivo para dos electrones en dos pozos de potencial (puntos cuánticos derecho e izquierdo) sin considerar un potencial de interacción.
   * Análisis mediante el paquete de MCTDH y representación en Sine-DVR. Se intenta reproducir el espectro de energías y funciones de onda  tanto con el paquete MCTDH como con la representación Sine-DVR (programa hecho en FORTRAN).
+* qdot_02 folder
+  * Se agrega al hamiltoniano considerado en *qdot_01 folder* el potencial de interacción.
+  * Se realiza una relajación para calcular el estado fundamental y se comparan los resultados con aquellos previos asociados a los hamiltonianos sin interacción.
   
 ## Math expressions
   
