@@ -8,6 +8,8 @@
 
 ## Repository contents
 
+* 01_effcou_interaction folder
+  * Carpeta que contiene aquellas modificaciones que se deben agregar al paquete mctdh (install and source folders) para poder compilar qdot_02.
 * qdot_01 folder
   * Se analiza el hamiltoniano efectivo para dos electrones en dos pozos de potencial (puntos cuánticos derecho e izquierdo) sin considerar un potencial de interacción.
   * Análisis mediante el paquete de MCTDH y representación en Sine-DVR. Se intenta reproducir el espectro de energías y funciones de onda  tanto con el paquete MCTDH como con la representación Sine-DVR (programa hecho en FORTRAN).
