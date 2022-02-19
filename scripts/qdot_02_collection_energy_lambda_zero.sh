@@ -10,6 +10,9 @@ delta_index=0.1
 
 cd ../double_quantum_dot_model/qdot_02
 
+# REMOVE EXISTING DATA
+rm -f result_fundamental_energy_lambda_zero.dat
+
 for i in $(seq $index_min $delta_index $index_max)
 	do
 	
@@ -32,6 +35,6 @@ for i in $(seq $index_min $delta_index $index_max)
 	
 	# WRITE DATA
 	cd ..
-	echo $result >> fundamental_energy_lambda_zero.dat
+	echo $result >> result_fundamental_energy_lambda_zero.dat
 
 done

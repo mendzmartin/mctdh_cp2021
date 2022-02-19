@@ -10,6 +10,9 @@ delta_lambda=0.01
 
 cd ../double_quantum_dot_model/qdot_02
 
+# REMOVE EXISTING DATA
+rm -f result_energy_vs_lambda.dat
+
 for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	do
 	
@@ -29,7 +32,7 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	
 	# WRITE DATA
 	cd ..
-	echo $result >> result.dat
+	echo $result >> result_energy_vs_lambda.dat
 
 	# REMOVE EXISTING DIRECTORIES
 	rm -Rf double_qd_model_02
