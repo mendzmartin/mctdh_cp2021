@@ -31,11 +31,11 @@
 	rm -f tmpplot.pl
 	
 	showsys85 -rst <<- EOF
-		20
-		x=1, y=0
-		1
-		quit
-	EOF
+20
+x=1, y=0
+1
+quit
+EOF
 	
 	# GRAFICAR EN GNUPLOT
 	# Crear un file nuevo pero cambiandoles ciertas filas para poder graficar

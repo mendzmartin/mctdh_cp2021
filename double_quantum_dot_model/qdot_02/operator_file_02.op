@@ -24,7 +24,7 @@ PARAMETER-SECTION
 	w		=	1			## angular frecuency
 	l		=	1			## characteristic transverse confinement length
 	R		=	9.0			## distance between centers of qdots
-	lambda	=	0.1			## electron interaction magnitude
+#	lambda	=	0.1			## electron interaction magnitude
 end-parameter-section
 
 ##################COMENTARIOS#################################
@@ -55,7 +55,7 @@ HAMILTONIAN-SECTION
 	-V_R	|	Veff_R	|	1
 	-V_L	|	1		|	Veff_L
 	-V_R	|	1		|	Veff_R
-	lambda	|	1&2 Vee
+	lambda	|1&2 Vee
 	---------------------------------------------------------
 end-hamiltonian-section
 

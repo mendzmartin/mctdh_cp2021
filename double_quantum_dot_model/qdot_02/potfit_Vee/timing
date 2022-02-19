@@ -1,0 +1,17 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ firstfit                   1         0.720           0.7200      53.7
+ dvr                        1         0.590           0.5900      44.0
+ vecs                       1         0.340           0.3400      25.4
+ fiterr                     1         0.310           0.3100      23.1
+ diagrs                     1         0.260           0.2600      19.4
+ coeffs                     1         0.070           0.0700       5.2
+ getpes                     1         0.020           0.0200       1.5
+ loadv                      1         0.010           0.0100       0.7
+
+Total (usr,sys,cpu)       1.31     0.03       1.34   (  0h :  0m :  1.34s)
+
+ ---------------------------------------------------------------------------
+ ------ Host: "mendez-famaf" ----------Tue Feb 15 15:17:31 2022
+
+ /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfit_Vee

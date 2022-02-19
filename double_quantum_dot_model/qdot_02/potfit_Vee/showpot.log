@@ -1,0 +1,50 @@
+
+------ Host: "mendez-famaf" ----------Sat Feb 19 10:39:53 2022
+
+ /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfit_Vee
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: showpot85
+--------------------------------------------------------------------------------
+
+
+**** Reading VPOT file ****
+File version:  8.50140
+Created on:
+------ Host: "mendez-famaf" ----------Tue Feb 15 15:17:30 2022
+
+ niobuf  =      251001
+
+****** Reading NATPOT file ******
+File version:  8.50140
+Created on:
+------ Host: "mendez-famaf" ----------Tue Feb 15 15:17:31 2022
+
+potfit input file:  nr =  1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+ contracted mode:  1,  nat.pots:     501     501
+ V-cut =  0.2721E+22 eV,  oned:  0  0
+ C-Weights: V-max =  0.2721E+35 eV,  V-min = -0.2721E+35 eV
+ Modelabels: X1 X2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ vpotdim =      251001
+--------------------------------------------------------------------------------
+
+  *** Memory allocated dynamically ***
+ work       :      251001       1.92 MB
+ coeff      :      251001       1.92 MB
+ real*8     :      504007       3.85 MB
+ integer    :           2       0.00 MB
+ real*4     :      251003       0.96 MB
+ Total   :        9052288. Bytes ,       8.63 MB
+--------------------------------------------------------------------------------
+

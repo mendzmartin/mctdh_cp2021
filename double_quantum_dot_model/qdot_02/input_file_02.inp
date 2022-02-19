@@ -63,8 +63,8 @@ end-sbasis-section
 ## 	short/long	-> inluir (si/no) pts extremos en la grilla
 #############################################################
 PBASIS-SECTION
-	X1	sin	500	-25.0	25.0	short
-	X2	sin	500	-25.0	25.0	short
+	X1	sin	501	-25.0	25.0	short
+	X2	sin	501	-25.0	25.0	short
 end-pbasis-section
 
 INTEGRATOR-SECTION

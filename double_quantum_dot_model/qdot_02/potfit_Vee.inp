@@ -24,8 +24,8 @@ end-operator-section
 ## 			input file.
 ############################################################## 
 PBASIS-SECTION
-	X1	sin 500	-25.00	25.00	short
-	X2	sin 500	-25.00	25.00	short
+	X1	sin 501	-25.00	25.00	short
+	X2	sin 501	-25.00	25.00	short
 end-pbasis-section
 
 
@@ -37,7 +37,7 @@ end-pbasis-section
 ############################################################## 
 NATPOT-BASIS-SECTION
 	X1 = contr
-	X2 = 500
+	X2 = 501
 end-natpot-basis-section
 
 end-input
