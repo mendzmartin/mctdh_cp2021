@@ -67,10 +67,12 @@ PBASIS-SECTION
 	X2	sin	501	-25.0	25.0	short
 end-pbasis-section
 
+## CMF = 0.05,	3.0d-4 means stepsize of 0.05 fs and an error tolerance of 3.0x10−4
+
 INTEGRATOR-SECTION
-	CMF      	=	0.05,	3.0d-4	#np1
-	RK8/spf  	=	1.0d-9 			#np1
-	rrDAV/A  	=	500,	1.0d-5	#np1
+	CMF      	=	0.05,	3.0d-4	#np1	# Constant Mean-Field scheme
+	RK8/spf  	=	1.0d-9 			#np1	# Runge-Kutta integrator for SPFs
+	rrDAV/A  	=	500,	1.0d-5	#np1	# for A-vector
 	#eps_inv 	=	1.0d-10
 
 	#CMF/var	=	0.001,	1d-6	# Initial step size, accuracy.

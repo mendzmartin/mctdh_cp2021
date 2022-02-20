@@ -1,0 +1,50 @@
+Análisis de Convergencia
+
+Notas
+
+- Para CMF es conveniente, en algunos casos, usar un initial stepsize igual a tout (RUN-SECTION). Para "error tolerance" es conveniente usar valores entre 1.0d-4 (very low accuracy) and 1.0d−8 (very high accuracy). También es posible stepsize fijos (CMF/fix) o variables (CMF/var) el cual se encuentra por defecto.
+- Para relajación mejorada, en CMF, es conveniente usar CMF/varphi y 3.0d-3 (notar que es una precisión baja) y tambien requiere Davidson ”integrator” (actually a diagonalizer).
+- Para RKx es conveniente poner el segundo parámetro que especifica el initial stepsize (en caso de no poner nada el programa lo estima, pero el resutlado puede ser una elección muy conservadora). Para este integrado, el tamaño de paso es fijo.
+
+Bibliografía
+- https://www.pci.uni-heidelberg.de/tc/usr/mctdh/guide85.pdf - Cap.8 pp. 82-87
+
+Configuración 1: original
+
+	INTEGRATOR-SECTION
+		CMF      	=	0.05,	3.0d-4
+		RK8/spf  	=	1.0d-9
+		rrDAV/A  	=	500,	1.0d-5
+	end-integrator-section
+
+Configuración 2
+
+	INTEGRATOR-SECTION
+		CMF/var    	=	0.1,	1.0d-6
+		RK8/spf  	=	1.0d-9
+		rrDAV/A  	=	500,	1.0d-5
+	end-integrator-section
+
+Configuración 3
+
+	INTEGRATOR-SECTION
+		CMF/fix    	=	0.1,	1.0d-6
+		RK8/spf  	=	1.0d-9
+		rrDAV/A  	=	500,	1.0d-5
+	end-integrator-section
+
+Configuración 4
+
+	INTEGRATOR-SECTION
+		CMF/var    	=	0.1,	1.0d-6
+		RK5/spf  	=	1.0d-9
+		rrDAV/A  	=	500,	1.0d-5
+	end-integrator-section
+	
+Configuración 5
+
+	INTEGRATOR-SECTION
+		CMF/var    	=	0.1,	1.0d-6
+		RK5/spf  	=	1.0d-9	0.1
+		rrDAV/A  	=	500,	1.0d-5
+	end-integrator-section
