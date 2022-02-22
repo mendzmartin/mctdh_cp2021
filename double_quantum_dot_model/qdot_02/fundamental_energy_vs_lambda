@@ -114,7 +114,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Sun Feb 20 18:04:49 2022"
+@timestamp def "Tue Feb 22 20:36:08 2022"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -184,7 +184,7 @@
 @    xaxis  bar color 1
 @    xaxis  bar linestyle 1
 @    xaxis  bar linewidth 1.0
-@    xaxis  label ""
+@    xaxis  label "Lambda"
 @    xaxis  label layout para
 @    xaxis  label place auto
 @    xaxis  label char size 1.000000
@@ -235,7 +235,7 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 1.0
-@    yaxis  label ""
+@    yaxis  label "Energy [au]"
 @    yaxis  label layout para
 @    yaxis  label place auto
 @    yaxis  label char size 1.000000
@@ -243,7 +243,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 0.01
+@    yaxis  tick major 0.005
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -283,7 +283,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.3, 0.8
+@    legend 0.7, 0.84
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -352,7 +352,7 @@
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
 @    s0 comment "Cols 1:2"
-@    s0 legend  "Relaxation - Sine-DVR (L=50, N=501)"
+@    s0 legend  "Relaxation - Configuration 1"
 @target G0.S0
 @type xy
 0.01 -1.246805
