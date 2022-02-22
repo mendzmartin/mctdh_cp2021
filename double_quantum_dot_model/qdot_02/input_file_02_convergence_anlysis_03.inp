@@ -1,0 +1,101 @@
+## mctdh85 -w -mnd -p V_L 1.1 input_file_01.inp
+## cd double_qd_model_01/ -> showsys85 -rst
+## mctdh85 -w -p V_L 1.1 input_file_01.inp
+
+##################COMENTARIOS#################################
+## name		-> keyword for directory name
+## geninwf	-> keywords to generate de initial wave function
+############################################################## 
+RUN-SECTION
+	name = double_qd_model_02
+	#geninwf
+	#propagation
+	relaxation = 0
+#############################################################
+##############Paralellization################################
+#usepthreads = 2, #summf2,#no-funkphi
+#ptiming # Check ptiming file to control overload, and include
+            # no-* keywords accordingly to suppress inefficiently 
+            # parallelized routines.
+#############################################################
+#############################################################
+
+##################COMENTARIOS#################################
+## tfinal	-> tiempo final
+## tout		-> tiempo en el cual va guardando los datos
+## tpsi		-> lapso de tiempo en el que se va guardando la función de onda
+############################################################## 
+	rlxunit = au
+	tfinal = 1.0 tout = 0.1 tpsi = 0.1
+	steps
+	orben		# para relajacion
+	gridpop		# para showd1d
+	pdensity	# particle density file. Useful to compute quantities after run.
+	veigen
+	psi
+	auto
+end-run-section
+
+OPERATOR-SECTION
+	# oppath = /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh
+	opname = operator_file_02
+end-operator-section
+
+##################COMENTARIOS#################################
+## single particle function (SPF) basis section
+## Nomenclatura -> GDL = cantidad-de-elementos
+## ojo! cuando tenemos 2 GDL X1 y X2 deben ser iguales
+## en este caso usamos Sine-DVR
+############################################################## 
+SBASIS-SECTION
+	X1	=	10
+	X2	=	10
+end-sbasis-section
+
+##################COMENTARIOS#################################
+## primitive basis section
+## aca decimos como se describen cada una de las SPFs
+## Nomenclatura	-> GDL sin N -L L short/long
+## 	GDL			-> grado de libertad o coordenada
+## 	sin			-> keyword que permite hacer una aproximación sine-DVR
+## 	N			-> cantidad de puntos a utilizar
+## 	[-L,L]		-> ancho de la caja Sine-DVR
+## 	short/long	-> inluir (si/no) pts extremos en la grilla
+#############################################################
+PBASIS-SECTION
+	X1	sin	501	-25.0	25.0	short
+	X2	sin	501	-25.0	25.0	short
+end-pbasis-section
+
+## CMF = 0.05,	3.0d-4 means stepsize of 0.05 fs and an error tolerance of 3.0x10−4
+
+
+INTEGRATOR-SECTION
+	CMF	    	=	0.1,	1.0d-8
+	RK8/spf  	=	1.0d-9
+	rrDAV/A  	=	500,	1.0d-5
+end-integrator-section
+
+
+##################COMENTARIOS#################################
+## Init Wave Function Section (consultar página de MCTDH)
+## Reference:
+##	Link: https://www.pci.uni-heidelberg.de/tc/usr/mctdh/guide85.pdf
+##		Generating eigenfunctions of a one-dimensional Hamiltonian - (pp. 75, cap. 7.6 )
+## eigenf -> keyword to generate eigenfunction of a one-dimensional Hamiltonian
+## nomenclatura	-> name	pop={1,2,...}
+##		name	-> hamiltonian denomination from operator file
+##		pop		-> state of eigenf
+#############################################################
+INIT_WF-SECTION
+	build
+		X1	eigenf	heff	pop=1
+		X2	map		X1
+	end-build
+	
+	A-coeff
+		1	1	( 1.0, 0.0 )
+	end-A-coeff
+end-init_wf-section
+
+end-input

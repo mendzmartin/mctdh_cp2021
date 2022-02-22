@@ -20,7 +20,7 @@ for i in $(seq $index_min $delta_index $index_max)
 	rm -Rf double_qd_model_02
 	
 	# START EXECUTION
-	mctdh85 -w -mnd -p V_L $i,au -p lambda 0 input_file_02.inp
+	mctdh85 -w -mnd -p V_L $i,au -p lambda 0 input_file_02_convergence_anlysis_05.inp
 
 
 	# START COLLECTION OF ENERGIES
@@ -35,6 +35,6 @@ for i in $(seq $index_min $delta_index $index_max)
 	
 	# WRITE DATA
 	cd ..
-	echo $result >> result_fundamental_energy_lambda_zero.dat
+	echo $result >> result_fundamental_energy_lambda_zero_05.dat
 
 done
