@@ -37,7 +37,7 @@ RUN-SECTION
 end-run-section
 
 OPERATOR-SECTION
-	# oppath = /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh
+	oppath = ~/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/
 	opname = operator_file_02
 end-operator-section
 
@@ -71,7 +71,7 @@ end-pbasis-section
 
 
 INTEGRATOR-SECTION
-	CMF	    	=	0.1,	1.0d-8
+	CMF	    	=	0.1,	1.0d-6
 	RK8/spf  	=	1.0d-9
 	rrDAV/A  	=	500,	1.0d-5
 end-integrator-section

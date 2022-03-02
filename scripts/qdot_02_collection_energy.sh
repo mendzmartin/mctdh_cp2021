@@ -4,9 +4,10 @@
 #echo +++			PARAMETERS DECLARATION			+++
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
 
-lambda_min=0.01
-lambda_max=0.1
-delta_lambda=0.01
+lambda_min=0.05
+lambda_max=1
+delta_lambda=0.05
+COUNTER=1
 
 cd ../double_quantum_dot_model/qdot_02
 
@@ -33,10 +34,11 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	# WRITE DATA
 	cd ..
 	echo $result >> result_energy_vs_lambda.dat
-
-	# REMOVE EXISTING DIRECTORIES
-	rm -Rf double_qd_model_02
 	
+	# SAVE DATA FOLDER
+	mv double_qd_model_02 double_qd_model_02_$COUNTER
+	
+	COUNTER=$((COUNTER+1))
 done
 
 # Notes:

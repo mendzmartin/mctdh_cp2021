@@ -8,7 +8,7 @@ index_min=0.4
 index_max=1.1
 delta_index=0.1
 
-cd ../double_quantum_dot_model/qdot_02
+cd ../double_quantum_dot_model/qdot_02/convergence_analysis
 
 # REMOVE EXISTING DATA
 rm -f result_fundamental_energy_lambda_zero_07.dat
@@ -20,7 +20,7 @@ for i in $(seq $index_min $delta_index $index_max)
 	rm -Rf double_qd_model_02
 	
 	# START EXECUTION
-	mctdh85 -w -mnd -p V_L $i,au -p lambda 0 input_file_02_convergence_anlysis_07.inp
+	mctdh85 -w -mnd -p V_L $i,au -p lambda 0 input_file_02_convergence_analysis_07.inp
 
 
 	# START COLLECTION OF ENERGIES

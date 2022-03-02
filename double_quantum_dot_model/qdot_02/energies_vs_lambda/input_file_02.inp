@@ -37,7 +37,7 @@ RUN-SECTION
 end-run-section
 
 OPERATOR-SECTION
-	# oppath = /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/mctdh
+	oppath = ~/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/
 	opname = operator_file_02
 end-operator-section
 
