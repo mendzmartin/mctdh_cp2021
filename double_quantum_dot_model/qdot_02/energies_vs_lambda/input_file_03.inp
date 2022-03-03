@@ -10,7 +10,7 @@ RUN-SECTION
 	name = double_qd_model_02
 	#geninwf
 	#propagation
-	relaxation=98
+	relaxation=follow
 #############################################################
 ##############Paralellization################################
 #usepthreads = 2, #summf2,#no-funkphi
@@ -92,7 +92,7 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	eigenf	heff	pop=4
+		X1	eigenf	heff	pop=2
 		X2	map		X1
 	end-build
 	
