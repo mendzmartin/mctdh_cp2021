@@ -1,0 +1,32 @@
+#############################################
+### Tests to learn how to use the improve
+###    relaxation method to generate energies
+###    of excited states.
+### We do test with lambda=0 to compare with
+###    previous results.
+#############################################
+
+V_L |    E_1_prop	|      E_12_pro		|    E_12_rlx	|  INIT_WF-SECTION	| test	|       name data folder
+
+0.9	-0.6268758711584	-1.253751742		-1.253751		pop=1				1		double_qd_model_02_test_1
+	-0.2320416252815	-0.4640832506		-0.464083		pop=2				2		double_qd_model_02_test_2
+	-0.1811866911784	-0.3623733824		-0.362373		pop=3				3		double_qd_model_02_test_3
+	+0.0097450414609	+0.01949008292		0.019490		pop=4				4		double_qd_model_02_test_4
+	+0.0125341449048
+	+0.0348062906198
+	+0.0490038266898
+	+0.0753505614020
+	+0.1061876485995
+	+0.1350235994198
+	+0.1793395599175
+	+0.2134053454628
+	+0.2672786540389
+	+0.3121030554782
+	+0.3709339583493
+	+0.4287524255396
+
+V_L		:=	left qdot potential depth
+prop	:=	propagation method
+rlx		:=	relaxation method
+E_1		:=	energy of one electron in two qdots (previous results)
+E_12	:=	energy of two electrons in two qdots (E_12 = 2*E_1)

@@ -1,0 +1,360 @@
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+    -0.1    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.000    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.000    -12.6283474741 eV,   -0.0000000000 meV
+::       0.000 0.19E-11 0.19E-11
+::       0.000 0.84E-06 0.81E-06
+::       0.000 0.24E-05 0.64E-05
+After Relaxation T =     0.050    -12.6283474741 eV,   -0.0000000035 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.050    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.050    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.050    -12.6283474741 eV,    0.0000000053 meV
+::       0.050 0.24E-05 0.64E-05
+::       0.050 0.81E-06 0.47E-06
+::       0.050 0.90E-05 0.45E-05
+After Relaxation T =     0.100    -12.6283474741 eV,   -0.0000000060 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.100    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.100    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.100    -12.6283474741 eV,    0.0000000056 meV
+::       0.100 0.90E-05 0.45E-05
+::       0.100 0.55E-05 0.64E-05
+::       0.100 0.69E-05 0.64E-05
+After Relaxation T =     0.200    -12.6283474741 eV,   -0.0000000025 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.200    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.200    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.200    -12.6283474741 eV,    0.0000000013 meV
+::       0.200 0.69E-05 0.64E-05
+::       0.200 0.60E-05 0.63E-05
+::       0.200 0.66E-05 0.64E-05
+After Relaxation T =     0.300    -12.6283474741 eV,   -0.0000000003 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.300    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.300    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.300    -12.6283474741 eV,    0.0000000001 meV
+::       0.300 0.66E-05 0.64E-05
+::       0.300 0.62E-05 0.63E-05
+::       0.300 0.64E-05 0.64E-05
+After Relaxation T =     0.400    -12.6283474741 eV,    0.0000000002 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.400    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.400    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.400    -12.6283474741 eV,   -0.0000000000 meV
+::       0.400 0.64E-05 0.64E-05
+::       0.400 0.63E-05 0.63E-05
+::       0.400 0.64E-05 0.64E-05
+After Relaxation T =     0.500    -12.6283474741 eV,   -0.0000000001 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.500    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.500    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.500    -12.6283474741 eV,   -0.0000000000 meV
+::       0.500 0.64E-05 0.64E-05
+::       0.500 0.63E-05 0.63E-05
+::       0.500 0.64E-05 0.64E-05
+After Relaxation T =     0.600    -12.6283474741 eV,    0.0000000001 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.600    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.600    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.600    -12.6283474741 eV,   -0.0000000000 meV
+::       0.600 0.64E-05 0.64E-05
+::       0.600 0.63E-05 0.64E-05
+::       0.600 0.64E-05 0.64E-05
+After Relaxation T =     0.700    -12.6283474741 eV,    0.0000000000 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.700    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.700    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.700    -12.6283474741 eV,    0.0000000001 meV
+::       0.700 0.64E-05 0.64E-05
+::       0.700 0.63E-05 0.64E-05
+::       0.700 0.64E-05 0.64E-05
+After Relaxation T =     0.800    -12.6283474741 eV,   -0.0000000001 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.800    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.800    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.800    -12.6283474741 eV,    0.0000000000 meV
+::       0.800 0.64E-05 0.64E-05
+::       0.800 0.64E-05 0.64E-05
+::       0.800 0.64E-05 0.64E-05
+After Relaxation T =     0.900    -12.6283474741 eV,    0.0000000000 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   0.900    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+     0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+        0.000        0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   0.900    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     0.900    -12.6283474741 eV,   -0.0000000001 meV
+::       0.900 0.64E-05 0.64E-05
+::       0.900 0.64E-05 0.64E-05
+::       0.900 0.64E-05 0.64E-05
+After Relaxation T =     1.000    -12.6283474741 eV,    0.0000000001 meV
+This file contains information on the improved relaxation.
+Q = number of the eigenvector of the Davidson matrix (counting from zero).
+order+1 = Dimension of the Davidson matrix. 
+If order=maxorder, this will be noted by a "*".
+beta = overlap squared of the Q-th Davidson eigenvector with the start vector.
+To view this file type "rdrlx" in name directory.
+
+                                                                             %
+
+   time  order   q   beta*1000     Energy[au]         ovl*1000    Delta-E    %
+   1.000    0    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+
+ Eigenvalues [eV]   (first diagonalisation)
+  0.000000  0.000000
+
+ Overlaps * 1000   (first diagonalisation)
+    -0.000     0.000
+
+  Q's / Largest overlaps*1000 / Energies[eV] / Shifted energies[au]
+         0            0
+       -0.000       -0.000
+    0.0000000    0.0000000
+      0.0000       0.0000   
+
+   1.000    1    0   0.000E+00   -0.464 083 250 563     0.0000   0.000E+00   %
+After Davidson   T =     1.000    -12.6283474741 eV,   -0.0000000001 meV
+
+ Eigenvalues [eV]   (last diagonalisation)
+  0.000000  0.000000
+
