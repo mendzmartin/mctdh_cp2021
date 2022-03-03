@@ -1,0 +1,141 @@
+
+#####  Removed operators (h-terms)  #####
+     h   f  af  nf   m  md Typ Sym   Shift      Term 
+    14   1   1   0   0   0   0   0       0    npot1,1*lambda
+----- Stopped printing removed operators. (Too many lines) -----
+ --- Number of removed terms =    501
+
+******* Array-Dimensions *******
+
+ k   :  minkoe, maxkoe     511   16000
+ h   :  htmdim, maxhtm    1019   16000
+ hl  :  hopdim, maxhop    1012   16000
+ nh  :  minfac, maxfac      12     800
+ n   :    ndef, maxdef       3     640
+ n   :    npar, maxpar      11    3200
+ n   :    nrdf, maxrdf       1      96
+ np  : npesopt, maxpes       1     800
+ nham:  hamdim, maxham       2      64
+ muld: mulddim,maxmuld       1      64
+ LMR :    iLMR, maxLMR       0     120
+
+***** Operator details *****
+
+ndof   =   2 ,  nmode   =   2
+nopdof =   3 ,  nopmode =   3
+feb =  0,  meb =  0,   fpb =  0,  mpb =  0,  mkoe =  3
+leb = F,  lmult = F,  lmulpack = F,  lcap = F
+
+DOF no.    label
+    1       X1
+    2       X2
+- - - - - - - - - - - - - - -
+    3       Koeff
+
+Mode     DOFs
+   1    1=      X1
+   2    2=      X2
+- - - - - - - - - - - - - - -
+   3    3=   Koeff
+
+Number of Hamiltonians defined:     2
+    1     system                usediag
+    2     heff                  usediag
+
+   Info on muld
+  1  mulddof :
+   1   2
+  1  mulddof2:
+   1   2
+
+Information for Hamiltonian : System                                            
+
+Total no. of terms      :      2
+No. of correlated terms :      0
+
+No. of uncorrelated terms for mode   1:     1
+No. of uncorrelated terms for mode   2:     1
+
+Information for Hamiltonian : heff                                              
+
+Total no. of terms      :      1
+No. of correlated terms :      0
+
+No. of uncorrelated terms for mode   1:     1
+No. of uncorrelated terms for mode   2:     0
+
+  Parameters
+PI                      3.141592653590
+V_L                     0.900000000000
+lambda              0.000000000000E+00
+mass_X1                 1.000000000000
+mass_X2                 1.000000000000
+b_L                     0.220000000000
+b_R                     1.000000000000
+V_R                     0.600000000000
+w                       1.000000000000
+l                       1.000000000000
+R                       9.000000000000
+
+Number of operators removed =   501,  cutoff = 1.00E-09
+
+Default natpotcut = .10000E-08 au  is used.
+ natpot no. | cutted terms |  reduce-pf
+     1      |        501   | 0.00000 0.00000
+
+  Operator Labels    [hl,hoplab,(deflabel),hopilab,hopfile]
+    hl  Label                         function no.  file no.
+     1  1                                       1       302
+     2  -1                                      2       302
+     3  I                                       1       101
+     4  KEdvr                                   5         3
+     5  V_L                                     2       301
+     6  gauss[1]             Veff_L            12       302
+     7  V_R                                     8       301
+     8  gauss[2]             Veff_R            12       302
+     9  lambda                                  3       301
+    10  natpot  1            Vee                0      -999
+    11  npot1,1                                 1         1
+   ...  ......  Set "print-npot" to see all   ...       ...
+  1012  npot1002,1                           1002         1
+
+Hamiltonian Operator Terms [h,htmdof,htmadof,htmndof,htmmode,htmmuld,htmtype,
+                            htmsym,htmshift,string]
+   No.   f  af  nf   m  md Typ Sym   Shift      Term
+     1   1   1   0   0   0   1   1       0    1
+     2   2   2   0   0   0   1   1       0    1
+     3   K           0   0   1   1            1
+  1016   1   1   0   0   0   8   1       0    KEdvr + gauss[1]*-1*V_L + gauss[2]*-1*V_R
+  1017   2   2   0   0   0   8   1       0    KEdvr + gauss[1]*-1*V_L + gauss[2]*-1*V_R
+
+Arguments for operators
+  No.    Arguments
+    1   0.22000000       -4.5000000        0.0000000        0.0000000    
+    2    1.0000000        4.5000000        0.0000000        0.0000000    
+
+Files containing operators
+  No.        Name
+    1     /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfi
+
+********* System Hamiltonian ***********                                        
+
+Uncorrelated Terms
+     k   m   s  sym coeff   No.s
+     1   1   1   1    3    1016
+     2   2   1   1    3    1017
+
+The operator is REAL and HERMITIAN
+
+------------------------------------------------------------------------------
+
+
+********* heff Hamiltonian ***********                                          
+
+Uncorrelated Terms
+     k   m   s  sym coeff   No.s
+     3   1   1   1    3    1016
+
+The operator is REAL and HERMITIAN
+
+------------------------------------------------------------------------------
+

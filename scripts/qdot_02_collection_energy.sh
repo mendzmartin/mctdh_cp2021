@@ -6,19 +6,20 @@
 
 lambda_min=0
 lambda_max=0
-delta_lambda=0.01
+delta_lambda=0.05
 COUNTER=1
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda
 
 # REMOVE EXISTING DATA
 rm -f result_energy_vs_lambda.dat
+rm -Rf double_qd_model_02
 
 for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	do
 	
 	# REMOVE EXISTING DIRECTORIES
-	rm -Rf double_qd_model_02
+	rm -Rf double_qd_model_02_$COUNTER
 	
 	# START EXECUTION
 	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_03.inp
