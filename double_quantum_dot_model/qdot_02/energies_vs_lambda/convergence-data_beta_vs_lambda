@@ -114,7 +114,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Mar  4 11:44:44 2022"
+@timestamp def "Fri Mar  4 11:39:58 2022"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -161,7 +161,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 0.05, -1.25, 1, 0.1
+@    world 0, 0, 1, 1050
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
@@ -169,7 +169,7 @@
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle "Energies vs Lambda (V_R=0.6;V_L=0.9;b_L=0.22;b_R=1.0;R=9.0)"
+@    subtitle "beta*1000 vs Lambda (V_R=0.6;V_L=0.9;b_L=0.22;b_R=1.0;R=9.0)"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
@@ -192,7 +192,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 0.05
+@    xaxis  tick major 0.2
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
@@ -235,7 +235,7 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 1.0
-@    yaxis  label "Energy [au]"
+@    yaxis  label "beta*1000 (squared overlap A-vector)"
 @    yaxis  label layout para
 @    yaxis  label place auto
 @    yaxis  label char size 1.000000
@@ -243,7 +243,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 0.1
+@    yaxis  tick major 200
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -283,7 +283,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.9, 0.35
+@    legend 0.2, 0.6
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -351,7 +351,7 @@
 @    s0 errorbar riser linestyle 1
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
-@    s0 comment "Cols 1:2"
+@    s0 comment "Cols 1:3"
 @    s0 legend  "E00 (pop=1)"
 @    s1 hidden false
 @    s1 type xy
@@ -400,7 +400,7 @@
 @    s1 errorbar riser linestyle 1
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
-@    s1 comment "Cols 1:2"
+@    s1 comment "Cols 1:3"
 @    s1 legend  "E01 (pop=2)"
 @    s2 hidden false
 @    s2 type xy
@@ -449,7 +449,7 @@
 @    s2 errorbar riser linestyle 1
 @    s2 errorbar riser clip off
 @    s2 errorbar riser clip length 0.100000
-@    s2 comment "Cols 1:2"
+@    s2 comment "Cols 1:3"
 @    s2 legend  "E02 (pop=3)"
 @    s3 hidden false
 @    s3 type xy
@@ -498,97 +498,95 @@
 @    s3 errorbar riser linestyle 1
 @    s3 errorbar riser clip off
 @    s3 errorbar riser clip length 0.100000
-@    s3 comment "Cols 1:2"
+@    s3 comment "Cols 1:3"
 @    s3 legend  "E03 (pop=4)"
 @target G0.S0
 @type xy
-0.05 -1.219134
-0.1 -1.184809
-0.15 -1.150785
-0.2 -1.117072
-0.25 -1.083679
-0.3 -1.05062
-0.35 -1.0179
-0.4 -0.985533
-0.45 -0.953529
-0.5 -0.921898
-0.55 -0.890653
-0.6 -0.85981
-0.65 -0.829386
-0.7 -0.799429
-0.75 -0.770835
-0.8 -0.740826
-0.85 -0.711822
-0.9 -0.757704
-0.95 -0.752135
-1 -0.74656
+0.05 3.76e-12
+0.1 3.36e-10
+0.15 1.14e-10
+0.2 3.8e-10
+0.25 9.45e-10
+0.3 1.43e-09
+0.35 1.87e-10
+0.4 1.5e-09
+0.45 1.02e-09
+0.5 1.5e-09
+0.55 2.55e-09
+0.6 3.28e-09
+0.65 2.37e-09
+0.7 999.99972
+0.75 997.69771
+0.8 999.98898
+0.85 999.9996
+0.9 6.77e-12
+0.95 5.41e-10
+1 7.67e-09
 &
 @target G0.S1
 @type xy
-0.05 -0.431156
-0.1 -0.392921
-0.15 -0.362981
-0.2 -0.331337
-0.25 -0.306488
-0.3 -0.269566
-0.35 -0.817154
-0.4 -0.813604
-0.45 -0.360459
-0.5 -0.354635
-0.55 -0.58576
-0.6 -0.188085
-0.65 -0.18585
-0.7 -0.179383
-0.75 -0.576101
-0.8 0.050942
-0.85 -0.570996
-0.9 -0.120137
-0.95 -0.171011
-1 -0.168
+0.05 999.92265
+0.1 999.7705
+0.15 999.99777
+0.2 999.82825
+0.25 760.88394
+0.3 999.94276
+0.35 999.97731
+0.4 3.64e-09
+0.45 998.23371
+0.5 999.4907
+0.55 999.93389
+0.6 999.79159
+0.65 999.47677
+0.7 998.58717
+0.75 995.81528
+0.8 998.49503
+0.85 999.97115
+0.95 999.91001
 &
 @target G0.S2
 @type xy
-0.05 -0.338427
-0.1 -0.769878
-0.15 -0.751002
-0.2 -0.836164
-0.25 -0.830511
-0.3 -0.824867
-0.35 -0.201171
-0.4 -0.813604
-0.45 -0.80798
-0.5 -0.176654
-0.55 -0.190668
-0.6 -0.188173
-0.65 -0.185838
-0.7 -0.183331
-0.75 -0.176366
-0.8 -0.17835
-0.85 -0.175896
-0.9 -0.173395
-0.95 -0.752126
-1 -0.746568
+0.05 999.66774
+0.1 999.99985
+0.15 2.59e-09
+0.2 0
+0.25 5.88e-09
+0.3 6.3e-09
+0.35 999.42404
+0.4 1.05e-09
+0.45 800.31578
+0.5 998.34989
+0.55 999.80635
+0.6 999.88547
+0.65 999.5735
+0.7 999.87152
+0.75 999.4052
+0.8 999.6034
+0.85 999.6712
+0.9 999.89822
+0.95 999.99553
+1 999.99997
 &
 @target G0.S3
 @type xy
-0.05 0.024661
-0.1 -0.211688
-0.15 -0.136634
-0.2 -0.208529
-0.25 0.031659
-0.3 0.033481
-0.35 0.035306
-0.4 0.065242
-0.45 -0.182897
-0.5 0.040662
-0.55 -0.796714
-0.6 0.044087
-0.65 0.045825
-0.7 0.0475
-0.75 0.049246
-0.8 0.050941
-0.85 0.052623
-0.9 -0.553518
-0.95 0.055991
-1 0.057631
+0.05 998.49137
+0.1 999.79533
+0.15 985.66668
+0.2 996.99824
+0.25 998.20149
+0.3 998.77255
+0.35 542.24089
+0.4 980.47074
+0.45 994.30287
+0.5 907.94896
+0.55 994.2863
+0.6 994.24095
+0.65 996.27695
+0.7 844.81904
+0.75 825.60656
+0.8 952.56623
+0.85 982.54071
+0.9 999.92655
+0.95 997.80781
+1 953.96491
 &
