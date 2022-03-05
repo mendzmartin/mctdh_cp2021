@@ -23,7 +23,7 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	
 	# START EXECUTION
 	#mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_03.inp && perf stat -e cpu-clock,cpu-cycles,instructions,cache-references,cache-misses
-	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_03.inp
+	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_04.inp
 
 
 	# START COLLECTION OF ENERGIES

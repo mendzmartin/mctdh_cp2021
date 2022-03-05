@@ -1,0 +1,29 @@
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: showd1d85
+--------------------------------------------------------------------------------
+
+  *** Memory allocated dynamically ***
+ complex*16 :          10
+ real*8     :      505511
+ integer    :           4
+ logical    :           2
+ complex*8  :           2
+ real*4     :        1004
+ Total   :        4048512. Bytes ,       3.86 MB
+--------------------------------------------------------------------------------
+
+gridpop : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/01_energy_02_vs_lamda/double_qd_model_02_13/gridpop
+dvr     : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/01_energy_02_vs_lamda/double_qd_model_02_13/dvr
+output  : /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/01_energy_02_vs_lamda/double_qd_model_02_13/den1d_f2
+--------------------------------------------------------------------------------
+
