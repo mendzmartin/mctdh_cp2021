@@ -1,0 +1,108 @@
+# /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/input_file_04.inp
+                ### ------- INPUT FILE ------- ###
+
+RUN-SECTION
+	name = double_qd_model_02
+	#geninwf
+	#propagation
+	relaxation=follow
+usepthreads = 4, summf2,no-funkphi
+ptiming # Check ptiming file to control overload, and include
+            # no-* keywords accordingly to suppress inefficiently
+            # parallelized routines.
+	rlxunit = au
+	tfinal = 1.0 tout = 0.1 tpsi = 0.1
+	steps
+	orben		# para relajacion
+	gridpop		# para showd1d
+	pdensity	# particle density file. Useful to compute quantities after run.
+	veigen
+	psi
+	auto
+end-run-section
+OPERATOR-SECTION
+	oppath = ~/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/
+	opname = operator_file_02
+end-operator-section
+SBASIS-SECTION
+	X1	=	10
+	X2	=	10
+end-sbasis-section
+PBASIS-SECTION
+	X1	sin	501	-25.0	25.0	short
+	X2	sin	501	-25.0	25.0	short
+end-pbasis-section
+INTEGRATOR-SECTION
+	CMF      	=	0.1,	1.0d-6	#np1	# Constant Mean-Field scheme
+	RK8/spf  	=	1.0d-8 			#np1	# Runge-Kutta integrator for SPFs
+	rrDAV/A  	=	500,	1.0d-6	#np1	# for A-vector
+	#eps_inv 	=	1.0d-10
+	#CMF/var	=	0.001,	1d-6	# Initial step size, accuracy.
+	#BS/spf		=	9,		1d-7	# Order, accuracy, initial step.
+	#SIL/A		=	10,		1d-6	# Order, accuracy.
+end-integrator-section
+INIT_WF-SECTION
+	build
+		X1	eigenf	heff	pop=1
+		X2	map		X1
+	end-build
+	
+	A-coeff
+		2	1	( 1.0, 0.0 )
+		1	2	( -1.0, 0.0 )
+	end-A-coeff
+end-init_wf-section
+end-input
+
+ -w -mnd -p V_L 0.9,au -p lambda 0.70 
+
+#******************************************************************************#
+                ### ------ OPERATOR FILE ------ ###
+
+OP_DEFINE-SECTION
+	title
+		double quantum dot model
+		hamiltonian without interaction (heff)
+	end-title
+end-op_define-section
+PARAMETER-SECTION
+	mass_X1	=	1.d0, au	## electron mass 1
+	mass_X2	=	mass_X1		## electron mass 2
+	b_L		=	0.22		## parameter of size left qdot
+	b_R		=	1.0			## parameter of size right qdot
+	V_R		=	0.6			## right qdot potential depth - (absolut value)
+	w		=	1			## angular frecuency
+	l		=	1			## characteristic transverse confinement length
+	R		=	9.0			## distance between centers of qdots
+end-parameter-section
+LABELS-SECTION
+	Veff_L	=	gauss[b_L,-R/2]			## The longitudinal open potential from left qdot
+	Veff_R	=	gauss[b_R,R/2]			## The longitudinal open potential from right qdot
+	Vee = natpot{~/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfit_Vee ignore}	## Electron interaction potential
+end-labels-section
+HAMILTONIAN-SECTION
+	---------------------------------------------------------
+	modes	|	X1		|	X2
+	---------------------------------------------------------
+	1		|	KE		|	1
+	1		|	1		|	KE
+	-V_L	|	Veff_L	|	1
+	-V_R	|	Veff_R	|	1
+	-V_L	|	1		|	Veff_L
+	-V_R	|	1		|	Veff_R
+	lambda	|1&2 Vee
+	---------------------------------------------------------
+end-hamiltonian-section
+HAMILTONIAN-SECTION_heff
+usediag
+	---------------------------------------------------------
+	modes	|	X1
+	---------------------------------------------------------
+	1		|	KE
+	-V_L	|	Veff_L
+	-V_R	|	Veff_R
+	---------------------------------------------------------
+end-hamiltonian-section
+end-operator
+
+#******************************************************************************#
