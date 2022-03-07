@@ -1,9 +1,9 @@
 
------- Host: "mendez-famaf" ----------Sun Mar  6 18:46:29 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 14:56:16 2022
 
  /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02
 
- PID =102489
+ PID = 78924
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -92,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02/dvr
-                                                         Mar  6 18:46:29
+                                                         Mar  5 14:56:16
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -134,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02/oper
-                                                         Mar  6 18:46:30
+                                                         Mar  5 14:56:16
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,12 +186,12 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Mar  6 18:46:32
+                                                         Mar  5 14:56:19
 ########################################################################
 
 
 ****** Initial SPF Functions *********
-  1  X1        eigenf  pop =  4  sym =  0      ham =   2  heff
+  1  X1        eigenf  pop =  3  sym =  0      ham =   2  heff
   2  X2           map     f-map =   1
 
 ***** Length of psi vector *****
@@ -224,16 +224,16 @@ total array memory in mb     (used):        23.5
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 18:46:32 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 14:56:19 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
 
-   1. Eigenvalue   -17.058159963[eV]   -0.626875871159[au] ,   5. spf
-   2. Eigenvalue    -6.314173737[eV]   -0.232041625282[au] ,   3. spf
-   3. Eigenvalue    -4.930340604[eV]   -0.181186691178[au] ,   2. spf
-   4. Eigenvalue     0.265180536[eV]    0.009745205818[au] ,   1. spf
-   5. Eigenvalue     0.341078262[eV]    0.012534396049[au] ,   4. spf
+   1. Eigenvalue   -17.058159963[eV]   -0.626875871159[au] ,   3. spf
+   2. Eigenvalue    -6.314173737[eV]   -0.232041625282[au] ,   2. spf
+   3. Eigenvalue    -4.930340604[eV]   -0.181186691178[au] ,   1. spf
+   4. Eigenvalue     0.265180536[eV]    0.009745205818[au] ,   4. spf
+   5. Eigenvalue     0.341078262[eV]    0.012534396049[au] ,   5. spf
    6. Eigenvalue     0.947141857[eV]    0.034806824315[au] ,   6. spf
    7. Eigenvalue     1.333487778[eV]    0.049004776284[au] ,   7. spf
    8. Eigenvalue     2.050426897[eV]    0.075351805239[au] ,   8. spf
@@ -401,13 +401,13 @@ Created on:
 Mapping s =  1 ;   1 ->  2 , ishift =   0
 
 **** A-coefficients taken from input ****
-    12  ( 1.000000, 0.000000)    2  2
+    22  ( 1.000000, 0.000000)    2  3
 
 
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Mar  6 18:46:33
+                                                         Mar  5 14:56:20
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =      10120        0.154 MB
@@ -451,13 +451,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 18:46:32 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 14:56:19 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 18:46:33 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 14:56:20 2022
 
 
 ***** Calculation type *****
@@ -513,24 +513,24 @@ rlx_info    file opened
 
 Integration method used for the MCTDH-coefficients:
 Davidson "integrator" (restricted-real)
-Maximum order employed:    13
+Maximum order employed:    10
 Maximum order allowed:     99
 
 Integration method used for the single-particle functions:
 Runge-Kutta order 8 (RK8) from ODESIM
 
-Total number of RK8 steps:         10811
-Number of accepted RK8 steps:      10633
-Number of rejected RK8 steps:        178
+Total number of RK8 steps:          6399
+Number of accepted RK8 steps:       6391
+Number of rejected RK8 steps:          8
 
-Number of successful Davidson steps:  1556
+Number of successful Davidson steps:    12
 
 ***** Update times *****
 
-Number of successful update steps:  1485
-Number of failed update steps:         1
-Mean update time (in fs):        0.00067
-Standard deviation (in fs):      0.00507
+Number of successful update steps:    10
+Number of failed update steps:         0
+Mean update time (in fs):        0.10000
+Standard deviation (in fs):      0.00000
 
 ***** God's final message *****
 
@@ -538,10 +538,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :        814.17
-Total system time  [s] :         58.01
-Total time     [h:m:s] :    0 : 14 : 32.18
-Wall  time     [h:m:s] :    0 :  9 : 50
+Total cpu time     [s] :        274.48
+Total system time  [s] :          7.62
+Total time     [h:m:s] :    0 :  4 : 42.10
+Wall  time     [h:m:s] :    0 :  4 : 22
 
------- Host: "mendez-famaf" ----------Sun Mar  6 18:56:19 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 15:00:38 2022
 

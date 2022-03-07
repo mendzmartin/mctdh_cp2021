@@ -1,9 +1,9 @@
 
------- Host: "mendez-famaf" ----------Sun Mar  6 15:21:47 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 13:01:52 2022
 
  /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02
 
- PID = 99239
+ PID = 76834
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -92,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02/dvr
-                                                         Mar  6 15:21:47
+                                                         Mar  5 13:01:52
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -134,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /home/mendez/MCTDH/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/double_qd_model_02/oper
-                                                         Mar  6 15:21:48
+                                                         Mar  5 13:01:53
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,12 +186,12 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Mar  6 15:21:51
+                                                         Mar  5 13:01:56
 ########################################################################
 
 
 ****** Initial SPF Functions *********
-  1  X1        eigenf  pop =  1  sym =  0      ham =   2  heff
+  1  X1        eigenf  pop =  2  sym =  0      ham =   2  heff
   2  X2           map     f-map =   1
 
 ***** Length of psi vector *****
@@ -224,13 +224,13 @@ total array memory in mb     (used):        23.5
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 15:21:51 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 13:01:56 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
 
-   1. Eigenvalue   -17.058159963[eV]   -0.626875871159[au] ,   1. spf
-   2. Eigenvalue    -6.314173737[eV]   -0.232041625282[au] ,   2. spf
+   1. Eigenvalue   -17.058159963[eV]   -0.626875871159[au] ,   2. spf
+   2. Eigenvalue    -6.314173737[eV]   -0.232041625282[au] ,   1. spf
    3. Eigenvalue    -4.930340604[eV]   -0.181186691178[au] ,   3. spf
    4. Eigenvalue     0.265180536[eV]    0.009745205818[au] ,   4. spf
    5. Eigenvalue     0.341078262[eV]    0.012534396049[au] ,   5. spf
@@ -401,14 +401,13 @@ Created on:
 Mapping s =  1 ;   1 ->  2 , ishift =   0
 
 **** A-coefficients taken from input ****
-     2  ( 0.707107, 0.000000)    2  1
-    11  (-0.707107, 0.000000)    1  2
+    11  ( 1.000000, 0.000000)    1  2
 
 
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Mar  6 15:21:51
+                                                         Mar  5 13:01:56
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =      10120        0.154 MB
@@ -452,13 +451,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 15:21:51 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 13:01:56 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Sun Mar  6 15:21:51 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 13:01:56 2022
 
 
 ***** Calculation type *****
@@ -514,15 +513,15 @@ rlx_info    file opened
 
 Integration method used for the MCTDH-coefficients:
 Davidson "integrator" (restricted-real)
-Maximum order employed:     6
+Maximum order employed:    11
 Maximum order allowed:     99
 
 Integration method used for the single-particle functions:
 Runge-Kutta order 8 (RK8) from ODESIM
 
-Total number of RK8 steps:          6417
-Number of accepted RK8 steps:       6391
-Number of rejected RK8 steps:         26
+Total number of RK8 steps:          6408
+Number of accepted RK8 steps:       6394
+Number of rejected RK8 steps:         14
 
 Number of successful Davidson steps:    13
 
@@ -539,10 +538,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :        278.09
-Total system time  [s] :          7.47
-Total time     [h:m:s] :    0 :  4 : 45.56
-Wall  time     [h:m:s] :    0 :  4 : 26
+Total cpu time     [s] :        274.69
+Total system time  [s] :          7.62
+Total time     [h:m:s] :    0 :  4 : 42.31
+Wall  time     [h:m:s] :    0 :  4 : 23
 
------- Host: "mendez-famaf" ----------Sun Mar  6 15:26:13 2022
+------ Host: "mendez-famaf" ----------Sat Mar  5 13:06:15 2022
 

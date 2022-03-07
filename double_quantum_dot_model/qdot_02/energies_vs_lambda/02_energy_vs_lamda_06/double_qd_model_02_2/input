@@ -43,12 +43,12 @@ INTEGRATOR-SECTION
 end-integrator-section
 INIT_WF-SECTION
 	build
-		X1	eigenf	heff	pop=4
+		X1	eigenf	heff	pop=3
 		X2	map		X1
 	end-build
 	
 	A-coeff
-		2	2	( 1.0, 0.0 )
+		2	3	( 1.0, 0.0 )
 	end-A-coeff
 end-init_wf-section
 end-input
