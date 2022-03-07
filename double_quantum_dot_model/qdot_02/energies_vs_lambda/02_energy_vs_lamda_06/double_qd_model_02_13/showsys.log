@@ -1,0 +1,24 @@
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Wed, 04 Aug 2021, 11:21:15 ; Host: mendez-famaf
+Program name: showsys85
+--------------------------------------------------------------------------------
+
+  *** Memory allocated dynamically ***
+ complex*16 :       20269
+ real*8     :   129016520
+ integer    :           4
+ logical    :           2
+ complex*8  :       10122
+ real*4     :           2
+ Total   :     1032537696. Bytes ,     984.70 MB
+--------------------------------------------------------------------------------
+
