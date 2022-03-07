@@ -92,7 +92,7 @@ end-integrator-section
 #############################################################
 INIT_WF-SECTION
 	build
-		X1	eigenf	heff	pop=4
+		X1	eigenf	heff	pop=1
 		X2	map		X1
 	end-build
 	
