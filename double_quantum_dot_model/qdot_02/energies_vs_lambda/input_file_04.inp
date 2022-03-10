@@ -97,7 +97,8 @@ INIT_WF-SECTION
 	end-build
 	
 	A-coeff
-		2	2	( 1.0, 0.0 )
+		2	3	( 1.0, 0.0 )
+		3	2	( -1.0, 0.0 )
 	end-A-coeff
 end-init_wf-section
 
