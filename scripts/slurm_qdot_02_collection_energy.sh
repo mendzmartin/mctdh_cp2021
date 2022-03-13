@@ -4,9 +4,9 @@
 # +++ Nombre para identificar el trabajo. Por defecto es el nombre del script
 #SBATCH --job-name=mctdh_cp2021
 # +++ Solicita N cores, por defecto se asignan consecutivamente dentro de un nodo. Si N excede la cantidad de cores continúa en otro nodo
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node=8
 # +++ Especifico en cuantos hilos correra cada uno de los procesos anteriores
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 # +++ Especifico que no quiero a nadie más en el nodo cuando corra esta tarea
 #SBATCH --exclusive
 # +++ Envía un correo cuando el trabajo finaliza correctamente o por algún error

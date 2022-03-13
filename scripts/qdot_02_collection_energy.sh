@@ -9,7 +9,7 @@ lambda_max=1
 delta_lambda=0.05
 COUNTER=1
 
-cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda
+cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance
 
 # REMOVE EXISTING DATA
 rm -f result_energy_vs_lambda.dat
@@ -23,7 +23,7 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	
 	# START EXECUTION
 	#mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_03.inp && perf stat -e cpu-clock,cpu-cycles,instructions,cache-references,cache-misses
-	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_04.inp
+	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file.inp
 
 
 	# START COLLECTION OF ENERGIES
@@ -38,10 +38,12 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	echo $result >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02 double_qd_model_02_$COUNTER
+	mv double_qd_model_02 configuration_01/double_qd_model_02_$COUNTER
 	
 	COUNTER=$((COUNTER+1))
 done
+
+mv result_energy_vs_lambda.dat configuration_01/result_energy_vs_lambda.dat
 
 # Notes:
 
