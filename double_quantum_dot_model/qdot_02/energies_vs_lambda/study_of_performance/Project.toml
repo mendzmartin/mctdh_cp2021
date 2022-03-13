@@ -1,0 +1,7 @@
+name = "study_of_performance"
+uuid = "3384b91a-d330-483c-9ee0-5e47b21eff53"
+authors = ["mendzmartin <chmartinmendez@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
