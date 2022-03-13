@@ -16,3 +16,4 @@
 ##SBATCH --mem-per-cpu=4G # cantidad de memoria por core
 
 srun ./qdot_02_collection_energy.sh
+srun ./qdot_02_collection_total_timing_data.sh

@@ -7,11 +7,11 @@ lambda_min=0.05
 lambda_max=1
 delta_lambda=0.05
 
-cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda
+cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance
 
-for j in {0..3};
+for j in {1..4};
 do
-	cd 01_energy_0${j}_vs_lamda
+	cd configuration_0${j}
 	
 	rm -f result_collection_total_timing_data.dat
 
