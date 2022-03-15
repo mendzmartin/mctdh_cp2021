@@ -42,6 +42,9 @@
 #  Especificar que el proceso es capaz de hacer checkpoints
 #$ -ckpt dmtcp
 
+# Eligir el archivo output.log para que allí se escriba el standard output (salida)
+#$ -o output.log
+
 #################################################################
 ### EXPORTACIÓN DE VARIABLES DE ENTORNO
 #################################################################
@@ -67,3 +70,4 @@ export OMP_STACKSIZE="512M"               # stack size per thread
 
 # " #$ " simple numeral con pesos es un comando
 # " # " numeral solo es un comentario
+# dentro de bandurria usar el comando [/home/user] qsub sge_dot_02_collection_energy.sh
