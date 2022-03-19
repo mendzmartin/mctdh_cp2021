@@ -22,10 +22,10 @@
 #$ -S /bin/bash
 
 #  Pido la cola sumo (tiene infiniband) (Puedo usar otras colas si no requiero infiniband)
-#$ -q sumo
+##$ -q sumo
 
 #  Pido 2GB RAM para el proceso (reservo un poco más)
-#$ -l mem=2.2G
+#$ -l mem_free=2.2G
 
 #  -pe [entorno_paralelo] [cpus] (obligatorio en procesos paralelos)
 ##$  -pe [make/openmpi/lam/mpich] [cpus]
