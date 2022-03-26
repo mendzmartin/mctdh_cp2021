@@ -62,7 +62,7 @@ export OMP_STACKSIZE="512M"               # stack size per thread
 ### COMANDOS USUALES PARA CORRER EL PROCESO DESDE LA TERMINAL
 #################################################################
 
-./qdot_02_collection_energy.sh && ./qdot_02_collection_total_timing_data.sh
+./qdot_02_collection_energy.sh
 
 #################################################################
 ### NOTAS Y/O COMENTARIOS
