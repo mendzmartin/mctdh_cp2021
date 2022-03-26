@@ -4,9 +4,14 @@
 #echo +++			PARAMETERS DECLARATION			+++
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
 
-lambda_min=0.05
+#lambda_min=0.05
+#lambda_max=1
+#delta_lambda=0.05
+
+lambda_min=1
 lambda_max=1
-delta_lambda=0.05
+delta_lambda=1
+
 COUNTER=1
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance
