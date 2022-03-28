@@ -4,13 +4,9 @@
 #echo +++			PARAMETERS DECLARATION			+++
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
 
-#lambda_min=0.05
-#lambda_max=1
-#delta_lambda=0.05
-
-lambda_min=1
+lambda_min=0.05
 lambda_max=1
-delta_lambda=1
+delta_lambda=0.05
 
 COUNTER=1
 
@@ -27,7 +23,7 @@ for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	rm -Rf double_qd_model_02_$COUNTER
 	
 	# START EXECUTION
-	#mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file_03.inp && perf stat -e cpu-clock,cpu-cycles,instructions,cache-references,cache-misses
+	#mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file.inp && perf stat -e cpu-clock,cpu-cycles,instructions,cache-references,cache-misses
 	mctdh85 -w -mnd -p V_L 0.9,au -p lambda $i input_file.inp
 
 

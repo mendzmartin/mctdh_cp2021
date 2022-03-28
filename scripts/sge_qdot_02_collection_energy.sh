@@ -70,4 +70,7 @@ export OMP_STACKSIZE="512M"               # stack size per thread
 
 # " #$ " simple numeral con pesos es un comando
 # " # " numeral solo es un comentario
-# dentro de bandurria usar el comando [/home/user] qsub sge_dot_02_collection_energy.sh
+# dentro de bandurria usar el comando [/home/user]
+# 	qsub sge_dot_02_collection_energy.sh 	-> para encolar el trabajo
+# 	qstat 					-> para ver los trabajos encolados
+# 	qdel jobID				-> para remover un trabajo de la cola
