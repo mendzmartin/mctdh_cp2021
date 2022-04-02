@@ -22,9 +22,6 @@ rm -Rf double_qd_model_02/
 for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	do
 	
-	# REMOVE EXISTING DIRECTORIES
-	# rm -Rf double_qd_model_02_$COUNTER/
-	
 	# START EXECUTION
 	mctdh85 -mnd -p V_L 0.9,au -p lambda $i input_file.inp
 
