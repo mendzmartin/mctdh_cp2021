@@ -14,7 +14,7 @@
 
 # Nombre del proceso.
 # Por defecto toma el nombre del script que se ejecuta.
-#$ -N mctdh_cp2021
+#$ -N mctdh_qdot
 
 # Especifica si la salida de error de la tarea a ejecutar va a ser
 #   la salida de error de SGE, es decir, si stdout y stderr apuntan
@@ -25,13 +25,14 @@
 #$ -S /bin/bash
 
 # Pido memoría RAM para el proceso
-#  si quiero 2GB reservo un poco más (por ej. 2.2GB)
-#$ -l mem_free=2.2G
+#  si quiero 4GB reservo un poco más
+#  (por ej. si necesito 2GB recervo 2.2GB)
+#$ -l mem_free=4.2G
 
 # Obligatorio en procesos paralelos (-pe [entorno_paralelo] [cpus])
 #  donde [entorno_paralelo] = [smp/make/openmpi/lam/mpich]
 #  donde [cpus] = número de cpus
-#$ -pe smp 8
+#$ -pe smp 4
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
@@ -42,7 +43,7 @@
 
 # Tiempo de CPU (wall clock) que se solicita para el proceso
 #  h_rt=[h:min:sec]
-#$ -l h_rt=2:00:00
+#$ -l h_rt=4:00:00
 
 # Especificar que el proceso es capaz de hacer checkpoints
 #$ -ckpt dmtcp
@@ -63,15 +64,18 @@
 
 # export DMTCP_SIGCKPT = 31
 # number of CPU cores to use
-export OMP_NUM_THREADS = $NSLOTS
+ export OMP_NUM_THREADS = $NSLOTS
 # Threading schedule
 # (consider other schedules as well)
-export OMP_SCHEDULE = "dynamic,128"
+# export OMP_SCHEDULE = "dynamic,128"
 # Stack size per thread
 # (you might need to increase this)
-export OMP_STACKSIZE = "512M"
+# export OMP_STACKSIZE = "512M"
 
-echo 'OMP_NUM_THREADS :' $OMP_NUM_THREADS
+ echo '######################################################'
+ echo 'COMIENZO DE CORRIDA'
+ echo '29/03/2022 - 07:26h'
+ echo 'OMP_NUM_THREADS :' $OMP_NUM_THREADS
                                           
 #################################################################
 ### COMANDOS USUALES PARA CORRER EL PROCESO DESDE BASH SHELL
