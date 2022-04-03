@@ -38,7 +38,7 @@
 # Obligatorio en procesos paralelos (-pe [entorno_paralelo] [cpus])
 #  donde [entorno_paralelo] = [smp/make/openmpi/lam/mpich]
 #  donde [cpus] = número de cpus
-#$ -pe smp 1
+#$ -pe smp 8
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
@@ -102,7 +102,7 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	echo $result >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_01/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02/ configuration_03/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 

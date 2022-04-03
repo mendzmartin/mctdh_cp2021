@@ -5,9 +5,9 @@ RUN-SECTION
 	relaxation=follow
 
 	### PARALELLIZATION ###
-	#usepthreads = 8, #summf2,#no-funkphi
-	#ptiming # Check ptiming file to control overload, and include
-            # 	no-* keywords accordingly to suppress inefficiently 
+	usepthreads = 8, summf2,no-funkphi
+	ptiming # Check ptiming file to control overload, and include
+            #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.
 
 	rlxunit = au

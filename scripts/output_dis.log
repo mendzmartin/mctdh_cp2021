@@ -1,0 +1,23 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-18/job_scripts/121644
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/121644.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.121644 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-18/job_scripts/121644 /home/ckpt/ckpt.121644/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/121644.1.long/dmtcp_port
++ exec dmtcp_launch -p 38322 /bin/bash /home/ckpt/ckpt.121644/jobscript
+/home/ckpt/ckpt.121644/jobscript: línea 43: export: `=': no es un identificador válido
+/home/ckpt/ckpt.121644/jobscript: línea 43: export: `8': no es un identificador válido
++++++++++++++++++++++++++++++++++++++++++++++++++
+started run
+dom abr  3 19:35:05 -03 2022
+OMP_NUM_THREADS : {$NSLOTS}
++++++++++++++++++++++++++++++++++++++++++++++++++
+./sge_qdot_02_collect_ergy_job_run_1.sh: line 73: export: `=': not a valid identifier
+./sge_qdot_02_collect_ergy_job_run_1.sh: line 73: export: `8': not a valid identifier
+######################################################
+started run
+Sun Apr  3 19:35:06 -03 2022
+OMP_NUM_THREADS : {$NSLOTS}
+[52000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'

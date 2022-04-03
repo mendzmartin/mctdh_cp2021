@@ -21,7 +21,7 @@
 ### Pedir memoria RAM
 #$ -l mem_free=4.2G
 ### Configurar proceso paralelo (-pe [entorno_paralelo] [cpus])
-#$ -pe smp 1
+#$ -pe smp 8
 ### asignar numero de slots
 #$ -v OMP_NUM_THREADS={$NSLOTS}
 ### Reservar slots a medida que otros procesos los liberan
@@ -90,7 +90,7 @@ cd ../../../../scripts/
 	done
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-	mv result_energy_vs_lambda.dat configuration_01/result_energy_vs_lambda.dat
+	mv result_energy_vs_lambda.dat configuration_03/result_energy_vs_lambda.dat
 
 # Notes:
 
