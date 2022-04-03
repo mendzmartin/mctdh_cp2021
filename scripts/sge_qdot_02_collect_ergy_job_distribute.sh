@@ -13,7 +13,7 @@
 ### Manda un email si pasa algo con el proceso
 #$ -m bea -M martinmendez@mi.unc.edu.ar
 ### Nombre del proceso.
-#$ -N mctdh_qdot
+#$ -N mctdh_qdot_dis
 ### stdout y stderr apuntan
 #$ -j y
 ### Usar bash shell
@@ -27,11 +27,11 @@
 ### Reservar slots a medida que otros procesos los liberan
 #$ -R y
 ### Tiempo de CPU (wall clock)
-#$ -l h_rt=2:00:00
+#$ -l h_rt=4:00:00
 ### establecer checkpoints
 #$ -ckpt dmtcp
 ### Standard output (salida)
-#$ -o output.log
+#$ -o output_dis.log
 ### Pedir cola sumo (tiene inifnityband)
 ##$ -q sumo
 
@@ -58,9 +58,9 @@ LANG=en_US
 # +++			PARAMETERS DECLARATION			+++
 # +++++++++++++++++++++++++++++++++++++++++++++++++
 
-lambda_min=0.5
+lambda_min=0.05
 lambda_max=1
-delta_lambda=0.5
+delta_lambda=0.05
 COUNTER=1
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++

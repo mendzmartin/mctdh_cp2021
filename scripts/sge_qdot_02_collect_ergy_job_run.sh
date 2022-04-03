@@ -20,7 +20,7 @@
 
 # Nombre del proceso.
 # Por defecto toma el nombre del script que se ejecuta.
-#$ -N mctdh_qdot
+#$ -N mctdh_qdot_run
 
 # Especifica si la salida de error de la tarea a ejecutar va a ser
 #   la salida de error de SGE, es decir, si stdout y stderr apuntan
@@ -49,14 +49,14 @@
 
 # Tiempo de CPU (wall clock) que se solicita para el proceso
 #  h_rt=[h:min:sec]
-#$ -l h_rt=2:00:00
+#$ -l h_rt=4:00:00
 
 # Especificar que el proceso es capaz de hacer checkpoints
 #$ -ckpt dmtcp
 
 # Eligir el archivo output.log para que allí se escriba
 #  el standard output (salida)
-#$ -o output.log
+#$ -o output_run.log
 
 # Pido la cola sumo (tiene infiniband)
 # Puedo usar otras colas si no requiero infiniband
@@ -114,5 +114,6 @@ cd ../../../../scripts/
 # " #  " numeral solo es un comentario
 # dentro de bandurria usar el comando [/home/user]
 # 	qsub sge_script.sh 	-> para encolar el trabajo
-# 	qstat 				-> para ver los trabajos encolados
-# 	qdel jobID			-> para remover un trabajo de la cola
+# 	qstat 			-> para ver los trabajos encolados
+# 	qdel jobID		-> para remover un trabajo de la cola
+#	qacct -j jobID 		-> report and account for Sun Grid Engine usage
