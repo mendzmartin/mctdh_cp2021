@@ -88,21 +88,21 @@
 	
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 
-	mctdh85 -mnd -p V_L 0.9,au -p lambda $i input_file.inp
+	mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file.inp
 
 	# START COLLECTION OF ENERGIES
 	cd double_qd_model_02/
 	array_energy=($(rdrlx | tail -n 2 | sed -n '1 p'))
 	energy_part1="${array_energy[4]}"
 	energy_part2="${array_energy[5]}"
-	result="$i ${energy_part1}${energy_part2}"
+	result="${i} ${energy_part1}${energy_part2}"
 	
 	# WRITE DATA
 	cd ..
 	echo $result >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_01/double_qd_model_02_$COUNTER/
+	mv double_qd_model_02/ configuration_01/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 

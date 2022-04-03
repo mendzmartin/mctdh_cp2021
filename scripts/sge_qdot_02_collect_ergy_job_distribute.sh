@@ -7,9 +7,9 @@ LANG=en_US
 #echo +++			PARAMETERS DECLARATION			+++
 #echo +++++++++++++++++++++++++++++++++++++++++++++++++
 
-lambda_min=0.05
+lambda_min=0.5
 lambda_max=1
-delta_lambda=0.05
+delta_lambda=0.5
 
 COUNTER=1
 
@@ -22,11 +22,12 @@ cd ../../../../scripts/
 	for i in $(seq $lambda_min $delta_lambda $lambda_max)
 		do
 		# change values accordingto for loop and COUNTER
-		sed '91 s/${i}/'${i}'/' sge_qdot_02_collect_ergy_job_run.sh >> intermediate_file.txt
-		sed '105 s/${COUNTER}'${COUNTER}'/' intermediate_file.txt sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
+		sed '91 s/${i}/'${i}'/' sge_qdot_02_collect_ergy_job_run.sh >> intermediate_file_01.txt
+		sed '98 s/${i}/'${i}'/' intermediate_file_01.txt >> intermediate_file_02.txt
+		sed '105 s/${COUNTER}/'${COUNTER}'/' intermediate_file_02.txt sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		
 		# remove unnecessary data, give permission and run script
-		rm -f intermediate_file.txt
+		rm -f intermediate_file_01.txt intermediate_file_02.txt
 		chmod +x sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		./sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		rm -f sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
