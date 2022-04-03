@@ -49,7 +49,7 @@
 
 # Tiempo de CPU (wall clock) que se solicita para el proceso
 #  h_rt=[h:min:sec]
-#$ -l h_rt=4:00:00
+#$ -l h_rt=2:00:00
 
 # Especificar que el proceso es capaz de hacer checkpoints
 #$ -ckpt dmtcp
@@ -83,7 +83,7 @@
  echo 'OMP_NUM_THREADS :' $OMP_NUM_THREADS
                                           
 #################################################################
-### COMANDOS USUALES PARA CORRER EL PROCESO DESDE BASH SHELL
+### COMANDOS PARA CORRER EL PROCESO DESDE BASH SHELL
 #################################################################
 	
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
