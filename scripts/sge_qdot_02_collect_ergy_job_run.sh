@@ -42,7 +42,7 @@
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
-#$ -v OMP_NUM_THREADS={$NSLOTS}
+#$ -v OMP_NUM_THREADS=${NSLOTS}
 
 # Reservar slots a medida que otros procesos los liberan
 #$ -R y
@@ -70,7 +70,7 @@
 
 # export DMTCP_SIGCKPT = 31
 # number of CPU cores to use
- export OMP_NUM_THREADS = $NSLOTS
+ export OMP_NUM_THREADS = ${NSLOTS}
 # Threading schedule
 # (consider other schedules as well)
 # export OMP_SCHEDULE = "dynamic,128"
@@ -80,7 +80,7 @@
 
  echo '######################################################'
  echo 'started run' && date
- echo 'OMP_NUM_THREADS :' $OMP_NUM_THREADS
+ echo 'OMP_NUM_THREADS :' ${OMP_NUM_THREADS}
                                           
 #################################################################
 ### COMANDOS PARA CORRER EL PROCESO DESDE BASH SHELL
@@ -99,10 +99,10 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	
 	# WRITE DATA
 	cd ..
-	echo $result >> result_energy_vs_lambda.dat
+	echo ${result} >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_04/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02/ configuration_03/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 
