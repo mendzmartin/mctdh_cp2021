@@ -26,7 +26,7 @@ OPERATOR-SECTION
 end-operator-section
 SBASIS-SECTION
 	X1	=	10
-	X2	=	10
+	X2	=	id,1
 end-sbasis-section
 PBASIS-SECTION
 	X1	sin	501	-25.0	25.0	short

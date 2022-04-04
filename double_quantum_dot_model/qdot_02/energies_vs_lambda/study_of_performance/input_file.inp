@@ -27,7 +27,7 @@ end-operator-section
 
 SBASIS-SECTION
 	X1	=	10
-	X2	=	10
+	X2	=	id,1
 end-sbasis-section
 
 PBASIS-SECTION

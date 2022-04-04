@@ -90,7 +90,7 @@ cd ../../../../scripts/
 	done
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-	mv result_energy_vs_lambda.dat configuration_03/result_energy_vs_lambda.dat
+	mv result_energy_vs_lambda.dat configuration_04/result_energy_vs_lambda.dat
 
 # Notes:
 

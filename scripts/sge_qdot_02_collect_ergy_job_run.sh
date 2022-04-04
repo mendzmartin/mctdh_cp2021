@@ -102,7 +102,7 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	echo $result >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_03/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02/ configuration_04/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 

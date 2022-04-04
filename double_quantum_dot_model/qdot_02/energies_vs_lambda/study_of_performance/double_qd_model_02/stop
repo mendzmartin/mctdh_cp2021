@@ -25,4 +25,4 @@ real    cpu        wall-time  optional
  When the run terminates normally, the stop file will be removed.
 ---------------------------------------------------------------------------
 
-       0.500
+       0.400

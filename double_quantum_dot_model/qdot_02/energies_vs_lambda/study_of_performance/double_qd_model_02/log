@@ -1,5 +1,5 @@
 
------- Host: "compute-0-18" ----------Sun Apr  3 19:35:06 2022
+------ Host: "compute-0-24" ----------Sun Apr  3 23:02:16 2022
 
  /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
 
@@ -92,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/dvr
-                                                         Apr  3 19:35:07
+                                                         Apr  3 23:02:17
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -134,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/oper
-                                                         Apr  3 19:35:08
+                                                         Apr  3 23:02:17
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Apr  3 19:35:09
+                                                         Apr  3 23:02:19
 ########################################################################
 
 
@@ -198,9 +198,9 @@ Creating RESTART file
 
 Overall length of A-vector      :      100    1.000E+02
 Length of phi vector for mode   1:     5010
-Length of phi vector for mode   2:     5010
+Length of phi vector for mode   2:        0 (none, as set identical to mode 1)
                                   --------
-Length of wavefunction vector   :    10120    1.012E+04
+Length of wavefunction vector   :     5110    5.110E+03
 
 workcdim   :    502002
 workrdim   :    502503
@@ -208,23 +208,23 @@ workidim   :       501
 
 ***** Memory used in WAVEFUNCTION generation *****
 
-Memory size (used / allocated) (in Mb):     24.627 /    423.712
+Memory size (used / allocated) (in Mb):     24.469 /    423.554
 
 ** Array dimensions **
 
-length of psi/dtpsi    array (used):       10120          0.154 MB
-length of complex      array (used):      515138          7.860 MB
-length of real         array (used):     2010638         15.340 MB
+length of psi/dtpsi    array (used):        5110          0.078 MB
+length of complex      array (used):      514838          7.856 MB
+length of real         array (used):     2010578         15.340 MB
 length of integer      array (used):         506          0.002 MB
 length of logical      array (used):           3          0.000 MB
 
-total array memory in mb     (used):        23.5
+total array memory in mb     (used):        23.4
 
 **** Reading OPER file ****
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-18" ----------Sun Apr  3 19:35:09 2022
+------ Host: "compute-0-24" ----------Sun Apr  3 23:02:18 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -408,38 +408,38 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Apr  3 19:35:10
+                                                         Apr  3 23:02:19
 ########################################################################
  hopsdim  =    1005007        7.668 MB
- dgldim   =      10120        0.154 MB
+ dgldim   =       5110        0.078 MB
  pmatdim  =     100400        1.532 MB
  hpsidim  =       5010        0.076 MB
- hlochdim =     100200        1.529 MB
- mfsumdim =     100200        1.529 MB
+ hlochdim =      50100        0.764 MB
+ mfsumdim =      50100        0.764 MB
  intpsidim=     250500        3.822 MB
  intrdim  =      15350        0.117 MB
  ikrylov  =      10000        0.076 MB
- workcdim =     140780        2.148 MB
+ workcdim =     120740        1.842 MB
  workrdim =     253008        1.930 MB
 
 ***** Memory used in wavefunction PROPAGATION *****
 
-Memory size (used / allocated) (in Mb):     27.879 /    426.964
+Memory size (used / allocated) (in Mb):     25.657 /    424.742
 
 ** Array dimensions **
 
 length of cmplx array of threads (used):      100272.          1.530 MB
 length of real  array of threads (used):        1600.          0.012 MB
 length of int   array of threads (used):        1920.          0.007 MB
-length of psi/dtpsi    array (used):       10120          0.154 MB
-length of complex      array (used):      730389         11.145 MB
-length of real         array (used):     1783524         13.607 MB
+length of psi/dtpsi    array (used):        5110          0.078 MB
+length of complex      array (used):      594819          9.076 MB
+length of real         array (used):     1783464         13.607 MB
 length of integer      array (used):           6          0.000 MB
 length of logical      array (used):           3          0.000 MB
 length of real  Krylov array (used):       10000          0.076 MB
 length of real HKrylov array (used):       10000          0.076 MB
 
-total array memory in mb     (used):        26.8
+total array memory in mb     (used):        24.5
 
 **** Global array sizes ****
 
@@ -452,13 +452,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-18" ----------Sun Apr  3 19:35:09 2022
+------ Host: "compute-0-24" ----------Sun Apr  3 23:02:18 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-18" ----------Sun Apr  3 19:35:10 2022
+------ Host: "compute-0-24" ----------Sun Apr  3 23:02:19 2022
 
 
 ***** Calculation type *****
@@ -508,4 +508,4 @@ Orben       file opened
 Steps       file opened
 Update      file opened
 rlx_info    file opened
- time[fs]        0.500
+ time[fs]        0.400
