@@ -68,15 +68,15 @@
 
 # Exportar al environment las variables.
 
-# export DMTCP_SIGCKPT = 31
+# export DMTCP_SIGCKPT=31
 # number of CPU cores to use
- export OMP_NUM_THREADS = ${NSLOTS}
+ export OMP_NUM_THREADS=${NSLOTS}
 # Threading schedule
 # (consider other schedules as well)
-# export OMP_SCHEDULE = "dynamic,128"
+# export OMP_SCHEDULE="dynamic,128"
 # Stack size per thread
 # (you might need to increase this)
-# export OMP_STACKSIZE = "512M"
+# export OMP_STACKSIZE="512M"
 
  echo '######################################################'
  echo 'started run' && date
@@ -102,7 +102,7 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	echo ${result} >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_03/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02/ configuration_04/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 
