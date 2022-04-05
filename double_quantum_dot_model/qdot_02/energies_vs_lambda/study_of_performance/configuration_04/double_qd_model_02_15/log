@@ -1,5 +1,5 @@
 
------- Host: "compute-0-24" ----------Mon Apr  4 00:16:36 2022
+------ Host: "compute-0-17" ----------Mon Apr  4 17:31:25 2022
 
  /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
 
@@ -92,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/dvr
-                                                         Apr  4 00:16:36
+                                                         Apr  4 17:31:25
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -134,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/oper
-                                                         Apr  4 00:16:37
+                                                         Apr  4 17:31:27
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Apr  4 00:16:38
+                                                         Apr  4 17:31:30
 ########################################################################
 
 
@@ -224,7 +224,7 @@ total array memory in mb     (used):        23.4
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-24" ----------Mon Apr  4 00:16:38 2022
+------ Host: "compute-0-17" ----------Mon Apr  4 17:31:29 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -408,7 +408,7 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Apr  4 00:16:39
+                                                         Apr  4 17:31:31
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =       5110        0.078 MB
@@ -452,13 +452,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-24" ----------Mon Apr  4 00:16:38 2022
+------ Host: "compute-0-17" ----------Mon Apr  4 17:31:29 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-24" ----------Mon Apr  4 00:16:39 2022
+------ Host: "compute-0-17" ----------Mon Apr  4 17:31:31 2022
 
 
 ***** Calculation type *****
@@ -514,24 +514,24 @@ rlx_info    file opened
 
 Integration method used for the MCTDH-coefficients:
 Davidson "integrator" (restricted-real)
-Maximum order employed:    19
+Maximum order employed:    17
 Maximum order allowed:     99
 
 Integration method used for the single-particle functions:
 Runge-Kutta order 8 (RK8) from ODESIM
 
-Total number of RK8 steps:          5413
-Number of accepted RK8 steps:       5006
-Number of rejected RK8 steps:        407
+Total number of RK8 steps:          4788
+Number of accepted RK8 steps:       4400
+Number of rejected RK8 steps:        388
 
-Number of successful Davidson steps:  1581
+Number of successful Davidson steps:  1232
 
 ***** Update times *****
 
-Number of successful update steps:  1349
-Number of failed update steps:         1
-Mean update time (in fs):        0.00074
-Standard deviation (in fs):      0.00113
+Number of successful update steps:  1047
+Number of failed update steps:         2
+Mean update time (in fs):        0.00096
+Standard deviation (in fs):      0.00120
 
 ***** God's final message *****
 
@@ -539,10 +539,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :        422.30
-Total system time  [s] :        137.54
-Total time     [h:m:s] :    0 :  9 : 19.84
-Wall  time     [h:m:s] :    0 :  6 : 27
+Total cpu time     [s] :        757.92
+Total system time  [s] :        261.22
+Total time     [h:m:s] :    0 : 16 : 59.14
+Wall  time     [h:m:s] :    0 :  7 : 40
 
------- Host: "compute-0-24" ----------Mon Apr  4 00:23:03 2022
+------ Host: "compute-0-17" ----------Mon Apr  4 17:39:05 2022
 
