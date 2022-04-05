@@ -8,6 +8,8 @@ lambda_max=1
 delta_lambda=0.05
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance
+rm -f result_collection_total_timing_data.dat
+
 
 for j in {1..4};
 do
@@ -26,11 +28,11 @@ do
 		
 		array_data=($(cat speed | tail -n 1))
 		RealT="${array_data[6]}"
-		result="$lambda ${RealT}"
+		result="$j $lambda ${RealT}"
 		
 		# WRITE DATA
-		cd ..
-		echo $result >> result_collection_total_timing_data.dat
+		cd ../
+		echo $result >> ../result_collection_total_timing_data.dat
 	done
 	
 	cd ..
