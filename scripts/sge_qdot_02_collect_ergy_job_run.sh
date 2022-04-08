@@ -78,9 +78,10 @@
 # (you might need to increase this)
 # export OMP_STACKSIZE="512M"
 
- echo '######################################################'
- echo 'started run' && date
+ echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+ echo date
  echo 'OMP_NUM_THREADS :' ${OMP_NUM_THREADS}
+ echo 'lambda :' ${i}
                                           
 #################################################################
 ### COMANDOS PARA CORRER EL PROCESO DESDE BASH SHELL
