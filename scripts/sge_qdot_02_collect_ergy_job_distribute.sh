@@ -25,7 +25,7 @@ num_conf=01
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	# remove existing data
 	rm -f result_energy_vs_lambda.dat
-	rm -Rf double_qd_model_02/
+	rm -Rf double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 	for i in $(seq $lambda_min $delta_lambda $lambda_max)
@@ -53,7 +53,7 @@ cd ../../../../scripts/
 	done
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-	mv result_energy_vs_lambda.dat configuration_${num_conf}/result_energy_vs_lambda.dat
+	mv result_energy_vs_lambda_${num_conf}.dat configuration_${num_conf}/result_energy_vs_lambda.dat
 
 # Notes:
 
