@@ -20,7 +20,7 @@
 
 # Nombre del proceso.
 # Por defecto toma el nombre del script que se ejecuta.
-#$ -N mctdh_qdot_run
+#$ -N mctdhqdotrun
 
 # Especifica si la salida de error de la tarea a ejecutar va a ser
 #   la salida de error de SGE, es decir, si stdout y stderr apuntan
@@ -58,9 +58,8 @@
 #  el standard output (salida)
 #$ -o output_run.log
 
-# Pido la cola sumo (tiene infiniband)
-# Puedo usar otras colas si no requiero infiniband
-##$ -q sumo
+# Excluye este/estos nodos
+#$ -l h=!compute-0-0&!compute-0-1&!compute-0-2&!compute-0-3&!compute-0-4&!compute-0-5&!compute-0-6&!compute-0-7&!compute-0-8&!compute-0-9&!compute-0-10&!compute-0-11&!compute-0-12&!compute-0-13&!compute-0-14&!compute-0-15&!compute-0-16&!compute-0-17&!compute-0-018&!compute-0-19&!compute-0-20&!compute-0-23&!compute-0-24
 
 #################################################################
 ### EXPORTACIÓN DE VARIABLES DE ENTORNO
@@ -80,8 +79,9 @@
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo date
- echo 'OMP_NUM_THREADS :' ${OMP_NUM_THREADS}
- echo 'lambda :' ${i}
+ echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
+ echo 'lambda:' ${i}
+ echo 'node: ' ${QUEUE}
                                           
 #################################################################
 ### COMANDOS PARA CORRER EL PROCESO DESDE BASH SHELL
@@ -103,7 +103,7 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	echo ${result} >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_04/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02/ configuration_01/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 

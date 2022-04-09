@@ -29,8 +29,8 @@ cd ../../../../scripts/
 	for i in $(seq $lambda_min $delta_lambda $lambda_max)
 		do
 		# change values accordingto for loop and COUNTER
-		sed '70,108 s/${i}/'${i}'/' sge_qdot_02_collect_ergy_job_run.sh >> intermediate_file_01.txt
-		sed '70,108 s/${COUNTER}/'${COUNTER}'/' intermediate_file_01.txt >> sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
+		sed '67,120 s/${i}/'${i}'/' sge_qdot_02_collect_ergy_job_run.sh >> intermediate_file_01.txt
+		sed '67,120 s/${COUNTER}/'${COUNTER}'/' intermediate_file_01.txt >> sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		
 		# remove unnecessary data, give permission and run script
 		rm -f intermediate_file_01.txt
