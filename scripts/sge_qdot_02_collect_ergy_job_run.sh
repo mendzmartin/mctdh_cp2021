@@ -38,7 +38,7 @@
 # Obligatorio en procesos paralelos (-pe [entorno_paralelo] [cpus])
 #  donde [entorno_paralelo] = [smp/make/openmpi/lam/mpich]
 #  donde [cpus] = número de cpus
-#$ -pe smp 8
+#$ -pe smp 1
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
@@ -59,12 +59,12 @@
 #$ -o output_run.log
 
 # Excluye este/estos nodos
-#$ -l h=!compute-0-0&!compute-0-1&!compute-0-2&!compute-0-3&!compute-0-4&!compute-0-5&!compute-0-6&!compute-0-7&!compute-0-8&!compute-0-9&!compute-0-10&!compute-0-11&!compute-0-12&!compute-0-13&!compute-0-14&!compute-0-15&!compute-0-16&!compute-0-17&!compute-0-018&!compute-0-19&!compute-0-20&!compute-0-23&!compute-0-24
+#$ -l h=!compute-0-0&!compute-0-1&!compute-0-2&!compute-0-3&!compute-0-4&!compute-0-5&!compute-0-6&!compute-0-7&!compute-0-8&!compute-0-9&!compute-0-10&!compute-0-11&!compute-0-12&!compute-0-13&!compute-0-14&!compute-0-15&!compute-0-16&!compute-0-17&!compute-0-18&!compute-0-19&!compute-0-20&!compute-0-23&!compute-0-24
 
 #################################################################
 ### EXPORTACIÓN DE VARIABLES DE ENTORNO
 #################################################################
-
+LANG=en_US
 # Exportar al environment las variables.
 
 # export DMTCP_SIGCKPT=31
@@ -81,6 +81,7 @@
  echo date
  echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
  echo 'lambda:' ${i}
+ echo 'node: ' ${HOSTNAME}
  echo 'node: ' ${QUEUE}
                                           
 #################################################################
@@ -89,10 +90,10 @@
 	
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 
-	mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file.inp
+	mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file_${COUNTER}.inp
 
 	# START COLLECTION OF ENERGIES
-	cd double_qd_model_02/
+	cd double_qd_model_02_${COUNTER}/	
 	array_energy=($(rdrlx | tail -n 2 | sed -n '1 p'))
 	energy_part1="${array_energy[4]}"
 	energy_part2="${array_energy[5]}"
@@ -103,7 +104,7 @@ cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
 	echo ${result} >> result_energy_vs_lambda.dat
 	
 	# SAVE DATA FOLDER
-	mv double_qd_model_02/ configuration_01/double_qd_model_02_${COUNTER}/
+	mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 
@@ -118,3 +119,4 @@ cd ../../../../scripts/
 # 	qstat 			-> para ver los trabajos encolados
 # 	qdel jobID		-> para remover un trabajo de la cola
 #	qacct -j jobID 		-> report and account for Sun Grid Engine usage
+#	qdel -u username

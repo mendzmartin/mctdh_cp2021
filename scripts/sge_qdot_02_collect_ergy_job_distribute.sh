@@ -15,6 +15,8 @@ lambda_min=0.05
 lambda_max=1
 delta_lambda=0.05
 COUNTER=1
+# numero de configuración (cambiar!)
+num_conf=01
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++
 # +++			EXECUTION						+++
@@ -30,19 +32,28 @@ cd ../../../../scripts/
 		do
 		# change values accordingto for loop and COUNTER
 		sed '67,120 s/${i}/'${i}'/' sge_qdot_02_collect_ergy_job_run.sh >> intermediate_file_01.txt
-		sed '67,120 s/${COUNTER}/'${COUNTER}'/' intermediate_file_01.txt >> sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
+		sed '67,120 s/${num_conf}/'${num_conf}'/' intermediate_file_01.txt >> intermediate_file_02.txt
+		sed '67,120 s/${COUNTER}/'${COUNTER}'/' intermediate_file_02.txt >> sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
+		
+		cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
+		sed '2 s/${COUNTER}/'${COUNTER}'/' input_file.inp >> input_file_${COUNTER}.inp
+		cd ../../../../scripts/		
 		
 		# remove unnecessary data, give permission and run script
-		rm -f intermediate_file_01.txt
+		rm -f intermediate_file_01.txt intermediate_file_02.txt
 		chmod +x sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		qsub ./sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		rm -f sge_qdot_02_collect_ergy_job_run_${COUNTER}.sh
 		
+		cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
+                rm -f input_file_${COUNTER}.inp
+                cd ../../../../scripts/
+
 		COUNTER=$((COUNTER+1))
 	done
 
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-	mv result_energy_vs_lambda.dat configuration_04/result_energy_vs_lambda.dat
+	mv result_energy_vs_lambda.dat configuration_${num_conf}/result_energy_vs_lambda.dat
 
 # Notes:
 
