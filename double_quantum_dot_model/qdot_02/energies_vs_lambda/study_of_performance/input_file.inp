@@ -1,5 +1,5 @@
 RUN-SECTION
-	name = double_qd_model_02_${num_conf}_${COUNTER}
+	name = double_qd_model_02_${COUNTER}
 	#geninwf
 	#propagation
 	relaxation=follow
