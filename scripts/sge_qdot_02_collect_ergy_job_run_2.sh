@@ -81,7 +81,7 @@
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo echo 'lambda:' ${i} '/ COUNTER:' ${COUNTER} '/ num conf:' ${num_conf}
+ echo echo 'lambda:' 0.10 '/ COUNTER:' 2 '/ num conf:' 01
 # echo date
  echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
  echo 'HOSTNAME: ' ${HOSTNAME} '/ QUEUE: ' ${QUEUE}
@@ -94,23 +94,23 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 	
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-rm -Rf double_qd_model_02_${COUNTER}/
+rm -Rf double_qd_model_02_2/
 
-mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file_${COUNTER}.inp
+mctdh85 -mnd -p V_L 0.9,au -p lambda 0.10 input_file_2.inp
 
 # START COLLECTION OF ENERGIES
-cd double_qd_model_02_${COUNTER}/	
+cd double_qd_model_02_2/	
 array_energy=($(rdrlx | tail -n 2 | sed -n '1 p'))
 energy_part1="${array_energy[4]}"
 energy_part2="${array_energy[5]}"
-result="${i} ${energy_part1}${energy_part2}"
+result="0.10 ${energy_part1}${energy_part2}"
 
 # WRITE DATA
 cd ..
 echo ${result} > result_energy_vs_lambda.dat
 
 # SAVE DATA FOLDER
-mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
+mv double_qd_model_02_2/ configuration_01/double_qd_model_02_${COUNTER}/
 
 cd ../../../../scripts/
 
