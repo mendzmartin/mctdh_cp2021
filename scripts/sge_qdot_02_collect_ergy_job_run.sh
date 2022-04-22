@@ -106,8 +106,8 @@ energy_part2="${array_energy[5]}"
 result="${i} ${energy_part1}${energy_part2}"
 
 # WRITE DATA
-cd ..
-echo ${result} > result_energy_vs_lambda.dat
+cd ../
+echo ${result} >> configuration_${num_conf}/result_energy_vs_lambda.dat
 
 # SAVE DATA FOLDER
 mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
