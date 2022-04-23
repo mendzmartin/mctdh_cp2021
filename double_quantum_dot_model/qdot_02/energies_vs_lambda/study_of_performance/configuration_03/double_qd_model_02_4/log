@@ -1,9 +1,9 @@
 
------- Host: "compute-0-21" ----------Mon Apr  4 12:18:22 2022
+------ Host: "compute-0-21" ----------Fri Apr 22 13:34:50 2022
 
- /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
+ /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4
 
- PID =163999
+ PID = 42999
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -67,12 +67,12 @@ Assigning Operators From Library
 ***** Paths and input files *****
 
 ~.inp  file copied to input in name directory
-name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
-input     : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/input_file.inp
-DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
+name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4
+input     : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/input_file_4.inp
+DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4
 .op file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/operator_file.op
-INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02
-cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/restart
+INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4
+cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4/restart
 
 overwrite disabled
 
@@ -91,8 +91,8 @@ Parallel timing file opened
 
 ########################################################################
 
- Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/dvr
-                                                         Apr  4 12:18:22
+ Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4/dvr
+                                                         Apr 22 13:34:50
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -133,8 +133,8 @@ total array memory in mb     (used):        13.4
 
 ########################################################################
 
- Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02/oper
-                                                         Apr  4 12:18:22
+ Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_4/oper
+                                                         Apr 22 13:34:51
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Apr  4 12:18:24
+                                                         Apr 22 13:34:53
 ########################################################################
 
 
@@ -224,7 +224,7 @@ total array memory in mb     (used):        23.5
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Mon Apr  4 12:18:24 2022
+------ Host: "compute-0-21" ----------Fri Apr 22 13:34:53 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -408,7 +408,7 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Apr  4 12:18:26
+                                                         Apr 22 13:34:54
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =      10120        0.154 MB
@@ -452,13 +452,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Mon Apr  4 12:18:24 2022
+------ Host: "compute-0-21" ----------Fri Apr 22 13:34:53 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-21" ----------Mon Apr  4 12:18:25 2022
+------ Host: "compute-0-21" ----------Fri Apr 22 13:34:54 2022
 
 
 ***** Calculation type *****
@@ -520,18 +520,18 @@ Maximum order allowed:     99
 Integration method used for the single-particle functions:
 Runge-Kutta order 8 (RK8) from ODESIM
 
-Total number of RK8 steps:          9743
-Number of accepted RK8 steps:       9382
-Number of rejected RK8 steps:        361
+Total number of RK8 steps:         11681
+Number of accepted RK8 steps:      11443
+Number of rejected RK8 steps:        238
 
-Number of successful Davidson steps:  1241
+Number of successful Davidson steps:  1956
 
 ***** Update times *****
 
-Number of successful update steps:  1207
-Number of failed update steps:         3
-Mean update time (in fs):        0.00083
-Standard deviation (in fs):      0.00214
+Number of successful update steps:  1900
+Number of failed update steps:         6
+Mean update time (in fs):        0.00053
+Standard deviation (in fs):      0.00180
 
 ***** God's final message *****
 
@@ -539,10 +539,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :        641.36
-Total system time  [s] :        157.41
-Total time     [h:m:s] :    0 : 13 : 18.77
-Wall  time     [h:m:s] :    0 :  8 : 56
+Total cpu time     [s] :        887.12
+Total system time  [s] :        233.46
+Total time     [h:m:s] :    0 : 18 : 40.58
+Wall  time     [h:m:s] :    0 : 11 : 55
 
------- Host: "compute-0-21" ----------Mon Apr  4 12:27:18 2022
+------ Host: "compute-0-21" ----------Fri Apr 22 13:46:45 2022
 

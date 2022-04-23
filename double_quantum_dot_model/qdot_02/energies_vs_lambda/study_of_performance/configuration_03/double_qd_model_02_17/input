@@ -1,13 +1,13 @@
-# /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/input_file.inp
+# /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/input_file_17.inp
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name = double_qd_model_02
+	name = double_qd_model_02_17
 	#geninwf
 	#propagation
 	relaxation=follow
 	### PARALELLIZATION ###
-	usepthreads = 8, summf2,no-funkphi
+	usepthreads = 8 ,summf2 ,no-funkphi
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently
             # 	parallelized routines.
