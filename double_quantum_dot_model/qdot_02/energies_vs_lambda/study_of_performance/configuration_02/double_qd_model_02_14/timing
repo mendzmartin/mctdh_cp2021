@@ -1,0 +1,26 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ Funk2                   9439         0.035         333.8300      44.2
+ RK8                     6799         0.031         209.0500      27.7
+ Funk-X1                86061         0.002         204.2900      27.0
+ Funk3                   6044         0.029         176.3200      23.3
+ summf                   6044         0.026         159.5900      21.1
+ orben                   3398         0.036         122.0300      16.1
+ Funka                  49127         0.001          26.4500       3.5
+ DAV                     6034         0.004          21.9500       2.9
+ MFields                 6044         0.002          14.9400       2.0
+ Startup                    1         2.820           2.8200       0.4
+ genOPER                    1         1.900           1.9000       0.3
+ Funk1                    759         0.002           1.6500       0.2
+ trafo                   3398         0.000           0.5900       0.1
+ initWF                     1         0.530           0.5300       0.1
+ genDVR                     1         0.390           0.3900       0.1
+ Density                 6044         0.000           0.1200       0.0
+ Output                    12         0.004           0.0500       0.0
+
+Total (usr,sys,cpu)     754.99     0.97     755.96   (  0h : 12m : 35.96s)
+
+ ---------------------------------------------------------------------------
+ ------ Host: "compute-0-21" ----------Sat Apr 23 22:21:32 2022
+
+ /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/double_qd_model_02_14
