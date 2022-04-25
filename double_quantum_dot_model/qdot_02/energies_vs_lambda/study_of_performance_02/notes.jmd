@@ -1,0 +1,44 @@
+### Notes
+
+#### OMP_STACKSIZE
++ [link1](https://www.openmp.org/spec-html/5.0/openmpse54.html)
++ [link2](https://www.bgu.ac.il/intel_fortran_docs/compiler_f/main_for/mergedProjects/optaps_for/common/optaps_par_var.htm)
+> Recommended size is 16M.
+
+#### OMP_SCHEDULE
++ [link1](https://www.openmp.org/spec-html/5.0/openmpse49.html)
+
+#### configurations
+> Para todos los casos se fijo el valor de lambda=0.5 y se llevo a cabo tratamiento de partículas idénticas.
+
++ conf01
+```bash
+#$ -pe smp 1
+export OMP_NUM_THREADS=1
+export OMP_SCHEDULE="dynamic,128"
+export OMP_STACKSIZE="512M"
+```
+
++ conf02
+```bash
+#$ -pe smp 2
+export OMP_NUM_THREADS=2
+export OMP_SCHEDULE="dynamic,128"
+export OMP_STACKSIZE="512M"
+```
+
++ conf03
+```bash
+#$ -pe smp 1
+export OMP_NUM_THREADS=3
+export OMP_SCHEDULE="dynamic,128"
+export OMP_STACKSIZE="512M"
+```
+
++ conf04
+```bash
+#$ -pe smp 1
+export OMP_NUM_THREADS=4
+export OMP_SCHEDULE="dynamic,128"
+export OMP_STACKSIZE="512M"
+```
