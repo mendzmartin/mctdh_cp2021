@@ -51,7 +51,7 @@ export OMP_STACKSIZE="512M"
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo echo 'lambda: 0.05' '/ COUNTER:' ${COUNTER} '/ num conf:' ${num_conf}
+ echo echo 'lambda: 0.05' '/ COUNTER:' ${COUNTER} '/ num_conf:' ${i}
  echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
  echo 'HOSTNAME: ' ${HOSTNAME} '/ QUEUE: ' ${QUEUE}
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
@@ -65,7 +65,7 @@ export OMP_STACKSIZE="512M"
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
 rm -Rf double_qd_model_02_${COUNTER}/
 mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${COUNTER}.inp
-mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
+mv double_qd_model_02_${COUNTER}/ configuration_0${i}/double_qd_model_02_${COUNTER}/
 cd ../../../../scripts/
 
 echo '++++++++++++          END-END-END-END-END       +++++++++++++++++++'
