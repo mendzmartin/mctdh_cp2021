@@ -1,0 +1,422 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124565
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124565.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124565 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124565 /home/ckpt/ckpt.124565/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124565.1.long/dmtcp_port
++ exec dmtcp_launch -p 39120 /bin/bash /home/ckpt/ckpt.124565/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.05 / COUNTER: 1 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_1
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124566
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124566.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124566 --exit-on-last --daemon
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124567
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124569
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124568
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124567.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124567 --exit-on-last --daemon
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124569.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124569 --exit-on-last --daemon
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124568.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124568 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124566 /home/ckpt/ckpt.124566/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124567 /home/ckpt/ckpt.124567/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124569 /home/ckpt/ckpt.124569/jobscript
++ shift
++ '[' 0 -ne 0 ']'
++ shift
++ '[' -n '' ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124568 /home/ckpt/ckpt.124568/jobscript
++ '[' -n '' ']'
++ shift
+++ cat /tmp/124567.1.long/dmtcp_port
++ '[' -n '' ']'
+++ cat /tmp/124566.1.long/dmtcp_port
++ shift
++ exec dmtcp_launch -p 42338 /bin/bash /home/ckpt/ckpt.124567/jobscript
+++ cat /tmp/124569.1.long/dmtcp_port
++ '[' -n '' ']'
++ exec dmtcp_launch -p 43482 /bin/bash /home/ckpt/ckpt.124566/jobscript
++ exec dmtcp_launch -p 42980 /bin/bash /home/ckpt/ckpt.124569/jobscript
+++ cat /tmp/124568.1.long/dmtcp_port
++ exec dmtcp_launch -p 43701 /bin/bash /home/ckpt/ckpt.124568/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.25 / COUNTER: 5 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+**********************************START********************************************
+**********************************START********************************************
+**********************************START********************************************
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.15 / COUNTER: 3 / num conf: 01
+echo lambda: 0.10 / COUNTER: 2 / num conf: 01
+echo lambda: 0.20 / COUNTER: 4 / num conf: 01
+OMP_NUM_THREADS: 1
+OMP_NUM_THREADS: 1
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_3
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_4
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_2
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_5
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124570
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124570.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124570 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124570 /home/ckpt/ckpt.124570/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124570.1.long/dmtcp_port
++ exec dmtcp_launch -p 46231 /bin/bash /home/ckpt/ckpt.124570/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.30 / COUNTER: 6 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124571
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124571.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124571 --exit-on-last --daemon
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124573
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124572
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124573.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124573 --exit-on-last --daemon
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124572.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124572 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124571 /home/ckpt/ckpt.124571/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124573 /home/ckpt/ckpt.124573/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124572 /home/ckpt/ckpt.124572/jobscript
++ shift
++ shift
++ '[' -n '' ']'
++ '[' -n '' ']'
++ shift
+++ cat /tmp/124573.1.long/dmtcp_port
++ '[' -n '' ']'
+++ cat /tmp/124571.1.long/dmtcp_port
++ exec dmtcp_launch -p 44046 /bin/bash /home/ckpt/ckpt.124573/jobscript
+++ cat /tmp/124572.1.long/dmtcp_port
++ exec dmtcp_launch -p 43389 /bin/bash /home/ckpt/ckpt.124571/jobscript
++ exec dmtcp_launch -p 45371 /bin/bash /home/ckpt/ckpt.124572/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.45 / COUNTER: 9 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.40 / COUNTER: 8 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.35 / COUNTER: 7 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_6
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124574
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124574.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124574 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124574 /home/ckpt/ckpt.124574/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124574.1.long/dmtcp_port
++ exec dmtcp_launch -p 40221 /bin/bash /home/ckpt/ckpt.124574/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.50 / COUNTER: 10 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_7
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_9
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_8
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124575
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124575.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124575 --exit-on-last --daemon
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124577
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124576
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124577.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124577 --exit-on-last --daemon
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124576.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124576 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124575 /home/ckpt/ckpt.124575/jobscript
++ shift
++ '[' -n '' ']'
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124577 /home/ckpt/ckpt.124577/jobscript
+++ cat /tmp/124575.1.long/dmtcp_port
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124576 /home/ckpt/ckpt.124576/jobscript
++ exec dmtcp_launch -p 34005 /bin/bash /home/ckpt/ckpt.124575/jobscript
++ shift
++ '[' -n '' ']'
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124576.1.long/dmtcp_port
+++ cat /tmp/124577.1.long/dmtcp_port
++ exec dmtcp_launch -p 44804 /bin/bash /home/ckpt/ckpt.124576/jobscript
++ exec dmtcp_launch -p 43189 /bin/bash /home/ckpt/ckpt.124577/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.55 / COUNTER: 11 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.65 / COUNTER: 13 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.60 / COUNTER: 12 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+[46000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_10
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124578
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124578.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124578 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124578 /home/ckpt/ckpt.124578/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124578.1.long/dmtcp_port
++ exec dmtcp_launch -p 35174 /bin/bash /home/ckpt/ckpt.124578/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.70 / COUNTER: 14 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_12
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_13
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_11
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_14
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124579
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124579.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124579 --exit-on-last --daemon
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124581
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124580
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124581.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124581 --exit-on-last --daemon
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124580.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124580 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124579 /home/ckpt/ckpt.124579/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124581 /home/ckpt/ckpt.124581/jobscript
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124580 /home/ckpt/ckpt.124580/jobscript
++ shift
++ '[' -n '' ']'
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124581.1.long/dmtcp_port
++ shift
+++ cat /tmp/124579.1.long/dmtcp_port
++ '[' -n '' ']'
++ exec dmtcp_launch -p 38802 /bin/bash /home/ckpt/ckpt.124581/jobscript
++ exec dmtcp_launch -p 34727 /bin/bash /home/ckpt/ckpt.124579/jobscript
+++ cat /tmp/124580.1.long/dmtcp_port
++ exec dmtcp_launch -p 40015 /bin/bash /home/ckpt/ckpt.124580/jobscript
+**********************************START********************************************
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.85 / COUNTER: 17 / num conf: 01
+**********************************START********************************************
+OMP_NUM_THREADS: 1
+echo lambda: 0.75 / COUNTER: 15 / num conf: 01
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+OMP_NUM_THREADS: 1
+**********************************START********************************************
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+**********************************START********************************************
+echo lambda: 0.80 / COUNTER: 16 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124582
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124582.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124582 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124582 /home/ckpt/ckpt.124582/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124582.1.long/dmtcp_port
++ exec dmtcp_launch -p 35014 /bin/bash /home/ckpt/ckpt.124582/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.90 / COUNTER: 18 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_15
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_17
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_16
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_18
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124583
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124583.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124583 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124583 /home/ckpt/ckpt.124583/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124583.1.long/dmtcp_port
++ exec dmtcp_launch -p 46286 /bin/bash /home/ckpt/ckpt.124583/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 0.95 / COUNTER: 19 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/124584
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/124584.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.124584 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/124584 /home/ckpt/ckpt.124584/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/124584.1.long/dmtcp_port
++ exec dmtcp_launch -p 42872 /bin/bash /home/ckpt/ckpt.124584/jobscript
+**********************************START********************************************
+**********************************START********************************************
+echo lambda: 1.00 / COUNTER: 20 / num conf: 01
+OMP_NUM_THREADS: 1
+HOSTNAME:  compute-0-21.local / QUEUE:  long
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_19
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_20
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+**********************************FINISH********************************************
+**********************************FINISH********************************************

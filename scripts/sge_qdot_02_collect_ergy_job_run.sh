@@ -19,7 +19,7 @@
 
 # Nombre del proceso.
 # Por defecto toma el nombre del script que se ejecuta.
-#$ -N mctdhqdotrun
+#$ -N run_${COUNTER}
 
 # Especifica si la salida de error de la tarea a ejecutar va a ser
 #   la salida de error de SGE, es decir, si stdout y stderr apuntan
@@ -37,7 +37,7 @@
 # Obligatorio en procesos paralelos (-pe [entorno_paralelo] [cpus])
 #  donde [entorno_paralelo] = [smp/make/openmpi/lam/mpich]
 #  donde [cpus] = número de cpus
-#$ -pe smp 1
+#$ -pe smp 4
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
@@ -90,9 +90,9 @@ echo 'HOSTNAME: ' ${HOSTNAME} '/ QUEUE: ' ${QUEUE}
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/
     rm -Rf double_qd_model_02_${COUNTER}/
-    sed '2 s/${COUNTER}/'${COUNTER}'/g' input_file.inp > input_file_${COUNTER}.inp
+    sed '2 s/${COUNT}/'${COUNTER}'/g' input_file.inp > input_file_${COUNTER}.inp
     mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file_${COUNTER}.inp
-    rm -f ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/input_file_${COUNTER}.inp
+    rm -f input_file_${COUNTER}.inp
     mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
 cd ../../../../scripts/
 echo '**********************************FINISH********************************************'
