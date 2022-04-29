@@ -79,41 +79,24 @@
 # (you might need to increase this)
 # export OMP_STACKSIZE="512M"
 
- echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo echo 'lambda:' ${i} '/ COUNTER:' ${COUNTER} '/ num conf:' ${num_conf}
-# echo date
- echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
- echo 'HOSTNAME: ' ${HOSTNAME} '/ QUEUE: ' ${QUEUE}
- echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-
+echo '**********************************START********************************************'
+echo '**********************************START********************************************'
+echo echo 'lambda:' ${i} '/ COUNTER:' ${COUNTER} '/ num conf:' ${num_conf}
+echo 'OMP_NUM_THREADS:' ${OMP_NUM_THREADS}
+echo 'HOSTNAME: ' ${HOSTNAME} '/ QUEUE: ' ${QUEUE}
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++		COMANDOS PARA CORRER EL PROCESO			++
 # ++				DESDE BASH SHELL				++
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++  
-	
-cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/
-rm -Rf double_qd_model_02_${COUNTER}/
-
-mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file_${COUNTER}.inp
-
-# START COLLECTION OF ENERGIES
-cd double_qd_model_02_${COUNTER}/	
-array_energy=($(rdrlx | tail -n 2 | sed -n '1 p'))
-energy_part1="${array_energy[4]}"
-energy_part2="${array_energy[5]}"
-result="${i} ${energy_part1}${energy_part2}"
-
-# WRITE DATA
-cd ../
-echo ${result} >> configuration_${num_conf}/result_energy_vs_lambda.dat
-
-# SAVE DATA FOLDER
-mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
-
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++
+cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/
+    rm -Rf double_qd_model_02_${COUNTER}/
+    sed '2 s/${COUNTER}/'${COUNTER}'/g' input_file.inp > input_file_${COUNTER}.inp
+    mctdh85 -mnd -p V_L 0.9,au -p lambda ${i} input_file_${COUNTER}.inp
+    rm -f ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/input_file_${COUNTER}.inp
+    mv double_qd_model_02_${COUNTER}/ configuration_${num_conf}/double_qd_model_02_${COUNTER}/
 cd ../../../../scripts/
-
+echo '**********************************FINISH********************************************'
+echo '**********************************FINISH********************************************'
 #################################################################
 ### NOTAS Y/O COMENTARIOS
 #################################################################
