@@ -5,7 +5,7 @@ RUN-SECTION
 	relaxation=follow,full,ortho
 
 	### PARALELLIZATION ###
-	usepthreads = 4 ,summf2 ,no-funkphi
+	usepthreads = 8 ,summf2 ,no-funkphi
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.

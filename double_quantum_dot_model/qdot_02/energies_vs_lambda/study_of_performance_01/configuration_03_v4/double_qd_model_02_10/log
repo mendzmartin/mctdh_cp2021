@@ -1,5 +1,5 @@
 
------- Host: "compute-0-21" ----------Fri Apr 29 18:42:40 2022
+------ Host: "compute-0-7" ----------Sat Apr 30 06:48:22 2022
 
  /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_10
 
@@ -92,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_10/dvr
-                                                         Apr 29 18:42:40
+                                                         Apr 30 06:48:23
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -134,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/double_qd_model_02_10/oper
-                                                         Apr 29 18:42:41
+                                                         Apr 30 06:48:24
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         Apr 29 18:42:44
+                                                         Apr 30 06:48:28
 ########################################################################
 
 
@@ -198,9 +198,9 @@ Creating RESTART file
 
 Overall length of A-vector      :      100    1.000E+02
 Length of phi vector for mode   1:     5010
-Length of phi vector for mode   2:        0 (none, as set identical to mode 1)
+Length of phi vector for mode   2:     5010
                                   --------
-Length of wavefunction vector   :     5110    5.110E+03
+Length of wavefunction vector   :    10120    1.012E+04
 
 workcdim   :    502002
 workrdim   :    502503
@@ -208,23 +208,23 @@ workidim   :       501
 
 ***** Memory used in WAVEFUNCTION generation *****
 
-Memory size (used / allocated) (in Mb):     24.469 /    423.554
+Memory size (used / allocated) (in Mb):     24.627 /    423.712
 
 ** Array dimensions **
 
-length of psi/dtpsi    array (used):        5110          0.078 MB
-length of complex      array (used):      514838          7.856 MB
-length of real         array (used):     2010578         15.340 MB
+length of psi/dtpsi    array (used):       10120          0.154 MB
+length of complex      array (used):      515138          7.860 MB
+length of real         array (used):     2010638         15.340 MB
 length of integer      array (used):         506          0.002 MB
 length of logical      array (used):           3          0.000 MB
 
-total array memory in mb     (used):        23.4
+total array memory in mb     (used):        23.5
 
 **** Reading OPER file ****
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Fri Apr 29 18:42:43 2022
+------ Host: "compute-0-7" ----------Sat Apr 30 06:48:28 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -408,35 +408,35 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         Apr 29 18:42:45
+                                                         Apr 30 06:48:30
 ########################################################################
  hopsdim  =    1005007        7.668 MB
- dgldim   =       5110        0.078 MB
+ dgldim   =      10120        0.154 MB
  pmatdim  =     100400        1.532 MB
  hpsidim  =       5010        0.076 MB
- hlochdim =      50100        0.764 MB
- mfsumdim =      50100        0.764 MB
+ hlochdim =     100200        1.529 MB
+ mfsumdim =     100200        1.529 MB
  intpsidim=     250500        3.822 MB
  intrdim  =       2008        0.015 MB
- workcdim =     120740        1.842 MB
+ workcdim =     140780        2.148 MB
  workrdim =     253008        1.930 MB
 
 ***** Memory used in wavefunction PROPAGATION *****
 
-Memory size (used / allocated) (in Mb):     24.583 /    423.668
+Memory size (used / allocated) (in Mb):     26.805 /    425.890
 
 ** Array dimensions **
 
 length of cmplx array of threads (used):       50136.          0.765 MB
 length of real  array of threads (used):           0.          0.000 MB
 length of int   array of threads (used):         960.          0.004 MB
-length of psi/dtpsi    array (used):        5110          0.078 MB
-length of complex      array (used):      594819          9.076 MB
-length of real         array (used):     1765113         13.467 MB
+length of psi/dtpsi    array (used):       10120          0.154 MB
+length of complex      array (used):      730389         11.145 MB
+length of real         array (used):     1765173         13.467 MB
 length of integer      array (used):           6          0.000 MB
 length of logical      array (used):           3          0.000 MB
 
-total array memory in mb     (used):        23.5
+total array memory in mb     (used):        25.7
 
 **** Global array sizes ****
 
@@ -449,13 +449,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Fri Apr 29 18:42:43 2022
+------ Host: "compute-0-7" ----------Sat Apr 30 06:48:28 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-21" ----------Fri Apr 29 18:42:45 2022
+------ Host: "compute-0-7" ----------Sat Apr 30 06:48:29 2022
 
 
 ***** Calculation type *****
@@ -507,23 +507,7 @@ Update      file opened
 rlx_info    file opened
 
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5093 ,  Time =    0.05
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.100
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4976 ,  Time =    0.15
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.200
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4127 ,  Time =    0.25
+The overlap between two time steps is small :  0.3198 ,  Time =    0.00
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -531,7 +515,71 @@ See rlx_info file for details.
  
 .
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.6304 ,  Time =    0.30
+The overlap between two time steps is small :  0.5368 ,  Time =    0.05
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5762 ,  Time =    0.05
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4322 ,  Time =    0.10
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+ time[fs]        0.100
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5002 ,  Time =    0.10
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5001 ,  Time =    0.15
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5002 ,  Time =    0.15
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+ time[fs]        0.200
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.3992 ,  Time =    0.20
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4664 ,  Time =    0.25
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5316 ,  Time =    0.25
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -539,7 +587,23 @@ See rlx_info file for details.
  
  time[fs]        0.300
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4838 ,  Time =    0.35
+The overlap between two time steps is small :  0.4981 ,  Time =    0.30
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4954 ,  Time =    0.35
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4926 ,  Time =    0.35
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -547,7 +611,23 @@ See rlx_info file for details.
  
  time[fs]        0.400
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4959 ,  Time =    0.45
+The overlap between two time steps is small :  0.4981 ,  Time =    0.40
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4958 ,  Time =    0.45
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4934 ,  Time =    0.45
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -555,7 +635,23 @@ See rlx_info file for details.
  
  time[fs]        0.500
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4989 ,  Time =    0.55
+The overlap between two time steps is small :  0.4982 ,  Time =    0.50
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5004 ,  Time =    0.55
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4981 ,  Time =    0.55
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -563,7 +659,23 @@ See rlx_info file for details.
  
  time[fs]        0.600
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4945 ,  Time =    0.65
+The overlap between two time steps is small :  0.4943 ,  Time =    0.60
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5010 ,  Time =    0.65
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4948 ,  Time =    0.65
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -571,7 +683,23 @@ See rlx_info file for details.
  
  time[fs]        0.700
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4953 ,  Time =    0.75
+The overlap between two time steps is small :  0.4961 ,  Time =    0.70
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5003 ,  Time =    0.75
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4963 ,  Time =    0.75
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -579,7 +707,31 @@ See rlx_info file for details.
  
  time[fs]        0.800
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4968 ,  Time =    0.85
+The overlap between two time steps is small :  0.4061 ,  Time =    0.80
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5187 ,  Time =    0.85
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.5101 ,  Time =    0.85
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.6353 ,  Time =    0.90
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -587,7 +739,23 @@ See rlx_info file for details.
  
  time[fs]        0.900
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4967 ,  Time =    0.95
+The overlap between two time steps is small :  0.4997 ,  Time =    0.90
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4992 ,  Time =    0.95
+You are probably converging to another state. 
+Try using a smaller update time, a larger Lanczos space,
+a higher accuracy, more SPF's, or a better initial state.
+See rlx_info file for details.
+ 
+.
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+The overlap between two time steps is small :  0.4988 ,  Time =    0.95
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -604,7 +772,7 @@ Maximum order allowed:   99
 
 Integration method used for the single-particle functions:
 
-Number of successful Lanczos steps:              31
+Number of successful Lanczos steps:              51
 Number of failed but fixed Lanczos steps:         0
 
 ***** Update times *****
@@ -620,10 +788,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          7.31
-Total system time  [s] :          0.35
-Total time     [h:m:s] :    0 :  0 :  7.66
-Wall  time     [h:m:s] :    0 :  0 :  9
+Total cpu time     [s] :         18.78
+Total system time  [s] :          0.84
+Total time     [h:m:s] :    0 :  0 : 19.62
+Wall  time     [h:m:s] :    0 :  0 : 16
 
------- Host: "compute-0-21" ----------Fri Apr 29 18:42:49 2022
+------ Host: "compute-0-7" ----------Sat Apr 30 06:48:38 2022
 

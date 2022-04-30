@@ -37,7 +37,7 @@
 # Obligatorio en procesos paralelos (-pe [entorno_paralelo] [cpus])
 #  donde [entorno_paralelo] = [smp/make/openmpi/lam/mpich]
 #  donde [cpus] = número de cpus
-#$ -pe smp 4
+#$ -pe smp 8
 
 # NSLOTS -> Variable de entorno que especifica el número de slots
 #           de la cola asignados al trabajo paralelo.
@@ -59,6 +59,7 @@
 
 # Elegir colas especificas para correr
 #$ -q long@compute-0-21.local,long@compute-0-22.local
+##$ -q long@compute-0-7.local,long@compute-0-4.local,long@compute-0-5.local
 
 # Excluye este/estos nodos
 ##$ -l h=!compute-0-0&!compute-0-1&!compute-0-2&!compute-0-3&!compute-0-4&!compute-0-5&!compute-0-6&!compute-0-7&!compute-0-8&!compute-0-9&!compute-0-10&!compute-0-11&!compute-0-12&!compute-0-13&!compute-0-14&!compute-0-15&!compute-0-16&!compute-0-17&!compute-0-18&!compute-0-19&!compute-0-20&!compute-0-23&!compute-0-24&!gpu-compute-0-0&!gpu-compute-0-1&!gpu-compute-0-2
