@@ -5,7 +5,7 @@ lambda_min=0.05
 lambda_max=1
 delta_lambda=0.05
 COUNTER=1
-num_conf=04 		# numero de configuración (cambiar!)
+num_conf=03 		# numero de configuración (cambiar!)
 # EXECUTION
 for i in $(seq $lambda_min $delta_lambda $lambda_max)
 	do
