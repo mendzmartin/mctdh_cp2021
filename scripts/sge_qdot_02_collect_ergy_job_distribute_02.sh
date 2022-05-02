@@ -1,37 +1,18 @@
 #!/bin/bash
-                            
-# defines the bahaviour otherwise toggling
-LANG=en_US
-
+LANG=en_US # defines the bahaviour otherwise toggling
 # PARAMETERS DECLARATIONS	
 cores_min=1
 cores_max=4
 delta_cores=1
-COUNTER=1
-
 # EXECUTION
-cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
-	# remove existing data
-	rm -f result_energy_vs_lambda.dat
-
-cd ../../../../scripts/
 for i in $(seq $cores_min $cores_lambda $cores_max)
 	do
 		# change values outside according to looped variables
-		sed 's/${i}/'${i}'/g' sge_qdot_02_collect_ergy_job_run_02.sh > intermediate_file_01_${COUNTER}.txt
-		sed 's/${COUNTER}/'${COUNTER}'/g' intermediate_file_01_${COUNTER}.txt > sge_qdot_02_collect_ergy_job_run_02_${COUNTER}.sh
-		rm -f intermediate_file_02_${COUNTER}.txt
-		cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
-		sed '2 s/${COUNTER}/'${COUNTER}'/g' input_file.inp > input_file_${COUNTER}.inp
-		cd ../../../../scripts/
-		
+		sed 's/${i}/'${i}'/g' sge_qdot_02_collect_ergy_job_run_02.sh > file_01_${i}.txt
 		# remove unnecessary data, give permission and run script
-		chmod +x sge_qdot_02_collect_ergy_job_run_02_${COUNTER}.sh
-		qsub ./sge_qdot_02_collect_ergy_job_run_02_${COUNTER}.sh 
-		rm -f sge_qdot_02_collect_ergy_job_run_02_${COUNTER}.sh
-#		rm -f ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance/input_file_${COUNTER}.inp
-		COUNTER=$((COUNTER+1))
+		chmod +x file_01_${i}.sh
+		qsub ./file_01_${i}.sh 
+		rm -f file_01_${i}.sh
 	done
-
 # Notes:
 # perf stat -e cpu-clock,cpu-cycles,instructions,cache-references,cache-misses

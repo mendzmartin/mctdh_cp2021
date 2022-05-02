@@ -1,12 +1,12 @@
 RUN-SECTION
-	name = double_qd_model_02_${COUNTER}
+	name = double_qd_model_02_${i}
 	#geninwf
 	#propagation
 	relaxation=follow
 
 	### PARALELLIZATION ###
-	#usepthreads = 8 ,summf2 ,no-funkphi
-	#ptiming # Check ptiming file to control overload, and include
+	usepthreads = ${i} ,summf2 ,no-funkphi
+	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.
 
