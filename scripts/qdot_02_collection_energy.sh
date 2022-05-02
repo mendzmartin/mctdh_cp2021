@@ -5,7 +5,7 @@ lambda_min=0.05		# valor mínimo
 lambda_max=1		# valor maximo
 delta_lambda=0.05	# paso
 COUNTER=1			# contador
-ext=03_v4 			# extención especifica del directorio (cambiar!)
+ext=04_v5 			# extención especifica del directorio (cambiar!)
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_01/configuration_${ext}
 # REMOVE EXISTING DATA
 rm -f result_energy_vs_lambda.dat

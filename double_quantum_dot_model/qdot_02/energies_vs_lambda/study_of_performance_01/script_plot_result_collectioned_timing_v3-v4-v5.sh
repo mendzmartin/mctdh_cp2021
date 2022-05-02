@@ -39,7 +39,10 @@ set ttics format "% h"
 set timefmt "%d/%m/%y,%H:%M"
 set angles radians
 set tics back
-unset grid
+set grid nopolar
+set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics \
+ nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
+set grid layerdefault   lt 0 linecolor 0 linewidth 0.500,  lt 0 linecolor 0 linewidth 0.500
 unset raxis
 set theta counterclockwise right
 set style parallel front  lt black linewidth 2.000 dashtype solid
@@ -114,8 +117,8 @@ set cbtics  norangelimit autofreq
 set rtics axis in scale 1,0.5 nomirror norotate  autojustify
 set rtics  norangelimit autofreq 
 unset ttics
-set title "Collectioned energies for differents compile configurations" 
-set title  offset character 0, -0.5, 0 font "Times Roman Bold Italic,9" textcolor lt -1 norotate
+set title "Collection total elapsed time for differents compile configurations" 
+set title  offset character 0, -0.5, 0 font "Times Roman Bold Italic,20" textcolor lt -1 norotate
 set timestamp bottom 
 set timestamp "" 
 set timestamp  font "" textcolor lt -1 norotate
@@ -128,7 +131,7 @@ set x2label ""
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ 0.0500000 : 1.00000 ] noreverse nowriteback
 set x2range [ * : * ] noreverse writeback
-set ylabel "E [au]" 
+set ylabel "t [s]" 
 set ylabel  font "Times Roman Bold Italic,20" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
@@ -165,6 +168,6 @@ set fontpath
 set psdir
 set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap v5
 GNUTERM = "qt"
-## Last datafile plotted: "./configuration_04_v4/result_energy_vs_lambda.dat"
-plot './configuration_03_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'red' lw 3 ps 2 dt 1 title 'conf_{03-v3}', './configuration_03_v4/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'red' lw 3 ps 2 dt 2 title 'conf_{03-v4}', './configuration_04_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'blue' lw 3 ps 2 dt 1 title 'conf_{04-v3}', './configuration_04_v4/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'blue' lw 3 ps 2 dt 2 title 'conf_{04-v4}'
+## Last datafile plotted: "result_collection_total_timing_data_v5.dat"
+plot'result_collection_total_timing_data_v3.dat' u 2:3 every ::41::60 smooth unique w lp lc rgb 'red' lw 3 ps 2 dt 1 title 'conf_{03-v3}', 'result_collection_total_timing_data_v3.dat' u 2:3 every ::61::80 smooth unique w lp lc rgb 'blue' lw 3 ps 2 dt 1 title 'conf_{04-v3}', 'result_collection_total_timing_data_v4.dat' u 2:3 every ::1::20 smooth unique w lp lc rgb 'orange-red' lw 3 ps 2 dt 2 title 'conf_{03-v4}', 'result_collection_total_timing_data_v4.dat' u 2:3 every ::21::40 smooth unique w lp lc rgb 'web-blue' lw 3 ps 2 dt 2 title 'conf_{04-v4}', 'result_collection_total_timing_data_v5.dat' u 2:3 every ::1::20 smooth unique w lp lc rgb 'dark-red' lw 3 ps 2 dt 3 title 'conf_{03-v5}', 'result_collection_total_timing_data_v5.dat' u 2:3 every ::21::40 smooth unique w lp lc rgb 'dark-blue' lw 3 ps 2 dt 3 title 'conf_{04-v5}'
 #    EOF

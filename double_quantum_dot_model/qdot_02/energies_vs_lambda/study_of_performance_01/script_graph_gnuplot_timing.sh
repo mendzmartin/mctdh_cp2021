@@ -14,7 +14,7 @@ plot	'result_collection_total_timing_data_v3.dat' u 2:3 every ::1::20 title 'con
 		'result_collection_total_timing_data_v3.dat' u 2:3 every ::41::60 title 'conf_{03-v3}' smooth unique w lp lc rgb 'green' lw 3 ps 2,\
 		'result_collection_total_timing_data_v3.dat' u 2:3 every ::61::80 title 'conf_{04-v3}' smooth unique w lp lc rgb 'orange' lw 3 ps 2
 unset label
-set output 'result_collection_total_timing_data_v3-v4.png'
+set output 'result_collection_total_timing_data_v3-v4-v5.png'
 plot	'result_collection_total_timing_data_v3.dat' u 2:3 every ::41::60 title 'conf_{03-v3}' smooth unique w lp lc rgb 'red' lw 3 ps 2,\
 		'result_collection_total_timing_data_v3.dat' u 2:3 every ::61::80 title 'conf_{04-v3}' smooth unique w lp lc rgb 'blue' lw 3 ps 2,\
 		'result_collection_total_timing_data_v4.dat' u 2:3 every ::1::20 title 'conf_{03-v4}' smooth unique w lp lc rgb 'red' lw 1 ps 2 dt 2,\
