@@ -8,7 +8,7 @@ set key left top
 set mxtics 20; set mytics 20;set grid mxtics mytics 
 set output 'result_collectioned_energies.png'
 plot 'configuration_01_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'red' lw 3 ps 2 title 'conf_{01-v3}',\
-    'configuration_02_v3/result_energy_vs_lambda.dat' u 1:2  w lp lc rgb 'blue' lw 3 ps 2 dashtype '.-_' title 'conf_{02-v3}',\
+    'configuration_02_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'blue' lw 3 ps 2 title 'conf_{02-v3}',\
     'configuration_03_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'green' lw 3 ps 2 title 'conf_{03-v3}',\
     'configuration_04_v3/result_energy_vs_lambda.dat' u 1:2 smooth unique w lp lc rgb 'orange' lw 3 ps 2 title 'conf_{04-v3}'
 reset
