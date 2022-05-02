@@ -4,7 +4,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 #$ -cwd                                               # Current Working Directory
 #$ -m bea -M martinmendez@mi.unc.edu.ar               # Manda un email si pasa algo con el proceso
-#$ -N run_${i}                                  # Nombre del proceso
+#$ -N run_${i}                                        # Nombre del proceso
 #$ -j y                                               # stdout y stderr apuntan al mismo archivo de salida.
 #$ -S /bin/bash                                       # Usar shell bash
 #$ -l mem_free=4.2G                                   # Pido memoría RAM para el proceso
@@ -15,7 +15,7 @@
 #$ -R y                                               # Reservar slots a medida que otros procesos los liberan
 #$ -l h_rt=4:00:00                                    # Tiempo de CPU (wall clock) que se solicita para el proceso
 #$ -ckpt dmtcp                                        # Habilitar checkpoints
-#$ -o output.log                                      # Standard output
+#$ -o output_${i}.log                                 # Standard output
 #$ -q long@compute-0-21.local,long@compute-0-22.local # Elegir colas especificas para correr
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -35,7 +35,7 @@ export OMP_STACKSIZE="512M"                # Stack size per thread (you might ne
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo 'lambda:           0.05'
+ echo 'lambda:           0.5'
  echo 'num_conf:        ' ${i}
  echo 'OMP_NUM_THREADS: ' ${OMP_NUM_THREADS}
  echo 'HOSTNAME:        ' ${HOSTNAME}
@@ -48,8 +48,8 @@ export OMP_STACKSIZE="512M"                # Stack size per thread (you might ne
 # ++				DESDE BASH SHELL
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
-rm -Rf double_qd_model_02_${i}/
-sed 's/${i}/'${i}'/g' input_file.inp > input_file_${i}.inp
+rm -Rf double_qd_model_02_${i}/ configuration_0${i}/double_qd_model_02_${i}/
+sed '2,8 s/${i2}/'${i}'/g' input_file.inp > input_file_${i}.inp
 mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${i}.inp
 rm -f input_file_${i}.inp
 mv double_qd_model_02_${i}/ configuration_0${i}/double_qd_model_02_${i}/

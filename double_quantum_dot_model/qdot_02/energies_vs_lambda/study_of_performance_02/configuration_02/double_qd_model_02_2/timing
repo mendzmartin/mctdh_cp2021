@@ -1,26 +1,22 @@
  Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
 
- RK8                     2171         0.075         162.3600      52.4
- Funk-X1                61239         0.003         158.9700      51.3
- Funk2                   2282         0.041          94.5400      30.5
- orben                   1085         0.042          45.2100      14.6
- Funk3                   1200         0.032          37.9400      12.2
- summf                   1200         0.029          34.5900      11.2
- Funka                   9836         0.001           6.2700       2.0
- DAV                     1192         0.004           5.2200       1.7
- Startup                    1         4.540           4.5400       1.5
- genOPER                    1         3.450           3.4500       1.1
- MFields                 1200         0.003           3.0300       1.0
- Funk1                    975         0.002           2.4300       0.8
- initWF                     1         0.670           0.6700       0.2
- genDVR                     1         0.420           0.4200       0.1
- trafo                   1085         0.000           0.1800       0.1
- Output                    12         0.006           0.0700       0.0
- Density                 1200         0.000           0.0100       0.0
+ Startup                    1         4.020           4.0200      58.9
+ genOPER                    1         3.160           3.1600      46.3
+ SIL                       31         0.055           1.7200      25.2
+ Funka                   1341         0.001           1.6600      24.3
+ initWF                     1         0.510           0.5100       7.5
+ Funk3                     14         0.034           0.4700       6.9
+ summf                     14         0.030           0.4200       6.2
+ Funk2                     11         0.035           0.3900       5.7
+ genDVR                     1         0.350           0.3500       5.1
+ Output                    12         0.007           0.0900       1.3
+ MFields                   14         0.004           0.0500       0.7
+ Funk1                     10         0.004           0.0400       0.6
+ orben                     12         0.001           0.0100       0.1
 
-Total (usr,sys,cpu)     309.37     0.41     309.78   (  0h :  5m :  9.78s)
+Total (usr,sys,cpu)       6.69     0.13       6.82   (  0h :  0m :  6.82s)
 
  ---------------------------------------------------------------------------
- ------ Host: "compute-0-21" ----------Mon Apr 25 15:44:18 2022
+ ------ Host: "compute-0-21" ----------Mon May  2 15:44:32 2022
 
  /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2
