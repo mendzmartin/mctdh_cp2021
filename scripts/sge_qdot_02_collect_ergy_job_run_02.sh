@@ -48,11 +48,11 @@ export OMP_STACKSIZE="512M"                # Stack size per thread (you might ne
 # ++				DESDE BASH SHELL
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
-rm -Rf double_qd_model_02_${i}/ configuration_0${i}/double_qd_model_02_${i}/
+rm -Rf double_qd_model_02_${i}_v1/ configuration_0${i}/double_qd_model_02_${i}_v1/
 sed '2,8 s/${i2}/'${i}'/g' input_file.inp > input_file_${i}.inp
 mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${i}.inp
 rm -f input_file_${i}.inp
-mv double_qd_model_02_${i}/ configuration_0${i}/double_qd_model_02_${i}/
+mv double_qd_model_02_${i}_v1/ configuration_0${i}/double_qd_model_02_${i}_v1/
 cd ../../../../scripts/
 
 echo '++++++++++++          END-END-END-END-END       +++++++++++++++++++'
