@@ -18,10 +18,12 @@
 #$ -o output_${i}.log                                 # Standard output
 #$ -q long@compute-0-21.local,long@compute-0-22.local # Elegir colas especificas para correr
 
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '+++++         START-START-START-START-START          +++++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++        EXPORTACIÓN DE VARIABLES DE ENTORNO
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-echo '++++++++++++    START-START-START-START-START   +++++++++++++++++++'
 # export DMTCP_SIGCKPT=31
 export OMP_NUM_THREADS=${NSLOTS} # number of CPU cores to use
 # ++ Threading schedule
@@ -55,7 +57,9 @@ rm -f input_file_${i}.inp
 mv double_qd_model_02_${i}_v1/ configuration_0${i}/double_qd_model_02_${i}_v1/
 cd ../../../../scripts/
 
-echo '++++++++++++          END-END-END-END-END       +++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+echo '++++               END-END-END-END-END                ++++'
+echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++ NOTAS Y/O COMENTARIOS
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
