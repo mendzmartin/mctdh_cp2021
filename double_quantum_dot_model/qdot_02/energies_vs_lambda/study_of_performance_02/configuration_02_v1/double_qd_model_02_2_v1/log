@@ -1,7 +1,7 @@
 
------- Host: "compute-0-21" ----------Mon May  2 15:44:19 2022
+------ Host: "compute-0-21" ----------Mon May  9 19:14:02 2022
 
- /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2
+ /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
 
  PID = 43999
 
@@ -67,12 +67,12 @@ Assigning Operators From Library
 ***** Paths and input files *****
 
 ~.inp  file copied to input in name directory
-name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2
+name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
 input     : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/input_file_2.inp
-DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2
+DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
 .op file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/operator_file.op
-INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2
-cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2/restart
+INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/restart
 
 overwrite disabled
 
@@ -91,8 +91,8 @@ Parallel timing file opened
 
 ########################################################################
 
- Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2/dvr
-                                                         May  2 15:44:19
+ Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/dvr
+                                                         May  9 19:14:02
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -133,8 +133,8 @@ total array memory in mb     (used):        13.4
 
 ########################################################################
 
- Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2/oper
-                                                         May  2 15:44:20
+ Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/oper
+                                                         May  9 19:14:02
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -186,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         May  2 15:44:24
+                                                         May  9 19:14:07
 ########################################################################
 
 
@@ -224,7 +224,7 @@ total array memory in mb     (used):        23.4
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Mon May  2 15:44:23 2022
+------ Host: "compute-0-21" ----------Mon May  9 19:14:06 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -408,7 +408,7 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         May  2 15:44:25
+                                                         May  9 19:14:08
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =       5110        0.078 MB
@@ -449,13 +449,13 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-21" ----------Mon May  2 15:44:23 2022
+------ Host: "compute-0-21" ----------Mon May  9 19:14:06 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-21" ----------Mon May  2 15:44:25 2022
+------ Host: "compute-0-21" ----------Mon May  9 19:14:08 2022
 
 
 ***** Calculation type *****
@@ -472,7 +472,7 @@ Mean-fields etc. are kept constant.
 CMF stepsize is adaptive (error control for phi only).
 CMF accuracy: 1.00E-06,      Initial stepsize:  0.100 fs
 For SPFs, For A-coefficients, SIL integrator
-order:  99,  accuracy: 1.00E-06,  initial step:  0.050 fs
+order:  99,  accuracy: 1.00E-10,  initial step:  0.050 fs
 error criterion: standard
 Standard-SIL (real) used.
 The working equation for the spfs reads:
@@ -507,7 +507,7 @@ Update      file opened
 rlx_info    file opened
 
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4707 ,  Time =    0.05
+The overlap between two time steps is small :  0.4804 ,  Time =    0.05
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -515,7 +515,7 @@ See rlx_info file for details.
  
  time[fs]        0.100
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4970 ,  Time =    0.15
+The overlap between two time steps is small :  0.4999 ,  Time =    0.15
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -523,7 +523,7 @@ See rlx_info file for details.
  
  time[fs]        0.200
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4991 ,  Time =    0.25
+The overlap between two time steps is small :  0.4928 ,  Time =    0.25
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -531,7 +531,7 @@ See rlx_info file for details.
  
  time[fs]        0.300
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4952 ,  Time =    0.35
+The overlap between two time steps is small :  0.4994 ,  Time =    0.35
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -539,7 +539,7 @@ See rlx_info file for details.
  
  time[fs]        0.400
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4990 ,  Time =    0.45
+The overlap between two time steps is small :  0.5000 ,  Time =    0.45
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -547,7 +547,7 @@ See rlx_info file for details.
  
  time[fs]        0.500
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4941 ,  Time =    0.55
+The overlap between two time steps is small :  0.4916 ,  Time =    0.55
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -555,7 +555,7 @@ See rlx_info file for details.
  
  time[fs]        0.600
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4955 ,  Time =    0.65
+The overlap between two time steps is small :  0.4978 ,  Time =    0.65
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -563,7 +563,7 @@ See rlx_info file for details.
  
  time[fs]        0.700
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4931 ,  Time =    0.75
+The overlap between two time steps is small :  0.4987 ,  Time =    0.75
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -571,7 +571,7 @@ See rlx_info file for details.
  
  time[fs]        0.800
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4984 ,  Time =    0.85
+The overlap between two time steps is small :  0.4953 ,  Time =    0.85
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -579,7 +579,7 @@ See rlx_info file for details.
  
  time[fs]        0.900
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4580 ,  Time =    0.95
+The overlap between two time steps is small :  0.5004 ,  Time =    0.95
 You are probably converging to another state. 
 Try using a smaller update time, a larger Lanczos space,
 a higher accuracy, more SPF's, or a better initial state.
@@ -612,10 +612,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          6.69
-Total system time  [s] :          0.13
-Total time     [h:m:s] :    0 :  0 :  6.82
-Wall  time     [h:m:s] :    0 :  0 : 13
+Total cpu time     [s] :          7.34
+Total system time  [s] :          0.23
+Total time     [h:m:s] :    0 :  0 :  7.57
+Wall  time     [h:m:s] :    0 :  0 : 12
 
------- Host: "compute-0-21" ----------Mon May  2 15:44:32 2022
+------ Host: "compute-0-21" ----------Mon May  9 19:14:14 2022
 

@@ -1,5 +1,5 @@
 RUN-SECTION
-	name = double_qd_model_02_${i2}
+	name = double_qd_model_02_${i2}_v1
 	#geninwf
 	#propagation
 	relaxation=follow,full,ortho
