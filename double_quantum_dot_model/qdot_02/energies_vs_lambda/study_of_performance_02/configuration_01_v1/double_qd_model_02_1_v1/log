@@ -1,9 +1,9 @@
 
------- Host: "compute-0-22" ----------Mon May  9 22:14:29 2022
+------ Host: "mendez-notebook" ----------Tue May 10 15:44:51 2022
 
- /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1
+ /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1
 
- PID = 43999
+ PID = 86310
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -14,18 +14,18 @@ Revision        :    14
 
 Heidelberg SVN repository no.: 1312
 Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Thu, 17 Mar 2022, 18:17:39 ; Host: bandurria
+Compiled: Mon, 02 Aug 2021, 10:35:32 ; Host: mendez-notebook
 Program name: mctdh85
 
 Included surfaces: lsth
 
-Default operator-path: /nashome/mmendez/mctdh85.14/operators
+Default operator-path: /home/mendez/MCTDH/mctdh85.14/operators
 --------------------------------------------------------------------------------
 
 ###############                 NEW RUN                  ###############
 
 ******* OPTIONS ******
--mnd -p V_L 0.9,au -p lambda 0.5
+-mnd -w -p V_L 0.9,au -p lambda 0.5
 
 
 ########################################################################
@@ -36,7 +36,7 @@ Default operator-path: /nashome/mmendez/mctdh85.14/operators
 
 Task: gendvr genoper geninwf relaxation
 
-Opening operator file :/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/operator_file.op
+Opening operator file :/home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/operator_file.op
 
 ***** Hamiltonian and title *****
 
@@ -59,7 +59,7 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
  C-Weights: V-max =  0.2721E+35 eV,  V-min = -0.2721E+35 eV
  Modelabels: X1 X2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Natpot path: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfit_Vee/natpot
+Natpot path: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/potfit_Vee/natpot
 
 Assigning Operators From Library
 
@@ -67,14 +67,14 @@ Assigning Operators From Library
 ***** Paths and input files *****
 
 ~.inp  file copied to input in name directory
-name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1
-input     : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/input_file_1.inp
-DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1
-.op file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/operator_file.op
-INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1
-cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1/restart
+name      : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1
+input     : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/input_file.inp
+DVR file  : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1
+.op file  : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/operator_file.op
+INWF file : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1
+cross-ref : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1/restart
 
-overwrite disabled
+overwrite enabled
 
 WARNING: Davidson iteration order must be smaller than A-vector length!
 IntOrder =  500, adim =   100
@@ -91,8 +91,8 @@ Parallel timing file opened
 
 ########################################################################
 
- Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1/dvr
-                                                         May  9 22:14:29
+ Creating DVR file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1/dvr
+                                                         May 10 15:44:51
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -133,8 +133,8 @@ total array memory in mb     (used):        13.4
 
 ########################################################################
 
- Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_1_v1/oper
-                                                         May  9 22:14:30
+ Creating OPER file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/configuration_01_v1/double_qd_model_02_1_v1/oper
+                                                         May 10 15:44:51
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -181,12 +181,12 @@ Number of Hamiltonians defined:     2
 
 Files containing operators
   No.        Name
-    1     /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/doub
+    1     /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_q
 
 ########################################################################
 
 Creating RESTART file
-                                                         May  9 22:14:33
+                                                         May 10 15:44:54
 ########################################################################
 
 
@@ -224,7 +224,7 @@ total array memory in mb     (used):        23.4
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:33 2022
+------ Host: "mendez-notebook" ----------Tue May 10 15:44:54 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -235,11 +235,11 @@ Created on:
    4. Eigenvalue     0.265180536[eV]    0.009745205818[au] ,   4. spf
    5. Eigenvalue     0.341078262[eV]    0.012534396049[au] ,   5. spf
    6. Eigenvalue     0.947141857[eV]    0.034806824315[au] ,   6. spf
-   7. Eigenvalue     1.333487778[eV]    0.049004776283[au] ,   7. spf
+   7. Eigenvalue     1.333487778[eV]    0.049004776284[au] ,   7. spf
    8. Eigenvalue     2.050426897[eV]    0.075351805239[au] ,   8. spf
    9. Eigenvalue     2.889565589[eV]    0.106189586096[au] ,   9. spf
   10. Eigenvalue     3.674241017[eV]    0.135025878726[au] ,  10. spf
-  11. Eigenvalue     4.880161025[eV]    0.179342625491[au]
+  11. Eigenvalue     4.880161025[eV]    0.179342625490[au]
   12. Eigenvalue     5.807155199[eV]    0.213409036061[au]
   13. Eigenvalue     7.273143687[eV]    0.267283124013[au]
   14. Eigenvalue     8.492904558[eV]    0.312108513165[au]
@@ -262,20 +262,20 @@ Created on:
   31. Eigenvalue    48.934885933[eV]    1.798324046459[au]
   32. Eigenvalue    52.278250321[eV]    1.921190432292[au]
   33. Eigenvalue    55.738914812[eV]    2.048367517763[au]
-  34. Eigenvalue    59.300101399[eV]    2.179238722427[au]
+  34. Eigenvalue    59.300101399[eV]    2.179238722428[au]
   35. Eigenvalue    62.969702750[eV]    2.314094096561[au]
   36. Eigenvalue    66.750218638[eV]    2.453025505122[au]
   37. Eigenvalue    70.630493854[eV]    2.595623001671[au]
   38. Eigenvalue    74.625754737[eV]    2.742446143901[au]
   39. Eigenvalue    78.721474464[eV]    2.892961080869[au]
-  40. Eigenvalue    82.927616021[eV]    3.047533945617[au]
+  40. Eigenvalue    82.927616021[eV]    3.047533945616[au]
   41. Eigenvalue    87.240227320[eV]    3.206019501569[au]
-  42. Eigenvalue    91.657703288[eV]    3.368358763349[au]
+  42. Eigenvalue    91.657703288[eV]    3.368358763350[au]
   43. Eigenvalue    96.185109072[eV]    3.534737871737[au]
-  44. Eigenvalue   100.816261417[eV]    3.704929596209[au]
+  44. Eigenvalue   100.816261417[eV]    3.704929596210[au]
   45. Eigenvalue   105.556369753[eV]    3.879125379872[au]
   46. Eigenvalue   110.402237596[eV]    4.057207754081[au]
-  47. Eigenvalue   115.354818434[eV]    4.239211758857[au]
+  47. Eigenvalue   115.354818434[eV]    4.239211758858[au]
   48. Eigenvalue   120.414818563[eV]    4.425163350102[au]
   49. Eigenvalue   125.580639364[eV]    4.615003779668[au]
   50. Eigenvalue   130.853952720[eV]    4.808794488102[au]
@@ -287,7 +287,7 @@ Created on:
   56. Eigenvalue   164.732137761[eV]    6.053794934087[au]
   57. Eigenvalue   170.751879321[eV]    6.275016375487[au]
   58. Eigenvalue   176.878252531[eV]    6.500156458096[au]
-  59. Eigenvalue   183.111257680[eV]    6.729215192512[au]
+  59. Eigenvalue   183.111257680[eV]    6.729215192511[au]
   60. Eigenvalue   189.450927798[eV]    6.962193792587[au]
   61. Eigenvalue   195.897213462[eV]    7.199090442082[au]
   62. Eigenvalue   202.450144198[eV]    7.439906226003[au]
@@ -334,8 +334,8 @@ Created on:
  103. Eigenvalue   562.905261919[eV]   20.686388638500[au]
  104. Eigenvalue   573.935188018[eV]   21.091730981800[au]
  105. Eigenvalue   585.071693691[eV]   21.500990052572[au]
- 106. Eigenvalue   596.314778657[eV]   21.914165840470[au]
- 107. Eigenvalue   607.664442647[eV]   22.331258335616[au]
+ 106. Eigenvalue   596.314778657[eV]   21.914165840471[au]
+ 107. Eigenvalue   607.664442647[eV]   22.331258335617[au]
  108. Eigenvalue   619.120685406[eV]   22.752267528585[au]
  109. Eigenvalue   630.683506687[eV]   23.177193410371[au]
  110. Eigenvalue   642.352906257[eV]   23.606035972365[au]
@@ -343,7 +343,7 @@ Created on:
  112. Eigenvalue   666.011439377[eV]   24.475471104443[au]
  113. Eigenvalue   678.000572509[eV]   24.916063659133[au]
  114. Eigenvalue   690.096283090[eV]   25.360572863211[au]
- 115. Eigenvalue   702.298570934[eV]   25.808998709781[au]
+ 115. Eigenvalue   702.298570934[eV]   25.808998709782[au]
  116. Eigenvalue   714.607435860[eV]   26.261341192240[au]
  117. Eigenvalue   727.022877697[eV]   26.717600304257[au]
  118. Eigenvalue   739.544896279[eV]   27.177776039769[au]
@@ -401,14 +401,13 @@ Created on:
 Mapping s =  1 ;   1 ->  2 , ishift =   0
 
 **** A-coefficients taken from input ****
-    13  (-0.707107, 0.000000)    3  2
-    22  ( 0.707107, 0.000000)    2  3
+     1  ( 1.000000, 0.000000)    1  1
 
 
 ########################################################################
 
  Wavefunction Relaxation
-                                                         May  9 22:14:35
+                                                         May 10 15:44:55
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =       5110        0.078 MB
@@ -417,26 +416,29 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
  hlochdim =      50100        0.764 MB
  mfsumdim =      50100        0.764 MB
  intpsidim=     250500        3.822 MB
- intrdim  =       2008        0.015 MB
+ intrdim  =      15350        0.117 MB
+ ikrylov  =      10000        0.076 MB
  workcdim =     120740        1.842 MB
  workrdim =     253008        1.930 MB
 
 ***** Memory used in wavefunction PROPAGATION *****
 
-Memory size (used / allocated) (in Mb):     24.007 /    423.092
+Memory size (used / allocated) (in Mb):     24.301 /    423.386
 
 ** Array dimensions **
 
 length of cmplx array of threads (used):       12534.          0.191 MB
-length of real  array of threads (used):           0.          0.000 MB
+length of real  array of threads (used):         200.          0.002 MB
 length of int   array of threads (used):         240.          0.001 MB
 length of psi/dtpsi    array (used):        5110          0.078 MB
 length of complex      array (used):      594819          9.076 MB
-length of real         array (used):     1765113         13.467 MB
+length of real         array (used):     1783464         13.607 MB
 length of integer      array (used):           6          0.000 MB
 length of logical      array (used):           3          0.000 MB
+length of real  Krylov array (used):       10000          0.076 MB
+length of real HKrylov array (used):       10000          0.076 MB
 
-total array memory in mb     (used):        22.9
+total array memory in mb     (used):        23.2
 
 **** Global array sizes ****
 
@@ -449,19 +451,19 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:33 2022
+------ Host: "mendez-notebook" ----------Tue May 10 15:44:54 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:34 2022
+------ Host: "mendez-notebook" ----------Tue May 10 15:44:55 2022
 
 
 ***** Calculation type *****
 
 Wavefunction relaxation.
-relaxation=full follow ortho
+relaxation=0
 Using Schroedinger picture.
 Using SM parallelisation. Number of threads =   1
 Options: no-funkphi summf2 
@@ -470,14 +472,14 @@ Options: no-funkphi summf2
 
 Mean-fields etc. are kept constant.
 CMF stepsize is adaptive (error control for phi only).
-CMF accuracy: 1.00E-09,      Initial stepsize:  0.100 fs
-For SPFs, For A-coefficients, SIL integrator
-order:  99,  accuracy: 1.00E-11,  initial step:  0.050 fs
-error criterion: standard
-Standard-SIL (real) used.
+CMF accuracy: 1.00E-09,      Initial stepsize:  0.001 fs
+For SPFs, For spfs, RK8 integrator
+accuracy: 1.00E-09, initial step 0.00E+00 fs
+For A-coefficients, DAV "integrator", restriced-real version
+order:  99,  accuracy: 1.00E-09
 The working equation for the spfs reads:
 i dphi/dt = (1-P)(h + ...) phi
-Using standard orbitals.
+Using energy orbitals.(CMF)
 Using operator symmetries
 
 ***** Numerical parameters *****
@@ -505,133 +507,4 @@ Orben       file opened
 Steps       file opened
 Update      file opened
 rlx_info    file opened
-
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.2604 ,  Time =    0.05
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
-.
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.3507 ,  Time =    0.10
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.100
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.3605 ,  Time =    0.15
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
-.
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5276 ,  Time =    0.20
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.200
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5000 ,  Time =    0.25
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.300
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5008 ,  Time =    0.35
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.400
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4971 ,  Time =    0.45
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.500
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5000 ,  Time =    0.55
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.600
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4978 ,  Time =    0.65
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.700
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5001 ,  Time =    0.75
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.800
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4943 ,  Time =    0.85
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.900
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4974 ,  Time =    0.95
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        1.000
-
-***** Integration method *****
-
-Integration method used for the MCTDH-coefficients:
-Short iterative Lanczos (real) with variable order.
-Maximum order employed:  99
-Maximum order allowed:   99
-
-Integration method used for the single-particle functions:
-
-Number of successful Lanczos steps:              31
-Number of failed but fixed Lanczos steps:         0
-
-***** Update times *****
-
-Number of successful update steps:    10
-Number of failed update steps:         0
-Mean update time (in fs):        0.10000
-Standard deviation (in fs):      0.00000
-
-***** God's final message *****
-
-Program terminated normally.
-
-***** Overall Timing *****
-
-Total cpu time     [s] :          6.87
-Total system time  [s] :          0.14
-Total time     [h:m:s] :    0 :  0 :  7.01
-Wall  time     [h:m:s] :    0 :  0 : 15
-
------- Host: "compute-0-22" ----------Mon May  9 22:14:44 2022
-
+ time[fs]        0.007

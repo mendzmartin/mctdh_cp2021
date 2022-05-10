@@ -1,0 +1,28 @@
+continue
+hhh:mm  hhh:mm:ss  hhh:mm:ss  comment
+real    cpu        wall-time  optional
+
+---------------------------------------------------------------------------
+ Replace "continue" by "stop   comment" or "hhh:mm  hhh:mm:ss  comment"
+ The first input (hhh:mm) refers to real-time, the second to cpu-time.
+ One or two of the time entries may be left blank.
+ The colon ":" must appear at the correct position, e.g :
+032:30             system update 
+ will stop the run after 08:30 next day (8+24=32)
+ NB: The day-count starts after the first read of "hhh:mm",
+ e.g. after "continue" has been replaced by "hhh:mm".
+ A first line which reads:
+        000:56:30             time limit
+ will stop the run after the first output later than 56.5 cpu minutes
+ and similarly a first line which reads:
+                   001:30:00  time limit
+ will stop the run after the first output later than 90 wall-time minutes
+
+ When this file (the stop file) is removed, the run will terminate
+ after next output. One may use the keywords "tstop", "tcpu" and "twall"
+ (Run-Section) to set the times "hhh:mm" and "hhh:mm:ss" and "hhh:mm:ss".
+
+ When the run terminates normally, the stop file will be removed.
+---------------------------------------------------------------------------
+
+       0.007

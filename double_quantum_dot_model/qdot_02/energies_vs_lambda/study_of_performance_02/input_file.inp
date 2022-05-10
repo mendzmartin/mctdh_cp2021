@@ -10,7 +10,7 @@ RUN-SECTION
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.
 	rlxunit = au
-	tfinal = 1.0 tout = 0.1 tpsi = 0.1
+	tfinal = 1.0 tout = 0.01 tpsi = 0.1
 	steps
 	orben		# para relajacion
 	gridpop		# para showd1d
@@ -35,7 +35,7 @@ PBASIS-SECTION
 end-pbasis-section
 
 INTEGRATOR-SECTION
-	CMF      	=	0.1,	1.0d-9	#np1	# Constant Mean-Field scheme
+	CMF      	=	0.01,	1.0d-9	#np1	# Constant Mean-Field scheme
 	RK8/spf  	=	1.0d-9 			#np1	# Runge-Kutta integrator for SPFs
 	#rrDAV/A  	=	500,	1.0d-6	#np1	# for A-vector
 	SIL			=	500,	1.0d-11 		# short iterative Lanczos INTEGRATOR
