@@ -1,41 +1,11 @@
- job arguments  /opt/gridengine/default/spool/compute-0-22/job_scripts/125268
-+ dmtcp_coordinator --quiet --port 0 --port-file /tmp/125268.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.125268 --exit-on-last --daemon
+ job arguments  /opt/gridengine/default/spool/compute-0-22/job_scripts/125276
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/125276.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.125276 --exit-on-last --daemon
 + '[' 0 -ne 0 ']'
-+ cp /opt/gridengine/default/spool/compute-0-22/job_scripts/125268 /home/ckpt/ckpt.125268/jobscript
++ cp /opt/gridengine/default/spool/compute-0-22/job_scripts/125276 /home/ckpt/ckpt.125276/jobscript
 + shift
 + '[' -n '' ']'
-++ cat /tmp/125268.1.long/dmtcp_port
-+ exec dmtcp_launch -p 35352 /bin/bash /home/ckpt/ckpt.125268/jobscript
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++++         START-START-START-START-START          +++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-lambda:           0.5
-num_conf:         4
-OMP_NUM_THREADS:  4
-HOSTNAME:         compute-0-22.local
-QUEUE:            long
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_4_v1
-
-## WARNING: 
-Davidson iteration order must be smaller than A-vector length!
-IntOrder =  500, adim =   100
-IntOrder is reduced to adim-1
-mv: cannot move 'double_qd_model_02_4_v1/' to 'configuration_04/double_qd_model_02_4_v1/': No such file or directory
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-++++               END-END-END-END-END                ++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- job arguments  /opt/gridengine/default/spool/compute-0-22/job_scripts/125272
-+ dmtcp_coordinator --quiet --port 0 --port-file /tmp/125272.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.125272 --exit-on-last --daemon
-+ '[' 0 -ne 0 ']'
-+ cp /opt/gridengine/default/spool/compute-0-22/job_scripts/125272 /home/ckpt/ckpt.125272/jobscript
-+ shift
-+ '[' -n '' ']'
-++ cat /tmp/125272.1.long/dmtcp_port
-+ exec dmtcp_launch -p 35229 /bin/bash /home/ckpt/ckpt.125272/jobscript
+++ cat /tmp/125276.1.long/dmtcp_port
++ exec dmtcp_launch -p 44587 /bin/bash /home/ckpt/ckpt.125276/jobscript
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++         START-START-START-START-START          +++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
