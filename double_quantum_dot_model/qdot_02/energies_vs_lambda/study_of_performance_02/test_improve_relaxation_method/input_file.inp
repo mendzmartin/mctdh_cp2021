@@ -1,11 +1,11 @@
 RUN-SECTION
-	name = double_qd_model_02_1_v1
+	name = double_qd_model_02_1_v1_${name}
 	#geninwf
 	#propagation
-	relaxation=follow,full
+	relaxation=${rlx_type}
 
 	### PARALELLIZATION ###
-	usepthreads = 1 ,summf2 ,no-funkphi
+	usepthreads = 4 ,summf2 ,no-funkphi
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.
@@ -37,8 +37,8 @@ end-pbasis-section
 INTEGRATOR-SECTION
 	CMF      	=	0.001,	1.0d-9	#np1	# Constant Mean-Field scheme
 	RK8/spf  	=	1.0d-9 			#np1	# Runge-Kutta integrator for SPFs
-	rrDAV/A  	=	500,	1.0d-9	#np1	# for A-vector
-	#SIL			=	500,	1.0d-11 		# short iterative Lanczos INTEGRATOR
+	#rrDAV/A  	=	500,	1.0d-9	#np1	# for A-vector
+	SIL			=	500,	1.0d-11 		# short iterative Lanczos INTEGRATOR
 end-integrator-section
 
 INIT_WF-SECTION

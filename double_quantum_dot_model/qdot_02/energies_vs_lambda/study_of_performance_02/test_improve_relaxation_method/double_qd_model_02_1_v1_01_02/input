@@ -1,13 +1,13 @@
-# /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/test_improve_relaxation_method/input_file.inp
+# /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/test_improve_relaxation_method/input_file_v2.inp
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name = double_qd_model_02_1_v1
+	name = double_qd_model_02_1_v1_01_02
 	#geninwf
 	#propagation
 	relaxation=follow
 	### PARALELLIZATION ###
-	usepthreads = 1 ,summf2 ,no-funkphi
+	usepthreads = 4 ,summf2 ,no-funkphi
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently
             # 	parallelized routines.
@@ -50,7 +50,7 @@ INIT_WF-SECTION
 end-init_wf-section
 end-input
 
- -mnd -w -p V_L 0.9,au -p lambda 0.5 
+ -mnd -p V_L 0.9,au -p lambda 0.5 
 
 #******************************************************************************#
                 ### ------ OPERATOR FILE ------ ###
