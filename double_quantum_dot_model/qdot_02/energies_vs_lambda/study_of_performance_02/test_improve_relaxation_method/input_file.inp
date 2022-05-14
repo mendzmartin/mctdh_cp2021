@@ -2,7 +2,7 @@ RUN-SECTION
 	name = double_qd_model_02_1_v1
 	#geninwf
 	#propagation
-	relaxation=follow
+	relaxation=follow,full
 
 	### PARALELLIZATION ###
 	usepthreads = 1 ,summf2 ,no-funkphi
