@@ -2,7 +2,7 @@ RUN-SECTION
 	name = double_qd_model_02_1_v1
 	#geninwf
 	#propagation
-	relaxation=follow,full
+	relaxation=follow
 
 	### PARALELLIZATION ###
 	usepthreads = 1 ,summf2 ,no-funkphi
@@ -47,7 +47,8 @@ INIT_WF-SECTION
 		X2	map		X1
 	end-build
 	A-coeff
-		1	1	( 1.0, 0.0 )
+		2	3	( 1.0, 0.0 )
+		3	2	( -1.0, 0.0 )
 	end-A-coeff
 end-init_wf-section
 
