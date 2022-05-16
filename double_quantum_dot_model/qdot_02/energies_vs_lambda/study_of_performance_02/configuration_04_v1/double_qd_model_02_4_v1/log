@@ -1,7 +1,9 @@
 
------- Host: "compute-0-22" ----------Mon May  9 22:14:29 2022
+------ Host: "compute-0-21" ----------Mon May 16 16:21:40 2022
 
  /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_4_v1
+
+ PID = 46999
 
 --------------------------------------------------------------------------------
 ****** Source code version ******
@@ -90,7 +92,7 @@ Parallel timing file opened
 ########################################################################
 
  Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_4_v1/dvr
-                                                         May  9 22:14:29
+                                                         May 16 16:21:40
 ########################################################################
 
 ***** Memory used in DVR basis generation *****
@@ -132,7 +134,7 @@ total array memory in mb     (used):        13.4
 ########################################################################
 
  Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_4_v1/oper
-                                                         May  9 22:14:30
+                                                         May 16 16:21:41
 ########################################################################
 
 ***** Memory used in OPERATOR generation *****
@@ -184,7 +186,7 @@ Files containing operators
 ########################################################################
 
 Creating RESTART file
-                                                         May  9 22:14:33
+                                                         May 16 16:21:44
 ########################################################################
 
 
@@ -222,7 +224,7 @@ total array memory in mb     (used):        23.4
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:33 2022
+------ Host: "compute-0-21" ----------Mon May 16 16:21:42 2022
 
 
 *** VEIGEN ***  operator: h = 1016 heff , DOF = X1       state =  1, type =  8
@@ -406,7 +408,7 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
 ########################################################################
 
  Wavefunction Relaxation
-                                                         May  9 22:14:35
+                                                         May 16 16:21:45
 ########################################################################
  hopsdim  =    1005007        7.668 MB
  dgldim   =       5110        0.078 MB
@@ -415,26 +417,29 @@ Mapping s =  1 ;   1 ->  2 , ishift =   0
  hlochdim =      50100        0.764 MB
  mfsumdim =      50100        0.764 MB
  intpsidim=     250500        3.822 MB
- intrdim  =       2008        0.015 MB
+ intrdim  =      15350        0.117 MB
+ ikrylov  =      10000        0.076 MB
  workcdim =     120740        1.842 MB
  workrdim =     253008        1.930 MB
 
 ***** Memory used in wavefunction PROPAGATION *****
 
-Memory size (used / allocated) (in Mb):     24.583 /    423.668
+Memory size (used / allocated) (in Mb):     24.882 /    423.967
 
 ** Array dimensions **
 
 length of cmplx array of threads (used):       50136.          0.765 MB
-length of real  array of threads (used):           0.          0.000 MB
+length of real  array of threads (used):         800.          0.006 MB
 length of int   array of threads (used):         960.          0.004 MB
 length of psi/dtpsi    array (used):        5110          0.078 MB
 length of complex      array (used):      594819          9.076 MB
-length of real         array (used):     1765113         13.467 MB
+length of real         array (used):     1783464         13.607 MB
 length of integer      array (used):           6          0.000 MB
 length of logical      array (used):           3          0.000 MB
+length of real  Krylov array (used):       10000          0.076 MB
+length of real HKrylov array (used):       10000          0.076 MB
 
-total array memory in mb     (used):        23.5
+total array memory in mb     (used):        23.8
 
 **** Global array sizes ****
 
@@ -447,19 +452,19 @@ Minimum value for maxkoe:     501  Present value:   16000
 		double quantum dot model
 		hamiltonian without interaction (heff)
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:33 2022
+------ Host: "compute-0-21" ----------Mon May 16 16:21:42 2022
 
 
 **** RSTINFO: Reading RESTART file ****
 Type : wavefunction, file-version =  8.50140
 Created on:
------- Host: "compute-0-22" ----------Mon May  9 22:14:34 2022
+------ Host: "compute-0-21" ----------Mon May 16 16:21:45 2022
 
 
 ***** Calculation type *****
 
 Wavefunction relaxation.
-relaxation=full follow ortho
+relaxation=full follow
 Using Schroedinger picture.
 Using SM parallelisation. Number of threads =   4
 Options: no-funkphi summf2 
@@ -468,14 +473,14 @@ Options: no-funkphi summf2
 
 Mean-fields etc. are kept constant.
 CMF stepsize is adaptive (error control for phi only).
-CMF accuracy: 1.00E-09,      Initial stepsize:  0.100 fs
-For SPFs, For A-coefficients, SIL integrator
-order:  99,  accuracy: 1.00E-11,  initial step:  0.050 fs
-error criterion: standard
-Standard-SIL (real) used.
+CMF accuracy: 1.00E-09,      Initial stepsize:  0.001 fs
+For SPFs, For spfs, RK8 integrator
+accuracy: 1.00E-09, initial step 0.00E+00 fs
+For A-coefficients, DAV "integrator", restriced-real version
+order:  99,  accuracy: 1.00E-09
 The working equation for the spfs reads:
 i dphi/dt = (1-P)(h + ...) phi
-Using standard orbitals.
+Using energy orbitals.(CMF)
 Using operator symmetries
 
 ***** Numerical parameters *****
@@ -503,106 +508,30 @@ Orben       file opened
 Steps       file opened
 Update      file opened
 rlx_info    file opened
-
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4360 ,  Time =    0.05
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
  time[fs]        0.100
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4998 ,  Time =    0.15
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.200
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4977 ,  Time =    0.25
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.300
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4934 ,  Time =    0.35
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.400
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5000 ,  Time =    0.45
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.500
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4991 ,  Time =    0.55
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.600
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4945 ,  Time =    0.65
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.700
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4985 ,  Time =    0.75
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.800
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.5000 ,  Time =    0.85
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        0.900
-WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-The overlap between two time steps is small :  0.4948 ,  Time =    0.95
-You are probably converging to another state. 
-Try using a smaller update time, a larger Lanczos space,
-a higher accuracy, more SPF's, or a better initial state.
-See rlx_info file for details.
- 
- time[fs]        1.000
 
 ***** Integration method *****
 
 Integration method used for the MCTDH-coefficients:
-Short iterative Lanczos (real) with variable order.
-Maximum order employed:  99
-Maximum order allowed:   99
+Davidson "integrator" (restricted-real)
+Maximum order employed:    99
+Maximum order allowed:     99
 
 Integration method used for the single-particle functions:
+Runge-Kutta order 8 (RK8) from ODESIM
 
-Number of successful Lanczos steps:              31
-Number of failed but fixed Lanczos steps:         0
+Total number of RK8 steps:         30706
+Number of accepted RK8 steps:      30706
+Number of rejected RK8 steps:          0
+
+Number of successful Davidson steps: 15375
 
 ***** Update times *****
 
-Number of successful update steps:    10
-Number of failed update steps:         0
-Mean update time (in fs):        0.10000
-Standard deviation (in fs):      0.00000
+Number of successful update steps: 15352
+Number of failed update steps:         2
+Mean update time (in fs):        0.00001
+Standard deviation (in fs):      0.00002
 
 ***** God's final message *****
 
@@ -610,10 +539,10 @@ Program terminated normally.
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          7.93
-Total system time  [s] :          0.44
-Total time     [h:m:s] :    0 :  0 :  8.37
-Wall  time     [h:m:s] :    0 :  0 : 13
+Total cpu time     [s] :       3422.29
+Total system time  [s] :        273.46
+Total time     [h:m:s] :    1 :  1 : 35.75
+Wall  time     [h:m:s] :    1 : 35 : 32
 
------- Host: "compute-0-22" ----------Mon May  9 22:14:42 2022
+------ Host: "compute-0-21" ----------Mon May 16 17:57:12 2022
 

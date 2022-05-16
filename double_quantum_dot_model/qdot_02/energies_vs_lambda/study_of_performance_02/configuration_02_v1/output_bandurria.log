@@ -1,0 +1,204 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/125993
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/125993.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.125993 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/125993 /home/ckpt/ckpt.125993/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/125993.1.long/dmtcp_port
++ exec dmtcp_launch -p 33370 /bin/bash /home/ckpt/ckpt.125993/jobscript
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++         START-START-START-START-START          +++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+lambda:           0.5
+num_conf:         2
+OMP_NUM_THREADS:  2
+HOSTNAME:         compute-0-21.local
+QUEUE:            long
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Created name-directory: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+## WARNING: 
+Davidson iteration order must be smaller than A-vector length!
+IntOrder =  500, adim =   100
+IntOrder is reduced to adim-1
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+[175000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+[179000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+STOP 1
+Name-directory already exists: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1
+
+ERROR in subroutine Openlog:
+Cannot open log file!
+overwrite disabled? (Use -w option to enable overwrite)
+logfile: 
+/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/double_qd_model_02_2_v1/log
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++               END-END-END-END-END                ++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

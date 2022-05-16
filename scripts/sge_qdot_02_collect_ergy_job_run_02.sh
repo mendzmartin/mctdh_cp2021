@@ -51,10 +51,20 @@ export OMP_STACKSIZE="512M"                # Stack size per thread (you might ne
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
 rm -Rf double_qd_model_02_${i}_v1/ configuration_0${i}_v1/double_qd_model_02_${i}_v1/
+rm -f result_elapsed_time_${i}.dat configuration_0${i}_v1/result_elapsed_time_${i}.dat
 sed '2,8 s/${i2}/'${i}'/g' input_file.inp > input_file_${i}.inp
-mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${i}.inp
+for j in $(seq 1 1 20)
+	do
+  		t_start=$(date +%s.%N) # medimos el tiempo al inicio
+		mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${i}.inp
+		t_end=$(date +%s.%N) # medimos el tiempo al final
+		t_elapsed=$(echo "${t_end} - ${t_start}" | bc)
+		result="${j} ${t_elapsed}"
+		echo ${result} >> result_elapsed_time_${i}.dat
+	done
 rm -f input_file_${i}.inp
 mv double_qd_model_02_${i}_v1/ configuration_0${i}_v1/double_qd_model_02_${i}_v1/
+mv result_elapsed_time_${i}.dat configuration_0${i}_v1/result_elapsed_time_${i}.dat
 cd ../../../../scripts/
 
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
