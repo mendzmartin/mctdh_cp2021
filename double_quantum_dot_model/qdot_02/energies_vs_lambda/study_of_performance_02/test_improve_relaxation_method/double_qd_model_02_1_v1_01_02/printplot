@@ -1,0 +1,2 @@
+set terminal postscript
+set output "| lpr" 
