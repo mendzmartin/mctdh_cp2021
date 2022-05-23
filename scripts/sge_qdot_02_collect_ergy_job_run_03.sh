@@ -13,7 +13,7 @@
                                                       #   [cpus] = número de cpus
 #$ -v OMP_NUM_THREADS=${NSLOTS}                       # NSLOTS -> número de slots
 #$ -R y                                               # Reservar slots a medida que otros procesos los liberan
-#$ -l h_rt=4:00:00                                    # Tiempo de CPU (wall clock) que se solicita para el proceso
+#$ -l h_rt=5:00:00                                    # Tiempo de CPU (wall clock) que se solicita para el proceso
 #$ -ckpt dmtcp                                        # Habilitar checkpoints
 #$ -o output_${i}.log                                 # Standard output
 #$ -q long@compute-0-21.local,long@compute-0-22.local # Elegir colas especificas para correr
@@ -52,10 +52,21 @@ export OMP_STACKSIZE="512M"                # Stack size per thread (you might ne
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 cd ../double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/
 rm -Rf double_qd_model_02_4_v${i}/ configuration_04_v${i}/double_qd_model_02_4_v${i}/
-sed '2 s/${i2}/'${i}'/g' input_file.inp > input_file_${i}.inp
-mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file_${i}.inp
-rm -f input_file_${i}.inp
+sed '3 s/${i2}/'${i}'/g' input_file.inp > file_${i}.inp
+for j in $(seq 1 1 20)
+	do
+        mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 file_${i}.inp
+        # recolectamos datos de cputime
+        cd /double_qd_model_02_4_v${i}/
+            array_data=($(cat speed | tail -n 1))
+            cpu_time="${array_data[1]}"
+            result="${j} ${cpu_time}"
+            echo ${result} >> result_elapsed_time_${i}.dat
+        cd ../
+	done
+rm -f file_${i}.inp
 mv double_qd_model_02_4_v${i}/ configuration_04_v${i}/double_qd_model_02_4_v${i}/
+mv result_elapsed_time_${i}.dat configuration_0${i}_v1/result_elapsed_time_${i}.dat
 cd ../../../../scripts/
 
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
