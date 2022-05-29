@@ -8,7 +8,7 @@ for i in $(seq $val_min $delta_val $val_max)
 		# change values outside according to looped variables
 		sed 's/${i}/'${i}'/g' sge_qdot_02_collect_ergy_job_run_03.sh > file_01_${i}.txt
 		sed '32,35 s/#'${i}'/''/g' file_01_${i}.txt > file_02_${i}.sh
-		rm -f file_01${i}.txt	 # remove unnecessary data
+		rm -f file_01_${i}.txt	 # remove unnecessary data
 		chmod +x file_02_${i}.sh # give permission
 		qsub ./file_02_${i}.sh   # run script
 		rm -f file_02_${i}.sh 	 # remove unnecessary data

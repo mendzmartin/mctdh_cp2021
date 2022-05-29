@@ -1,19 +1,20 @@
-# /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/input_file_2.inp
+# /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_02/file_2.inp
                 ### ------- INPUT FILE ------- ###
 
 RUN-SECTION
-	name = double_qd_model_02_2
+	#name = double_qd_model_02_${i2}_v1 		# descomentar para primer corrida
+	name = double_qd_model_02_4_v2			# descomentar para segunda corrida
 	#geninwf
 	#propagation
-	relaxation=follow,full,ortho
+	relaxation=follow,full
 	### PARALELLIZATION ###
-	#usepthreads = ${i2} ,summf2 ,no-funkphi
-	usepthreads = 4 ,summf2 ,no-funkphi
+	#usepthreads = ${i2} ,summf2 ,no-funkphi 	# descomentar para primer corrida
+	usepthreads = 4 ,summf2 ,no-funkphi 		# descomentar para segunda corrida
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently
             # 	parallelized routines.
 	rlxunit = au
-	tfinal = 1.0 tout = 0.1 tpsi = 0.1
+	tfinal = 0.1 tout = 0.001 tpsi = 0.001
 	steps
 	orben		# para relajacion
 	gridpop		# para showd1d
@@ -34,17 +35,16 @@ PBASIS-SECTION
 	X2	sin	501	-25.0	25.0	short
 end-pbasis-section
 INTEGRATOR-SECTION
-	CMF      	=	0.1,	1.0d-6	#np1	# Constant Mean-Field scheme
-	RK8/spf  	=	1.0d-8 		#np1	# Runge-Kutta integrator for SPFs
-	#rrDAV/A  	=	500,	1.0d-6	#np1	# for A-vector
-	SIL		=	500,	1.0D-6 		# short iterative Lanczos INTEGRATOR
+	CMF      	=	0.001,	1.0d-9	#np1	# Constant Mean-Field scheme
+	RK8/spf  	=	1.0d-9 			#np1	# Runge-Kutta integrator for SPFs
+	rrDAV/A  	=	500,	1.0d-9	#np1	# for A-vector
+	#SIL		=	500,	1.0d-11 		# short iterative Lanczos INTEGRATOR
 end-integrator-section
 INIT_WF-SECTION
 	build
 		X1	eigenf	heff	pop=1
 		X2	map		X1
 	end-build
-	
 	A-coeff
 		2	3	( 1.0, 0.0 )
 		3	2	( -1.0, 0.0 )
