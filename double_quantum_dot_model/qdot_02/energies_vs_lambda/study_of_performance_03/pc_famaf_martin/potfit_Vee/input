@@ -5,12 +5,12 @@ OPERATOR-SECTION
 	pes = eff2dcou
 end-operator-section
 PBASIS-SECTION
-	X1	sin 501	-25.00	25.00	short
-	X2	sin 501	-25.00	25.00	short
+	Z1	sin 501	-25.00	25.00	short
+	Z2	sin 501	-25.00	25.00	short
 end-pbasis-section
 NATPOT-BASIS-SECTION
-	X1 = contr
-	X2 = 501
+	Z1 = contr
+	Z2 = 501
 end-natpot-basis-section
 end-input
 ProgramVersion =    8.5014
