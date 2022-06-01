@@ -16,11 +16,11 @@ Number of   all    grid points    :      251001     2.51E+05
 
 Sum2 of unweighted potential       :    1.472164281199E+04
 
-*************      Mode:   1   X1              *****************************
+*************      Mode:   1   Z1              *****************************
 
  Contracted mode. Dimension =    501  /    501
 
-*************      Mode:   2   X2              *****************************
+*************      Mode:   2   Z2              *****************************
 
  Trace of reduced density matrix :  1.4722E+04 au
  Reduced trace :      434.2923 eV**2
@@ -218,7 +218,7 @@ Program terminated normally.
 
 
  ------------------------------------------------------------------------------
- ------ Host: "mendez-famaf" ----------Tue May 31 10:44:13 2022
+ ------ Host: "mendez-notebook" ----------Tue May 31 14:48:48 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
  ------------------------------------------------------------------------------

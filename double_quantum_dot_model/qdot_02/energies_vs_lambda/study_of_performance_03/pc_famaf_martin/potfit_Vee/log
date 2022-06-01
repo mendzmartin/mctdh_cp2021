@@ -1,5 +1,5 @@
 
------- Host: "mendez-famaf" ----------Tue May 31 10:44:12 2022
+------ Host: "mendez-notebook" ----------Tue May 31 14:48:47 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
 
@@ -12,7 +12,7 @@ Revision        :    14
 
 Heidelberg SVN repository no.: 1312
 Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Tue, 31 May 2022, 10:41:42 ; Host: mendez-famaf
+Compiled: Tue, 31 May 2022, 14:47:04 ; Host: mendez-notebook
 Program name: potfit85
 
 Included surfaces: lsth eff2dcou
@@ -42,8 +42,8 @@ name   : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_qu
 
  mode     kappa    DVR    N        xi         xf         dx       p-max
 
- X1           1    sin  501    -25.000     25.000   0.100000     31.353
- X2           2    sin  501    -25.000     25.000   0.100000     31.353
+ Z1           1    sin  501    -25.000     25.000   0.100000     31.353
+ Z2           2    sin  501    -25.000     25.000   0.100000     31.353
 
 ***** Memory used in PES FITTING  *****
 
@@ -82,34 +82,35 @@ oscillator frequency ground state HO function used for xi,yi
 variables. CHECK consistency with your problem!
 ################## 
 Eff. Coulomb Coordinates
-z1    : X1              
-z2    : X2              
+z1    : Z1              
+z2    : Z2              
 
 Surface to be fitted : eff2dcou
 max pes cut (ev) :       0.27211384E+22
 min pes cut (ev) :      -0.27211384E+22
 
 ----------------------------------------------------------------------------
- Reading VPOT file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/vpot
+ Creating VPOT file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/vpot
+----------------------------------------------------------------------------
+Buffer written. j1, j2 =         0   251001   May 31 14:48:47   CPU =      0.0
+
+----------------------------------------------------------------------------
+ Starting First Fit.         May 31 14:48:47     CPU =       0.0
+----------------------------------------------------------------------------
+ Computing the SPPs.         May 31 14:48:47     CPU =       0.0
+ Computing the D-tensor.     May 31 14:48:48     CPU =       0.4
+ Computing the fit-error.    May 31 14:48:48     CPU =       0.5
 ----------------------------------------------------------------------------
 
 **** Reading VPOT file ****
 File version:  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Tue May 31 10:43:57 2022
+------ Host: "mendez-notebook" ----------Tue May 31 14:48:47 2022
 
-
-----------------------------------------------------------------------------
- Starting First Fit.         May 31 10:44:12     CPU =       0.0
-----------------------------------------------------------------------------
- Computing the SPPs.         May 31 10:44:12     CPU =       0.0
- Computing the D-tensor.     May 31 10:44:13     CPU =       0.4
- Computing the fit-error.    May 31 10:44:13     CPU =       0.5
-----------------------------------------------------------------------------
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.77
+Total cpu time     [s] :          0.82
 Total time     [h:m:s] :    0 :  0 :  0.8
 
 ***** God's final message *****
@@ -118,7 +119,7 @@ Program terminated normally.
 
 
  ------------------------------------------------------------------------------
- ------ Host: "mendez-famaf" ----------Tue May 31 10:44:13 2022
+ ------ Host: "mendez-notebook" ----------Tue May 31 14:48:48 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
  ------------------------------------------------------------------------------
