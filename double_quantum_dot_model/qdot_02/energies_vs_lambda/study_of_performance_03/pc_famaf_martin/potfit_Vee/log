@@ -1,5 +1,5 @@
 
------- Host: "mendez-famaf" ----------Tue May 31 10:44:12 2022
+------ Host: "mendez-famaf" ----------Wed Jun  1 14:40:05 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
 
@@ -12,7 +12,7 @@ Revision        :    14
 
 Heidelberg SVN repository no.: 1312
 Checkin date: Wed, 23 Jun 2021, 13:43:30
-Compiled: Tue, 31 May 2022, 10:41:42 ; Host: mendez-famaf
+Compiled: Wed, 01 Jun 2022, 14:39:27 ; Host: mendez-famaf
 Program name: potfit85
 
 Included surfaces: lsth eff2dcou
@@ -23,10 +23,6 @@ Included surfaces: lsth eff2dcou
 -w -mnd
 
 
- ---------------------------------------------------------------------------
-Reading DVR file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/dvr
- ---------------------------------------------------------------------------
-
 ***** Output files *****
 
 output     file opened
@@ -36,6 +32,24 @@ timing     file opened
 ***** Paths and input files *****
 
 name   : /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
+
+ ---------------------------------------------------------------------------
+Creating DVR file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/dvr
+ ---------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****
+
+Memory size (used / allocated) (in Mb):     14.271 /    413.613
+
+** Array dimensions **
+
+length of complex      array (used):           6          0.000 MB
+length of real         array (used):     1758014         13.413 MB
+length of integer      array (used):           5          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        13.4
+
 
 
 ****** Primitive Basis *********
@@ -90,27 +104,28 @@ max pes cut (ev) :       0.27211384E+22
 min pes cut (ev) :      -0.27211384E+22
 
 ----------------------------------------------------------------------------
- Reading VPOT file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/vpot
+ Creating VPOT file: /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee/vpot
+----------------------------------------------------------------------------
+Buffer written. j1, j2 =         0   251001   Jun  1 14:40:06   CPU =      0.6
+
+----------------------------------------------------------------------------
+ Starting First Fit.         Jun  1 14:40:06     CPU =       0.6
+----------------------------------------------------------------------------
+ Computing the SPPs.         Jun  1 14:40:06     CPU =       0.6
+ Computing the D-tensor.     Jun  1 14:40:06     CPU =       1.0
+ Computing the fit-error.    Jun  1 14:40:06     CPU =       1.1
 ----------------------------------------------------------------------------
 
 **** Reading VPOT file ****
 File version:  8.50140
 Created on:
------- Host: "mendez-famaf" ----------Tue May 31 10:43:57 2022
+------ Host: "mendez-famaf" ----------Wed Jun  1 14:40:06 2022
 
-
-----------------------------------------------------------------------------
- Starting First Fit.         May 31 10:44:12     CPU =       0.0
-----------------------------------------------------------------------------
- Computing the SPPs.         May 31 10:44:12     CPU =       0.0
- Computing the D-tensor.     May 31 10:44:13     CPU =       0.4
- Computing the fit-error.    May 31 10:44:13     CPU =       0.5
-----------------------------------------------------------------------------
 
 ***** Overall Timing *****
 
-Total cpu time     [s] :          0.77
-Total time     [h:m:s] :    0 :  0 :  0.8
+Total cpu time     [s] :          1.35
+Total time     [h:m:s] :    0 :  0 :  1.4
 
 ***** God's final message *****
 
@@ -118,7 +133,7 @@ Program terminated normally.
 
 
  ------------------------------------------------------------------------------
- ------ Host: "mendez-famaf" ----------Tue May 31 10:44:13 2022
+ ------ Host: "mendez-famaf" ----------Wed Jun  1 14:40:07 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
  ------------------------------------------------------------------------------

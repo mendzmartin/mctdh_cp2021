@@ -210,7 +210,7 @@ Sum2 of unweighted potential       :    1.472164281199E+04
 
 ***** Overall Timing *****
 
-Total time     [h:m:s] :    0 :  0 :  0.8
+Total time     [h:m:s] :    0 :  0 :  1.4
 
 ***** God's final message *****
 
@@ -218,7 +218,7 @@ Program terminated normally.
 
 
  ------------------------------------------------------------------------------
- ------ Host: "mendez-famaf" ----------Tue May 31 10:44:13 2022
+ ------ Host: "mendez-famaf" ----------Wed Jun  1 14:40:07 2022
 
  /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/pc_famaf_martin/potfit_Vee
  ------------------------------------------------------------------------------
