@@ -1,5 +1,5 @@
 RUN-SECTION
-	name = 01_result_double_qd_model_02
+	name = result_double_qd_model_02_lambda${i}
 	relaxation=follow,full
 	### PARALELLIZATION ###
 	#usepthreads = 4 ,summf2 ,no-funkphi
@@ -7,7 +7,7 @@ RUN-SECTION
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines.
 	rlxunit = au
-	tfinal = 0.1 tout = 0.001 tpsi = 0.001
+	tfinal = 1 tout = 0.001 tpsi = 0.001
 	steps
 	orben		# para relajacion
 	gridpop		# para showd1d
