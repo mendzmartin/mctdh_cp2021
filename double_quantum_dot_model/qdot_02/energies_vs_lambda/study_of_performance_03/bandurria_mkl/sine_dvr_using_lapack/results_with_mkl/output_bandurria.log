@@ -1,0 +1,30 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/136155
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/136155.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.136155 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/136155 /home/ckpt/ckpt.136155/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/136155.1.long/dmtcp_port
++ exec dmtcp_launch -p 41555 /bin/bash /home/ckpt/ckpt.136155/jobscript
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++         START-START-START-START-START          +++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+lambda:           0.5
+num_conf:        
+OMP_NUM_THREADS:  4
+HOSTNAME:         compute-0-21.local
+QUEUE:            long
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[43000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'
+rm -f *.o *.mod
+gfortran -c mmlib.f
+gfortran sinedvr_using_lapack.f90 mmlib.o -L/share/apps/intel/oneapi/mkl/latest/lib/intel64 -Wl,--no-as-needed -lmkl_gf_ilp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lgfortran -lm -ldl -fdefault-integer-8  -m64  -I/share/apps/intel/oneapi/mkl/latest/include -fdefault-integer-8  -m64  -I/share/apps/intel/oneapi/mkl/latest/include -o sinedvr_using_lapack.o
+ deltax =    5.0000000000000003E-002 (Separation between grid points)
+ elapsed time =    86.387856999999997      [s]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++               END-END-END-END-END                ++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

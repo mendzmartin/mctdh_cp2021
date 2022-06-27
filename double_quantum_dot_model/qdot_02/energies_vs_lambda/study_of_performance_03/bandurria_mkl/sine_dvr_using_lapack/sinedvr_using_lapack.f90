@@ -46,6 +46,12 @@ program sindvr1d
 	!------------------------------------------------------
     integer              :: info,lwork
     real(8), allocatable :: work(:)
+        !------------------------------------------------------
+        ! Variables to measure cpu time
+        !------------------------------------------------------
+    real(8) :: time_end,time_start
+
+    call cpu_time(time_start)
 	
 	!------------------------------------------------------
 	! Reading & writing data from standard exite
@@ -55,7 +61,7 @@ program sindvr1d
     ! write(*,*) 'Enter a maximum potential depth value of left qdot (V_L)';read(*,*) depthVL_max
     ! write(*,*) 'How much energies do you want to show?';read(*,*) number_values
 
-    L=50.d0;gdim=501;depthVL_max=1.1d0;number_values=20
+    L=50.d0;gdim=1001;depthVL_max=1.1d0;number_values=50
 
 	!------------------------------------------------------
 	! Allocate memory
@@ -186,6 +192,9 @@ program sindvr1d
     
     close( 10 ) ! eigenvals_even_vs_depthVL.dat
     close( 20 ) ! eigenvals_odd_vs_depthVL.dat
+
+    call cpu_time(time_end)
+    write(*,*) 'elapsed time = ', time_end-time_start, '[s]'
       
 endprogram sindvr1d
 
