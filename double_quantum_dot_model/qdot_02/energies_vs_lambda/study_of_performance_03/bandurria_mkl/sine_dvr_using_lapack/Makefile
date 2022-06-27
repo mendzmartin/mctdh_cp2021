@@ -31,9 +31,9 @@ FFLAGS = $(flg_opt01) $(flg_opt02) $(flg_war01) $(flg_deb01) $(flg_deb02)
 # library flags
 flg_lib01 = -llapack -lrefblas
 # library paths
-lib_path01 = -L/home/mendez/lapack-3.10.0
+lib_path01 = -L/nashome/mmendez/pruebas
 # used library flags
-# LDFLAGS = $(lib_path01) $(flg_lib01)
+LDFLAGS = $(lib_path01) $(flg_lib01)
 
 # ============================================================
 # USAR LIBERÍA LAPACK MEDIAN MKL - BANDURRIA
@@ -41,7 +41,7 @@ lib_path01 = -L/home/mendez/lapack-3.10.0
 EXTERNAL_BLAS = -fdefault-integer-8  -m64  -I${MKLROOT}/include
 EXTERNAL_LAPACK = -fdefault-integer-8  -m64  -I${MKLROOT}/include
 MCTDH_ADD_LIBS = -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_gf_ilp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lgfortran -lm -ldl
-LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)
+#LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)
 
 # ============================================================
 # BINARIES COMPILATION
