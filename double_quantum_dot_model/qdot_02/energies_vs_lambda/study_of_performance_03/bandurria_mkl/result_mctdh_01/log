@@ -1,0 +1,224 @@
+
+------ Host: "compute-0-21" ----------Mon Jun 27 09:50:35 2022
+
+ /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01
+
+ PID = 42999
+
+--------------------------------------------------------------------------------
+****** Source code version ******
+
+Program Version :     8
+Release         :     5
+Revision        :    14
+
+Heidelberg SVN repository no.: 1312
+Checkin date: Wed, 23 Jun 2021, 13:43:30
+Compiled: Mon, 27 Jun 2022, 09:03:25 ; Host: bandurria
+Program name: mctdh85
+
+Included surfaces: lsth
+
+Default operator-path: /nashome/mmendez/mctdh85.14/operators
+--------------------------------------------------------------------------------
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ******
+-mnd -p V_L 0.9,au -p lambda 0.5
+
+
+########################################################################
+
+ Reading Input Files
+
+########################################################################
+
+Task: gendvr genoper geninwf relaxation
+
+Opening operator file :/nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/operator_file.op
+
+***** Hamiltonian and title *****
+
+		double quantum dot model (three electrons)
+		hamiltonian with interaction (heff)
+
+Parameter values taken from .op file
+
+Operator labels taken from .op file 
+
+****** Reading NATPOT file ******
+File version:  8.50140
+Created on:
+------ Host: "mendez-famaf" ----------Wed Jun  1 14:40:07 2022
+
+potfit input file:  nr =  1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+ contracted mode:  1,  nat.pots:     501     501
+ V-cut =  0.2721E+22 eV,  oned:  0  0
+ C-Weights: V-max =  0.2721E+35 eV,  V-min = -0.2721E+35 eV
+ Modelabels: X1 X2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Natpot path: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/potfit_Vee/natpot
+
+Assigning Operators From Library
+
+
+***** Paths and input files *****
+
+~.inp  file copied to input in name directory
+name      : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01
+input     : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/input_file.inp
+DVR file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01
+.op file  : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/operator_file.op
+INWF file : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01
+cross-ref : /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01/restart
+
+overwrite disabled
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+
+Timing file opened
+
+Parallel timing file opened
+
+########################################################################
+
+ Creating DVR file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01/dvr
+                                                         Jun 27 09:50:35
+########################################################################
+
+***** Memory used in DVR basis generation *****
+
+Memory size (used / allocated) (in Mb):     20.021 /    419.362
+
+** Array dimensions **
+
+length of complex      array (used):           6          0.000 MB
+length of real         array (used):     2511518         19.161 MB
+length of integer      array (used):           5          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        19.2
+
+
+
+****** Primitive Basis *********
+
+ mode     kappa    DVR    N        xi         xf         dx       p-max
+
+ X1           1    sin  501    -25.000     25.000   0.100000     31.353
+ X2           2    sin  501    -25.000     25.000   0.100000     31.353
+ X3           3    sin  501    -25.000     25.000   0.100000     31.353
+
+
+********* SPF Basis ************
+
+ mode        N    n      dof's
+
+    1      501   10       1
+    2      501   10       2
+    3      501   10       3
+
+ Total grid size       : 1.257515E+08
+ Length of A-vector    :     1000     1.000E+03
+ Length of Phi-vectors :    15030     1.503E+04
+ Length of WF-vector   :    16030     1.603E+04
+
+
+########################################################################
+
+ Creating OPER file: /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/bandurria_mkl/result_mctdh_01/oper
+                                                         Jun 27 09:50:36
+########################################################################
+
+***** Memory used in OPERATOR generation *****
+
+Memory size (used / allocated) (in Mb):     60.289 /    459.630
+
+** Array dimensions **
+
+length of complex      array (used):     1006009         15.350 MB
+length of real         array (used):     5777535         44.079 MB
+length of integer      array (used):           4          0.000 MB
+length of logical      array (used):           2          0.000 MB
+
+total array memory in mb     (used):        59.4
+
+ *** RUNOPER include-array dimensions ***
+k   :  minkoe, maxkoe    1518   16000
+h   :  htmdim, maxhtm    2023   16000
+hl  :  hopdim, maxhop    1012   16000
+nh  :  minfac, maxfac       3     800
+np  : npesopt, maxpes       1     800
+muld: mulddim,maxmuld       4      64
+n   :    ndef, maxdef       3     640
+n   :    npar, maxpar      12    3200
+n   :    nrdf, maxrdf       1      96
+See op.log file for final values.
+
+***** Operator details *****
+
+DOF no.    label
+    1       X1
+    2       X2
+    3       X3
+
+Mode     DOFs
+   1    1=      X1
+   2    2=      X2
+   3    3=      X3
+
+ feb =  0,  meb =  0,   fpb =  0,  mpb =  0,  mkoe =  4
+ leb = F,  lmult = F,  lmulpack = F,  lcap = F
+
+Number of Hamiltonians defined:     2
+    1     system                usediag
+    2     heff                  usediag
+
+Files containing operators
+  No.        Name
+    1     /nashome/mmendez/github_repositories/my_repositories/mctdh_cp2021/doub
+
+########################################################################
+
+Creating RESTART file
+                                                         Jun 27 09:50:39
+########################################################################
+
+
+****** Initial SPF Functions *********
+  1  X1        eigenf  pop =  1  sym =  0      ham =   2  heff
+  2  X2           map     f-map =   1
+  3  X3           map     f-map =   1
+
+***** Length of psi vector *****
+
+Overall length of A-vector      :     1000    1.000E+03
+Length of phi vector for mode   1:     5010
+Length of phi vector for mode   2:        0 (none, as set identical to mode 1)
+Length of phi vector for mode   3:        0 (none, as set identical to mode 1)
+                                  --------
+Length of wavefunction vector   :     6010    6.010E+03
+
+workcdim   :    502002
+workrdim   :    502503
+workidim   :       501
+
+***** Memory used in WAVEFUNCTION generation *****
+
+Memory size (used / allocated) (in Mb):     32.959 /    431.325
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        6010          0.092 MB
+length of complex      array (used):      519848          7.932 MB
+length of real         array (used):     3015585         23.007 MB
+length of integer      array (used):         506          0.002 MB
+length of logical      array (used):           3          0.000 MB
+
+total array memory in mb     (used):        31.1

@@ -1,0 +1,7 @@
+ Subroutine           Calls N         cpu/N             cpu       %cpu      real/N          real  cpu/real
+
+ genOPER                    1         2.370           2.3700      80.3
+ genDVR                     1         0.530           0.5300      18.0
+
+Total (usr,sys,cpu)       2.90     0.05       2.95   (  0h :  0m :  2.95s)
+

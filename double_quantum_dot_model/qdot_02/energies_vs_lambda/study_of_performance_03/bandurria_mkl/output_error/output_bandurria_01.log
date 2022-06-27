@@ -1,0 +1,84 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-21/job_scripts/135719
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/135719.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.135719 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-21/job_scripts/135719 /home/ckpt/ckpt.135719/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/135719.1.long/dmtcp_port
++ exec dmtcp_launch -p 46635 /bin/bash /home/ckpt/ckpt.135719/jobscript
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++         START-START-START-START-START          +++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+lambda:           0.5
+num_conf:        
+OMP_NUM_THREADS:  4
+HOSTNAME:         compute-0-21.local
+QUEUE:            long
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[46000] NOTE at processinfo.cpp:203 in growStack; REASON='bottom-most page of stack (page with highest address) was
+  invisible in /proc/self/maps. It is made visible again now.'
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7FE6AB00C697
+#1  0x7FE6AB00CCDE
+#2  0x7FE6AA0FB3FF
+#3  0x7FE63D42C41A
+#4  0x7FE6B4534520
+#5  0x7FE6AB5473C4
+#6  0x7FE6B631A57E
+#7  0x7FE6AB31CEA4
+#8  0x7FE6B631A3C8
+#9  0x7FE6AA1C38DC
+#10  0xFFFFFFFFFFFFFFFF
+#0  0x7FE6AB00C697
+#1  0x7FE6AB00CCDE
+#2  0x7FE6AA0FB3FF
+#3  0x7FE63D42C41A
+#4  0x7FE6B4534520
+#5  0x7FE6AB5473C4
+#6  0x7FE6B631A57E
+#7  0x7FE6AB31CEA4
+#8  0x7FE6B631A3C8
+#9  0x7FE6AA1C38DC
+#10  0xFFFFFFFFFFFFFFFF
+#0  0x7FE6AB00C697
+#0  0x7FE6AB00C697
+#1  0x7FE6AB00CCDE
+#2  0x7FE6AA0FB3FF
+#3  0x7FE63D42C41A
+#1  0x7FE6AB00CCDE
+#4  0x7FE6B4534520
+#5  0x7FE6AB5473C4
+#6  0x7FE6B631A57E
+#7  0x7FE6AB31CEA4
+#8  0x7FE6B631A3C8
+#9  0x7FE6AA1C38DC
+#10  0x#2  FFFFFFFFFFFFFFFF0x
+7FE6AA0FB3FF
+#3  0x7FE63D42CDB3
+#4  0x7FE6B453455E
+#5  0x7FE6B45348D3
+#6  0x7FE6AC367050
+#7  0x7FE6B57C243B
+#8  0x58C812 in veigen_
+#9  0x5B6062 in genphi_
+#10  0x5A1411 in runinwf_
+#11  0x57C037 in callinwf_
+#12  0x404C45 in MAIN__ at mctdh.F:?
