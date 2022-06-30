@@ -30,12 +30,18 @@ export OMP_NUM_THREADS=${NSLOTS} # number of CPU cores to use
 chunksize=128
 export OMP_SCHEDULE="dynamic,${chunksize}"
 export OMP_STACKSIZE="512M"
+export MKL_NUM_THREADS=${NSLOTS}
+export MKL_DYNAMIC="FALSE"
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo 'lambda:           0.5'
  echo 'num_conf:        ' ${i}
  echo 'OMP_NUM_THREADS: ' ${OMP_NUM_THREADS}
+ echo 'OMP_SCHEDULE:    ' ${OMP_SCHEDULE}
+ echo 'OMP_STACKSIZE:   ' ${OMP_STACKSIZE}
+ echo 'MKL_NUM_THREADS: ' ${MKL_NUM_THREADS}
+ echo 'MKL_DYNAMIC:     ' ${MKL_DYNAMIC}
  echo 'HOSTNAME:        ' ${HOSTNAME}
  echo 'QUEUE:           ' ${QUEUE}
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
@@ -47,7 +53,9 @@ export OMP_STACKSIZE="512M"
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 rm -Rf result_sinedvr_using_lapack/
 mkdir result_sinedvr_using_lapack
-make clean && make sinedvr_using_lapack.o && ./sinedvr_using_lapack.o
+#make clean && make sinedvr_using_lapack.o && ./sinedvr_using_lapack.o
+
+./sinedvr_using_lapack.o
 
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 echo '++++               END-END-END-END-END                ++++'

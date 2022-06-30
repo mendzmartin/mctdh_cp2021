@@ -33,15 +33,19 @@ flg_lib01 = -llapack -lrefblas
 # library paths
 lib_path01 = -L/nashome/mmendez/pruebas
 # used library flags
-LDFLAGS = $(lib_path01) $(flg_lib01)
+#LDFLAGS = $(lib_path01) $(flg_lib01)
 
 # ============================================================
 # USAR LIBERÍA LAPACK MEDIAN MKL - BANDURRIA
 # ============================================================
-EXTERNAL_BLAS = -fdefault-integer-8  -m64  -I${MKLROOT}/include
-EXTERNAL_LAPACK = -fdefault-integer-8  -m64  -I${MKLROOT}/include
+#EXTERNAL_BLAS = -fdefault-integer-8  -m64  -I${MKLROOT}/include
+#EXTERNAL_LAPACK = -fdefault-integer-8  -m64  -I${MKLROOT}/include
+
+EXTERNAL_BLAS = ${MKLROOT}/lib/intel64/libmkl_blas95_lp64.a
+EXTERNAL_LAPACK = ${MKLROOT}/lib/intel64/libmkl_lapack95_lp64.a
+
 MCTDH_ADD_LIBS = -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_gf_ilp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lgfortran -lm -ldl
-#LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)
+LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)
 
 # ============================================================
 # BINARIES COMPILATION
@@ -55,7 +59,7 @@ dependencies_01= mmlib.o
 # binaries rules
 # sinedvr_using_lapack
 $(bin_name_01).o: $(dependencies_01)
-	$(FC) $(bin_name_01).f90 $(dependencies_01) $(LDFLAGS) -o $(bin_name_01).o
+	$(FC) -o3 -march=native -fopenmp $(bin_name_01).f90 $(dependencies_01) $(LDFLAGS) -o $(bin_name_01).o
 
 # ============================================================
 # MODULES COMPILATION

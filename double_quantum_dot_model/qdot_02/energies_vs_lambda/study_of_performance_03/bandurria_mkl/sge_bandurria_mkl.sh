@@ -28,12 +28,18 @@ echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  chunksize=128
  export OMP_SCHEDULE="dynamic,${chunksize}"
  export OMP_STACKSIZE="512M"
+ export MKL_NUM_THREADS=${NSLOTS}
+ export MKL_DYNAMIC="FALSE"
 
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
- echo 'lambda:           0.5'
+ echo 'lamda         0.5'
  echo 'num_conf:        ' ${i}
  echo 'OMP_NUM_THREADS: ' ${OMP_NUM_THREADS}
+ echo 'OMP_SCHEDULE:    ' ${OMP_SCHEDULE}
+ echo 'OMP_STACKSIZE:   ' ${OMP_STACKSIZE}
+ echo 'MKL_NUM_THREADS: ' ${MKL_NUM_THREADS}
+ echo 'MKL_DYNAMIC:     ' ${MKL_DYNAMIC}
  echo 'HOSTNAME:        ' ${HOSTNAME}
  echo 'QUEUE:           ' ${QUEUE}
  echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
@@ -44,7 +50,7 @@ echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 # ++				DESDE BASH SHELL
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++  
 rm -Rf result_mctdh_01/
-mctdh85 -mnd -p V_L 0.9,au -p lambda 0.5 input_file.inp
+mctdh85P -mnd -p V_L 0.9,au -p lambda 0.5 input_file.inp
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 echo '++++               END-END-END-END-END                ++++'
 echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
