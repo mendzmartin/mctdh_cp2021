@@ -1,0 +1,60 @@
+[mmendez@bandurria install]$ cdm
+[mmendez@bandurria install]$ cd install/
+[mmendez@bandurria install]$ compile -x lapack -s compile_bandurria.cnf mctdh
+Using compile script /nashome/mmendez/mctdh85.14/install/compile_bandurria.cnf
+Progname: mctdh   completed to: mctdh
+Included surfaces (-i option):  lsth
+--------------------------------------------------------------------------------
+  compile  mctdh                      Mon, 27 Jun 2022, 09:03:23
+--------------------------------------------------------------------------------
+Platform:             x86_64
+Compiler environment: gfortran
+Operating system:     Linux
+Fortran compiler:     gfortran   
+C compiler:           gcc
+Make command:         make -k
+Program name:         mctdh85   (compile and link a single program)
+ 
+Program path:         /nashome/mmendez/mctdh85.14/bin/binary/x86_64
+Object path:          /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5
+Using compile script: /nashome/mmendez/mctdh85.14/install/compile_bandurria.cnf
+ 
+Only altered files will be compiled.
+Starting compilation with optimization.
+ 
+gfortran -O2 -fconvert=little-endian -frecord-marker=4 -funroll-loops -fno-align-commons -m64 -msse2 -mfpmath=sse  -DPARALLEL -J/nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5 -I/nashome/mmendez/mctdh85.14/CompDir17218 -I/nashome/mmendez/mctdh85.14/source/include -c /nashome/mmendez/mctdh85.14/source/mctdh/wrversion.F
+ar rlcU ./surfaces.a lsth.o
+gfortran -O2 -fconvert=little-endian -frecord-marker=4 -funroll-loops -fno-align-commons -m64 -msse2 -mfpmath=sse  -DPARALLEL -J/nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5 -I/nashome/mmendez/mctdh85.14/CompDir17218 -I/nashome/mmendez/mctdh85.14/source/include -o mctdh \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mctdh85.o   \
+      wrversion.o \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mctdh85.a   \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/propwf85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/dynwf85.a   \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/geninwf85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/genoper85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mlmctdh85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mloper85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mlcore85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/gendvr85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/libode85.a    \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mctdh85.a   \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/propwf85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/opfuncs85.a \
+      ./surfaces.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/surfdef85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/lib90intg85.a /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/lib90core85.a      \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/mlmctdh85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/libla85.a /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/libode85.a /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/libnum85.a /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/libsys85.a        \
+      -fdefault-integer-8  -m64  -I/share/apps/intel/oneapi/mkl/latest/include -fdefault-integer-8  -m64  -I/share/apps/intel/oneapi/mkl/latest/include -L/share/apps/intel/oneapi/mkl/latest/lib/intel64 -Wl,--no-as-needed -lmkl_gf_ilp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lgfortran -lm -ldl -lrt     \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/threaddef85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/propwf85.a  \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/librtdef85.a \
+      /nashome/mmendez/mctdh85.14/object/x86_64/gfortran4.8.5/numadef85.a
+ 
+ 
+Executable /nashome/mmendez/mctdh85.14/bin/binary/x86_64/mctdh85 created.
+ 
+Congratulations, the compilation was successful.
+ 
+------  compile  ---  Mon, 27 Jun 2022, 09:03:45 ---  good bye!  ---------------
+--------------------------------------------------------------------------------
