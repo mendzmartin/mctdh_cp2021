@@ -173,5 +173,6 @@ OMP\\_SCHEDULE:dynamic,128 / OMP\\_STACKSIZE:512M \n\
 double quantum dot with {/Symbol l}=0.5;V_{L}=0.9"
 set xlabel "num threads";set ylabel "cpu time elapsed [s]"
 set grid; set xtics 1; set ytics 1000
+set yrange[0:]
 p 'threads_vs_cputime.dat' u 1:2:0 w boxes lc variable notitle
 #    EOF
