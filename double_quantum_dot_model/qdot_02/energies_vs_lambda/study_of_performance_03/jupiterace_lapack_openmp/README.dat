@@ -1,0 +1,5 @@
+# Para obtener datos desde jupiterace ("pull")
+	rsync -a cp202136@jupiterace.famaf.unc.edu.ar:/nashome/mmendez/original_directory /destination_directory
+
+# Para envíar datos hacia jupiterace ("push")
+	rsync -a ~/original_directory cp202136@jupiterace.famaf.unc.edu.ar:/nashome/mmendez/destination_directory

@@ -1,0 +1,28 @@
+ job arguments  /opt/gridengine/default/spool/compute-0-22/job_scripts/136156
++ dmtcp_coordinator --quiet --port 0 --port-file /tmp/136156.1.long/dmtcp_port --ckptdir /home/ckpt/ckpt.136156 --exit-on-last --daemon
++ '[' 0 -ne 0 ']'
++ cp /opt/gridengine/default/spool/compute-0-22/job_scripts/136156 /home/ckpt/ckpt.136156/jobscript
++ shift
++ '[' -n '' ']'
+++ cat /tmp/136156.1.long/dmtcp_port
++ exec dmtcp_launch -p 37609 /bin/bash /home/ckpt/ckpt.136156/jobscript
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++         START-START-START-START-START          +++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+lambda:           0.5
+num_conf:        
+OMP_NUM_THREADS:  4
+HOSTNAME:         compute-0-22.local
+QUEUE:            long
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+rm -f *.o *.mod
+gfortran -c mmlib.f
+gfortran sinedvr_using_lapack.f90 mmlib.o -L/nashome/mmendez/pruebas -llapack -lrefblas -o sinedvr_using_lapack.o
+ deltax =    5.0000000000000003E-002 (Separation between grid points)
+ elapsed time =    97.347816999999992      [s]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++               END-END-END-END-END                ++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
