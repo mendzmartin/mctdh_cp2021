@@ -19,7 +19,7 @@ end-parameter-section
 LABELS-SECTION
 	Veff_L	=	gauss[b_L,-R/2]				## The longitudinal open potential from left qdot
 	Veff_R	=	gauss[b_R,R/2]				## The longitudinal open potential from right qdot
-	Vee = natpot{../../potfit_Vee ignore}	## Electron interaction potential
+	Vee = natpot{./potfit_Vee ignore}	## Electron interaction potential
 end-labels-section
 
 HAMILTONIAN-SECTION
