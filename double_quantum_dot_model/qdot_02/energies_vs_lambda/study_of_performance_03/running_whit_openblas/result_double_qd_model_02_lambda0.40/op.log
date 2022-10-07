@@ -1,0 +1,211 @@
+
+******* Array-Dimensions *******
+
+ k   :  minkoe, maxkoe    1520    4000
+ h   :  htmdim, maxhtm    2029    4000
+ hl  :  hopdim, maxhop    2026    4000
+ nh  :  minfac, maxfac      12     200
+ n   :    ndef, maxdef      85     240
+ n   :    npar, maxpar      12     300
+ n   :    nrdf, maxrdf       1      16
+ np  : npesopt, maxpes       1     100
+ nham:  hamdim, maxham       2      10
+ muld: mulddim,maxmuld       4      10
+ LMR :    iLMR, maxLMR       0      20
+ minnhtmshift,maxnhtmshift     0    10
+ (for minedim, maxedim see log file)
+
+***** Operator details *****
+
+ndof   =   3 ,  nmode   =   3
+nopdof =   4 ,  nopmode =   4
+feb =  0,  meb =  0,   fpb =  0,  mpb =  0,  mkoe =  4
+leb = F,  lmult = F,  lmulpack = F,  lcap = F
+
+DOF no.    label
+    1       X1
+    2       X2
+    3       X3
+- - - - - - - - - - - - - - -
+    4       Koeff
+
+Mode     DOFs
+   1    1=      X1
+   2    2=      X2
+   3    3=      X3
+- - - - - - - - - - - - - - -
+   4    4=   Koeff
+
+Number of Hamiltonians defined:     2
+    1     system                usediag
+    2     heff                  usediag
+
+   Info on muld
+  1  mulddof :
+   1   2   3
+  1  mulddof2:
+   1   2   3
+  2  mulddof :
+   1   2
+  2  mulddof2:
+   1   2
+  3  mulddof :
+   1   3
+  3  mulddof2:
+   1   3
+  4  mulddof :
+   2   3
+  4  mulddof2:
+   2   3
+
+Information for Hamiltonian : System
+
+Total no. of terms      :   1506
+No. of correlated terms :   1503
+
+No. of uncorrelated terms for mode   1:     1
+No. of uncorrelated terms for mode   2:     1
+No. of uncorrelated terms for mode   3:     1
+
+Information for Hamiltonian : heff
+
+Total no. of terms      :      1
+No. of correlated terms :      0
+
+No. of uncorrelated terms for mode   1:     1
+No. of uncorrelated terms for mode   2:     0
+No. of uncorrelated terms for mode   3:     0
+
+  Parameters
+PI                      3.141592653590
+V_L                     0.900000000000
+lambda                  0.400000000000
+mass_X1                 1.000000000000
+mass_X2                 1.000000000000
+mass_X3                 1.000000000000
+b_L                     0.220000000000
+b_R                     1.000000000000
+V_R                     0.600000000000
+w                       1.000000000000
+l                       1.000000000000
+R                       9.000000000000
+
+Number of operators removed =     0,  cutoff = 1.00E-09
+
+Default natpotcut = .10000E-08 au  is used.
+ natpot no. | cutted terms |  reduce-pf
+     1      |          0   | 0.00000 0.00000 0.00000
+
+  Operator Labels    [hl,hoplab,(deflabel),hopilab,hopfile]
+    hl  Label                         function no.  file no.
+     1  1                                       1       302
+     2  -1                                      2       302
+     3  I                                       1       101
+     4  KEdvr                                   5         3
+     5  V_L                                     2       301
+     6  gauss[1]             Veff_L            12       302
+     7  V_R                                     9       301
+     8  gauss[2]             Veff_R            12       302
+     9  lambda                                  3       301
+    10  natpot  1            Vee                0      -999
+    11  npot1,1                                 1         1
+   ...  ......  Set "print-npot" to see all   ...       ...
+  1012  npot1002,1                           1002         1
+
+Hamiltonian Operator Terms [h,htmdof,htmadof,htmndof,htmmode,htmmuld,htmtype,
+                            htmsym,htmshift,string]
+   No.   f  af  nf   m  md Typ Sym   Shift      Term
+     1   1   1   0   0   0   1   1       0    1
+     2   2   2   0   0   0   1   1       0    1
+     3   3   3   0   0   0   1   1       0    1
+     4   K           0   0   1   1            1
+    16   K           0   0   2   1            lambda
+    20   1   1   0   0   0   2   1       0    npot1,1
+   ...  ......  Set "print-npot" to see all  ......
+  1021   2   2   0   0   0   2   1       0    npot1002,1*lambda
+   ...  ......  Set "print-npot" to see all  ......
+  1522   3   3   0   0   0   2   1       0    npot1002,1
+  1523   2   2   0   0   0   2   1       0    npot1,1*lambda
+  2024   1   1   0   0   0   8   1       0    KEdvr + gauss[1]*-1*V_L + gauss[2]*-1*V_R
+  2025   2   2   0   0   0   8   1       0    KEdvr + gauss[1]*-1*V_L + gauss[2]*-1*V_R
+  2026   3   3   0   0   0   8   1       0    KEdvr + gauss[1]*-1*V_L + gauss[2]*-1*V_R
+
+Arguments for operators
+  No.    Arguments
+    1   0.22000000       -4.5000000        0.0000000        0.0000000    
+    2    1.0000000        4.5000000        0.0000000        0.0000000    
+
+Files containing operators
+  No.        Name
+    1     /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/running_whit_openblas/potfit_Vee/natpot
+
+********* System Hamiltonian ***********
+
+Correlated Terms  (ki,kf: initial and final el. state. h=hamilton(f,k))
+            dof order =     X1 |    X2 |    X3 |
+     k  ki  kf coeff   No.s
+     1   1   1    4         20      21       3
+     2   1   1    4         22      23       3
+     3   1   1    4         24      25       3
+     4   1   1    4         26      27       3
+     5   1   1    4         28      29       3
+     6   1   1    4         30      31       3
+     7   1   1    4         32      33       3
+     8   1   1    4         34      35       3
+     9   1   1    4         36      37       3
+    10   1   1    4         38      39       3
+    11   1   1    4         40      41       3
+    12   1   1    4         42      43       3
+    13   1   1    4         44      45       3
+    14   1   1    4         46      47       3
+    15   1   1    4         48      49       3
+    16   1   1    4         50      51       3
+    17   1   1    4         52      53       3
+    18   1   1    4         54      55       3
+    19   1   1    4         56      57       3
+    20   1   1    4         58      59       3
+    21   1   1    4         60      61       3
+    22   1   1    4         62      63       3
+    23   1   1    4         64      65       3
+    24   1   1    4         66      67       3
+    25   1   1    4         68      69       3
+    26   1   1    4         70      71       3
+    27   1   1    4         72      73       3
+    28   1   1    4         74      75       3
+    29   1   1    4         76      77       3
+    30   1   1    4         78      79       3
+    31   1   1    4         80      81       3
+    32   1   1    4         82      83       3
+    33   1   1    4         84      85       3
+    34   1   1    4         86      87       3
+    35   1   1    4         88      89       3
+    36   1   1    4         90      91       3
+    37   1   1    4         92      93       3
+    38   1   1    4         94      95       3
+    39   1   1    4         96      97       3
+    40   1   1    4         98      99       3
+    41   1   1    4        100     101       3
+   ...  ......  Set "print-npot" to see all   ...       ...
+  Information on 1462 k-terms is suppressed
+
+Uncorrelated Terms
+     k   m   s  sym coeff   No.s
+  1504   1   1   1    4    2024
+  1505   2   1   1    4    2025
+  1506   3   1   1    4    2026
+
+The operator is REAL and HERMITIAN
+
+------------------------------------------------------------------------------
+
+
+********* heff Hamiltonian ***********
+
+Uncorrelated Terms
+     k   m   s  sym coeff   No.s
+  1507   1   1   1    4    2024
+
+The operator is REAL and HERMITIAN
+
+------------------------------------------------------------------------------
+
