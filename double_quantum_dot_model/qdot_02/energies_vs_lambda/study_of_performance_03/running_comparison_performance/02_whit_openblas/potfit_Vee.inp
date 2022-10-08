@@ -1,0 +1,51 @@
+##################COMENTARIOS#################################
+## defines the number of iterations to be performed, the name
+## 	directory, and the files to be opened.
+##############################################################
+RUN-SECTION
+	name = potfit_Vee
+end-run-section
+
+
+##################COMENTARIOS#################################
+## Specifies the potential energy surface to be used and defines
+## 	cuts which remove large (positive and/or negative) potential 
+## 	values which, if kept, would slow down the integrator.
+## "eff2dcou" es una subrutina que toma parámetros como entrada
+## 	pero decidimos no darcelos.
+############################################################## 
+OPERATOR-SECTION
+	pes = eff2dcou
+end-operator-section
+
+
+##################COMENTARIOS#################################
+## se utiliza la misma configuración de grilla que en el
+## 			input file.
+############################################################## 
+PBASIS-SECTION
+	Z1	sin 501	-25.00	25.00	short
+	Z2	sin 501	-25.00	25.00	short
+end-pbasis-section
+
+
+##################COMENTARIOS#################################
+## How many natural potentials are used for the fit.
+## se utilizan todos los puntos para definir el potencial de
+##			de interacción y se contrae uno de los DOF (para
+##			reducir coste computacional.
+############################################################## 
+NATPOT-BASIS-SECTION
+	Z1 = contr
+	Z2 = 501
+end-natpot-basis-section
+
+end-input
+
+############################
+### COMPILATION
+############################
+# compile -i eff2dcou potfit
+# compile -i eff2docu mctdh
+# rm -rf potfit_Vee
+# potfit85 -w -mnd potfit_Vee.inp
