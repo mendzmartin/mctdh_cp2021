@@ -1,0 +1,55 @@
+RUN-SECTION
+	name =  ${name_folder}
+	relaxation=follow,full
+	### PARALELLIZATION ###
+	usepthreads = 2,summf2 ,no-funkphi
+	ptiming # Check ptiming file to control overload, and include
+            #	no-* keywords accordingly to suppress inefficiently 
+            # 	parallelized routines. Performance of the parallelisation
+	rlxunit = au
+	tfinal = 1 tout = 0.001 tpsi = 0.001
+	steps
+	orben		# para relajacion
+	gridpop		# para showd1d
+	pdensity	# particle density file. Useful to compute quantities after run.
+	veigen
+	psi
+	auto
+end-run-section
+
+OPERATOR-SECTION
+	# (The default operator path is displayed when typing mctdh84 -max)
+	#oppath = /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_03/running_comparison_performance
+	opname = operator_file
+end-operator-section
+
+SBASIS-SECTION
+	X1 =	10
+	X2 =	id,1
+	X3 =	id,1
+end-sbasis-section
+
+PBASIS-SECTION
+	X1	sin	501	-25.0	25.0	short
+	X2	sin	501	-25.0	25.0	short
+	X3	sin	501	-25.0	25.0	short
+end-pbasis-section
+
+INTEGRATOR-SECTION
+	CMF      	=	0.001,	1.0d-9	#np1	# Constant Mean-Field scheme
+	RK8/spf  	=	1.0d-9 			#np1	# Runge-Kutta integrator for SPFs
+	rrDAV/A  	=	500,	1.0d-9	#np1	# for A-vector
+end-integrator-section
+
+INIT_WF-SECTION
+	build
+		X1	eigenf	heff	pop=1
+		X2	map		X1
+		X3	map		X1
+	end-build
+	A-coeff
+		1	1	1	( 1.0, 0.0 )
+	end-A-coeff
+end-init_wf-section
+
+end-input

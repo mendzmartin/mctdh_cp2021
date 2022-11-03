@@ -46,6 +46,6 @@ end-input
 ### COMPILATION
 ############################
 # compile -i eff2dcou potfit
-# compile -i eff2docu mctdh
+# compile -i eff2dcou mctdh
 # rm -rf potfit_Vee
 # potfit85 -w -mnd potfit_Vee.inp

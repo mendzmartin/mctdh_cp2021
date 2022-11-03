@@ -1,0 +1,28 @@
+
+# ------ Host: "mendez-famaf" ----------Mon Oct 31 14:43:54 2022
+
+# /home/mendez/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_04/potfit_Vee
+
+maxdim    =       4
+maxsta    =       1
+maxtape   =       0
+maxdepth  =       0
+maxkoe    =       1,    default =    4000
+maxhtm    =       1,    default =    4000
+maxhop    =       6,    default =    4000
+maxfac    =       5,    default =     200
+maxdef    =       5,    default =     240
+maxmuld   =       2,    default =      10
+maxham    =       1,    default =      10
+maxpes    =       1,    default =     100
+maxrdf    =       1,    default =      16
+maxsub    =      80,    default =     100
+maxLMR    =       1,    default =      20
+maxedim   =       1,    default =      50
+maxreadspf=       1,    default =      10
+maxpar    =       5,    default =     300
+maxnhtmshift =    1,    default =      10
+end-alloc
+
+# Run "phelp <parametername>" to see the meaning of the parameter.
+
