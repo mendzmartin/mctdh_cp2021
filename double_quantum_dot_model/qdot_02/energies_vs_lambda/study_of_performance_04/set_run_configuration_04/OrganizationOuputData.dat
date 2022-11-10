@@ -1,0 +1,35 @@
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# RESYNCHRONIZATION DIRECTORIES TO COMPILE MCTDH AND POTFIT
+# FROM ZX81
+cd /home/cp2021cp202136/MCTDH/mctdh86.2/install/
+rm -f user_surfaces user_surfdef
+rm -f /home/cp2021cp202136/MCTDH/mctdh86.2/source/propwf/DEF_thread.cd
+rm -f /home/cp2021cp202136/MCTDH/mctdh86.2/source/opfuncs/usersrf.F
+cd /home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces/
+rm -f scou.f DEF_scou.f eff2dcou.f DEF_eff2dcou.f
+
+# FROM JUPITERACE TO ZX81
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/install/user_surfaces cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/install
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/install/user_surfdef cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/install
+
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/propwf/DEF_thread.c cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/propwf
+
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/opfuncs/usersrf.F cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/opfuncs
+
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces/scou.f cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces/DEF_scou.f cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces/eff2dcou.f cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces
+$ rsync -a /home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces/DEF_eff2dcou.f cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/surfaces
+
+# FROM PC-FAMAF TO ZX81
+$ rsync -a /home/mendez/MCTDH/mctdh86.2/source/propwf/DEF_thread.c cp202136@zx81.famaf.unc.edu.ar:/home/cp2021cp202136/MCTDH/mctdh86.2/source/propwf
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# to compress some files that exceed the maximum allowed for github (100 Mb)
+for i in result2QDot3eCor{1..28};do cd ${i}/; 7z a psi.7z psi; 7z a pdensity.7z pdensity; rm -f psi pdensity; cd ..; done;
+
+
+# to move slurm-output to specific directory for more organization
+for i in {2..7}; do j=`echo 56100 + ${i} - 1 | bc`; mv slurm-${j}.out result2QDot3eCor${i}/; done;

@@ -1,0 +1,10 @@
+
+ Performance counter stats for 'mctdh86 -w -p V_L 0.9,au -p lambda 0.2 input_file_Lambda02_NumCores10.inp' (2 runs):
+
+     9507018198724      cycles                                                        ( +-  0.19% )
+    24363699933450      instructions              #    2.56  insn per cycle           ( +-  0.02% )
+      162243776715      cache-references                                              ( +-  0.57% )
+       14346964663      cache-misses              #    8.793 % of all cache refs      ( +-  5.33% )
+
+           1637.84 +- 5.09 seconds time elapsed  ( +-  0.31% )
+

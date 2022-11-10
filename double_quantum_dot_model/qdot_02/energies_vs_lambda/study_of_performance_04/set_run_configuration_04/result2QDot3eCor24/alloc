@@ -1,0 +1,28 @@
+
+# ------ Host: "jupiterace" ----------Wed Nov  9 13:37:32 2022
+
+# /home/cp2021cp202136/github_repositories/my_repositories/mctdh_cp2021/double_quantum_dot_model/qdot_02/energies_vs_lambda/study_of_performance_04/set_run_configuration_04/result2QDot3eCor24
+
+maxdim    =       5
+maxsta    =       1
+maxtape   =       0
+maxdepth  =       0
+maxkoe    =    4000,    default =    4000
+maxhtm    =    4000,    default =    4000
+maxhop    =    4000,    default =    4000
+maxfac    =     200,    default =     200
+maxdef    =     240,    default =     240
+maxmuld   =      10,    default =      10
+maxham    =      10,    default =      10
+maxpes    =     100,    default =     100
+maxrdf    =      16,    default =      16
+maxsub    =     400,    default =     100
+maxLMR    =      20,    default =      20
+maxedim   =      50,    default =      50
+maxreadspf=      10,    default =      10
+maxpar    =     300,    default =     300
+maxnhtmshift =   10,    default =      10
+end-alloc
+
+# Run "phelp <parametername>" to see the meaning of the parameter.
+

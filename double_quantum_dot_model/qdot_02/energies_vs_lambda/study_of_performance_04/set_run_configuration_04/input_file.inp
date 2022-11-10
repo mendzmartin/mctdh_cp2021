@@ -1,8 +1,8 @@
 RUN-SECTION
-	name =  result_2QDot3e_NumCores${i}
+	name =  result2QDot3eCor${j}
 	relaxation=follow,full
 	### PARALELLIZATION ###
-	usepthreads = ${i},summf2 ,no-funkphi
+	usepthreads = ${j},summf2 ,no-funkphi
 	ptiming # Check ptiming file to control overload, and include
             #	no-* keywords accordingly to suppress inefficiently 
             # 	parallelized routines. Performance of the parallelisation
@@ -16,6 +16,11 @@ RUN-SECTION
 	psi
 	auto
 end-run-section
+
+ALLOC-SECTION
+	maxsub=400
+end-alloc-section
+
 
 OPERATOR-SECTION
 	# (The default operator path is displayed when typing mctdh84 -max)

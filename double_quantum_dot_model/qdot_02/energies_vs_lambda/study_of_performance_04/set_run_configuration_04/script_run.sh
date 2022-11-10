@@ -1,12 +1,9 @@
 #!/bin/bash
-echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-echo '+++++         START-START-START-START-START          +++++'
-echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 
 LANG=en_US			# defines the bahaviour otherwise toggling
 # set Cores number range
 NumCores_min=1		# valor mínimo
-NumCores_max=28	    # valor maximo
+NumCores_max=1	    # valor maximo
 delta_NumCores=1	# paso
 
 for i in $(seq ${NumCores_min} ${delta_NumCores} ${NumCores_max})
@@ -14,13 +11,9 @@ do
     name_RunScriptJupyterAce="slurm_run_JupyterAce${i}.sh"
     sed 's/${i}/'${i}'/g' slurm_run_JupyterAce.sh > ${name_RunScriptJupyterAce}
     chmod +x ${name_RunScriptJupyterAce}
-    ./${name_RunScriptJupyterAce}
+    sbatch ./${name_RunScriptJupyterAce}
     rm -f ${name_RunScriptJupyterAce}
 done
-
-echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-echo '++++               END-END-END-END-END                ++++'
-echo '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
 
 ########################################################################
 

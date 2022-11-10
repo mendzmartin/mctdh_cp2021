@@ -4,7 +4,7 @@
 # +++ Nombre para identificar el trabajo. Por defecto es el nombre del script
 #SBATCH --job-name=MCTDHcp2021
 # +++ Solicita N cores, por defecto se asignan consecutivamente dentro de un nodo. Si N excede la cantidad de cores continúa en otro nodo
-#SBATCH --ntasks-per-node=${i}
+#SBATCH --ntasks-per-node=1
 # +++ Especifico en cuantos hilos correra cada uno de los procesos anteriores
 #SBATCH --cpus-per-task=${i}
 # +++ Especifico que no quiero a nadie más en el nodo cuando corra esta tarea
@@ -29,14 +29,16 @@ export USE_THREAD=0
 export USE_LOCKING=1
 
 # set name of results from MCTDH package and remove existed data
-name_folder="result_2QDot3e_NumCores${i}"
+name_folder="result2QDot3eCor${i}"
 rm -Rf ${name_folder}/
+
+mkdir ${name_folder}/
 
 # change variable in input file to MCTDH package
 name_InputFile="input_file_Lambda02_NumCores${i}.inp"
-sed '2,5 s/${i}/'${i}'/g' input_file.inp > ${name_InputFile}
+sed '2,5 s/${j}/'${i}'/g' input_file.inp > ${name_InputFile}
 
 # srun perf stat -e cycles,instructions,cache-references,cache-misses -r 2 mctdh86P -mnd -w -p V_L 0.9,au -p lambda 0.2 ${name_InputFile}
-srun perf stat -e cycles,instructions,cache-references,cache-misses -r 2 mctdh86 -mnd -w -p V_L 0.9,au -p lambda 0.2 ${name_InputFile}
+srun perf stat -e cycles,instructions,cache-references,cache-misses -r 2 mctdh86 -w -p V_L 0.9,au -p lambda 0.2 ${name_InputFile}
             
 rm -f ${name_InputFile}

@@ -1,0 +1,12 @@
+No ALLOC-SECTION found. Using defaults.
+No ALLOC-SECTION found. Using defaults.
+
+ Performance counter stats for 'mctdh86 -w -p V_L 0.9,au -p lambda 0.2 input_file_Lambda02_NumCores2.inp' (2 runs):
+
+     7330358468133      cycles                                                        ( +-  0.06% )
+    23657195697001      instructions              #    3.23  insn per cycle           ( +-  0.01% )
+      150002958039      cache-references                                              ( +-  1.72% )
+        1056409469      cache-misses              #    0.717 % of all cache refs      ( +-  6.96% )
+
+           2165.94 +- 4.00 seconds time elapsed  ( +-  0.18% )
+

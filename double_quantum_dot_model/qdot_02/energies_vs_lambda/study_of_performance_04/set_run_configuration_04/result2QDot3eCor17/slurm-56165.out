@@ -1,0 +1,79 @@
+================================================
+            BUG-WARNING  
+    Consistency of mr-array fails :
+      1  overwritten !! 
+    value    :   0.98840605420942707
+    check    :   3.45990253977358364
+    pointer  :   2911917
+================================================
+
+
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+Backtrace for this error:
+#0  0x7fd09f83da9f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#1  0x7fd09f8978d5 in arena_for_chunk
+	at ./malloc/arena.c:162
+#2  0x7fd09f8978d5 in arena_for_chunk
+	at ./malloc/arena.c:160
+#3  0x7fd09f8978d5 in __GI___libc_free
+	at ./malloc/malloc.c:3385
+#4  0x55933a6e4927 in ???
+#5  0x55933a6746ce in ???
+#6  0x55933a670982 in ???
+#7  0x7fd09f829209 in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#8  0x7fd09f8292bb in __libc_start_main_impl
+	at ../csu/libc-start.c:389
+#9  0x55933a6709cc in ???
+mctdh86: Segmentation fault
+================================================
+            BUG-WARNING  
+    Consistency of mr-array fails :
+      1  overwritten !! 
+    value    :   0.13036817438884488
+    check    :   3.45990253977358364
+    pointer  :   2911917
+================================================
+
+munmap_chunk(): invalid pointer
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7f90f4c3da9f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#1  0x7f90f4c8957c in __pthread_kill_implementation
+	at ./nptl/pthread_kill.c:44
+#2  0x7f90f4c3da01 in __GI_raise
+	at ../sysdeps/posix/raise.c:26
+#3  0x7f90f4c28468 in __GI_abort
+	at ./stdlib/abort.c:79
+#4  0x7f90f4c7d887 in __libc_message
+	at ../sysdeps/posix/libc_fatal.c:155
+#5  0x7f90f4c93229 in malloc_printerr
+	at ./malloc/malloc.c:5659
+#6  0x7f90f4c933eb in munmap_chunk
+	at ./malloc/malloc.c:3055
+#7  0x7f90f4c97927 in __GI___libc_free
+	at ./malloc/malloc.c:3376
+#8  0x55d323c39927 in ???
+#9  0x55d323bc96ce in ???
+#10  0x55d323bc5982 in ???
+#11  0x7f90f4c29209 in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#12  0x7f90f4c292bb in __libc_start_main_impl
+	at ../csu/libc-start.c:389
+#13  0x55d323bc59cc in ???
+mctdh86: Aborted
+
+ Performance counter stats for 'mctdh86 -w -p V_L 0.9,au -p lambda 0.2 input_file_Lambda02_NumCores17.inp' (2 runs):
+
+    10502226974762      cycles                                                        ( +-  0.15% )
+    24648176544360      instructions              #    2.34  insn per cycle           ( +-  0.07% )
+      182084090774      cache-references                                              ( +-  0.11% )
+       29312727389      cache-misses              #   16.082 % of all cache refs      ( +-  1.00% )
+
+           1683.32 +- 10.60 seconds time elapsed  ( +-  0.63% )
+

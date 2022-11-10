@@ -1,0 +1,88 @@
+================================================
+            BUG-WARNING  
+    Consistency of mr-array fails :
+      1  overwritten !! 
+    value    :   0.99957310908396002
+    check    :   3.45990253977358364
+    pointer  :   2911917
+================================================
+
+munmap_chunk(): invalid pointer
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7f2a73a3da9f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#1  0x7f2a73a8957c in __pthread_kill_implementation
+	at ./nptl/pthread_kill.c:44
+#2  0x7f2a73a3da01 in __GI_raise
+	at ../sysdeps/posix/raise.c:26
+#3  0x7f2a73a28468 in __GI_abort
+	at ./stdlib/abort.c:79
+#4  0x7f2a73a7d887 in __libc_message
+	at ../sysdeps/posix/libc_fatal.c:155
+#5  0x7f2a73a93229 in malloc_printerr
+	at ./malloc/malloc.c:5659
+#6  0x7f2a73a933eb in munmap_chunk
+	at ./malloc/malloc.c:3055
+#7  0x7f2a73a97927 in __GI___libc_free
+	at ./malloc/malloc.c:3376
+#8  0x563dfa024927 in ???
+#9  0x563df9fb46ce in ???
+#10  0x563df9fb0982 in ???
+#11  0x7f2a73a29209 in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#12  0x7f2a73a292bb in __libc_start_main_impl
+	at ../csu/libc-start.c:389
+#13  0x563df9fb09cc in ???
+mctdh86: Aborted
+================================================
+            BUG-WARNING  
+    Consistency of mr-array fails :
+      1  overwritten !! 
+    value    :   0.99999861531800927
+    check    :   3.45990253977358364
+    pointer  :   2911917
+================================================
+
+munmap_chunk(): invalid pointer
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7f027363da9f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#1  0x7f027368957c in __pthread_kill_implementation
+	at ./nptl/pthread_kill.c:44
+#2  0x7f027363da01 in __GI_raise
+	at ../sysdeps/posix/raise.c:26
+#3  0x7f0273628468 in __GI_abort
+	at ./stdlib/abort.c:79
+#4  0x7f027367d887 in __libc_message
+	at ../sysdeps/posix/libc_fatal.c:155
+#5  0x7f0273693229 in malloc_printerr
+	at ./malloc/malloc.c:5659
+#6  0x7f02736933eb in munmap_chunk
+	at ./malloc/malloc.c:3055
+#7  0x7f0273697927 in __GI___libc_free
+	at ./malloc/malloc.c:3376
+#8  0x55fae9030927 in ???
+#9  0x55fae8fc06ce in ???
+#10  0x55fae8fbc982 in ???
+#11  0x7f0273629209 in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#12  0x7f02736292bb in __libc_start_main_impl
+	at ../csu/libc-start.c:389
+#13  0x55fae8fbc9cc in ???
+mctdh86: Aborted
+
+ Performance counter stats for 'mctdh86 -w -p V_L 0.9,au -p lambda 0.2 input_file_Lambda02_NumCores26.inp' (2 runs):
+
+    11054387988495      cycles                                                        ( +-  0.27% )
+    24984402246603      instructions              #    2.27  insn per cycle           ( +-  0.04% )
+      199282247466      cache-references                                              ( +-  1.14% )
+       42976194249      cache-misses              #   21.814 % of all cache refs      ( +-  0.99% )
+
+           1632.03 +- 2.65 seconds time elapsed  ( +-  0.16% )
+
