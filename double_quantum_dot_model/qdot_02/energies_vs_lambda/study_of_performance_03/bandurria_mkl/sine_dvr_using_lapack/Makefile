@@ -32,8 +32,6 @@ FFLAGS = $(flg_opt01) $(flg_opt02) $(flg_war01) $(flg_deb01) $(flg_deb02)
 flg_lib01 = -llapack -lrefblas
 # library paths
 lib_path01 = -L/nashome/mmendez/pruebas
-# used library flags
-#LDFLAGS = $(lib_path01) $(flg_lib01)
 
 # ============================================================
 # USAR LIBERÍA LAPACK MEDIAN MKL - BANDURRIA
@@ -41,11 +39,17 @@ lib_path01 = -L/nashome/mmendez/pruebas
 #EXTERNAL_BLAS = -fdefault-integer-8  -m64  -I${MKLROOT}/include
 #EXTERNAL_LAPACK = -fdefault-integer-8  -m64  -I${MKLROOT}/include
 
+
 EXTERNAL_BLAS = ${MKLROOT}/lib/intel64/libmkl_blas95_lp64.a
 EXTERNAL_LAPACK = ${MKLROOT}/lib/intel64/libmkl_lapack95_lp64.a
 
 MCTDH_ADD_LIBS = -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_gf_ilp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lgfortran -lm -ldl
-LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)
+
+# ============================================================
+# USER LAPACK LIBRARY FLAGS
+# ============================================================
+#LDFLAGS = $(lib_path01) $(flg_lib01) 							# UNCOMMENT IF RUN WHITOUT MKL
+LDFLAGS = $(MCTDH_ADD_LIBS) $(EXTERNAL_LAPACK) $(EXTERNAL_BLAS)	# UNCOMMENT IF RUN WHIT MKL
 
 # ============================================================
 # BINARIES COMPILATION

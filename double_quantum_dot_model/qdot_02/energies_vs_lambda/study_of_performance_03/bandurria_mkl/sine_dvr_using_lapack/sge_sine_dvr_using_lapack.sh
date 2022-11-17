@@ -4,7 +4,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++
 #$ -cwd                                               # Current Working Directory
 #$ -m bea -M martinmendez@mi.unc.edu.ar               # Manda un email si pasa algo con el proceso
-#$ -N mkl01                                        	  # Nombre del proceso
+#$ -N SineDVRmkl                                   	  # Nombre del proceso
 #$ -j y                                               # stdout y stderr apuntan al mismo archivo de salida.
 #$ -S /bin/bash                                       # Usar shell bash
 #$ -l mem_free=4.2G                                   # Pido memoría RAM para el proceso
@@ -13,7 +13,7 @@
                                                       #   [cpus] = número de cpus
 #$ -v OMP_NUM_THREADS=${NSLOTS}                       # NSLOTS -> número de slots
 #$ -R y                                               # Reservar slots a medida que otros procesos los liberan
-#$ -l h_rt=4:00:00                                    # Tiempo de CPU (wall clock) que se solicita para el proceso
+#$ -l h_rt=10:00:00                                   # Tiempo de CPU (wall clock) que se solicita para el proceso
 #$ -ckpt dmtcp                                        # Habilitar checkpoints
 #$ -o output_bandurria.log                         	  # Standard output
 #$ -q long@compute-0-21.local,long@compute-0-22.local # Elegir colas especificas para correr

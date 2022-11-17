@@ -61,7 +61,7 @@ program sindvr1d
     ! write(*,*) 'Enter a maximum potential depth value of left qdot (V_L)';read(*,*) depthVL_max
     ! write(*,*) 'How much energies do you want to show?';read(*,*) number_values
 
-    L=50.d0;gdim=1001;depthVL_max=1.1d0;number_values=50
+    L=50.d0;gdim=1048576;depthVL_max=1.1d0;number_values=50
 
 	!------------------------------------------------------
 	! Allocate memory
