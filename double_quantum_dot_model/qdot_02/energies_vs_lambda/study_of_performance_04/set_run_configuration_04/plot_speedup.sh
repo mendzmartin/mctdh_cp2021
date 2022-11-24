@@ -188,7 +188,7 @@ set multiplot layout 1,1
     fit [1:28] f(x) 'result_collection_total_timing_data.dat' u 1:(2721.313/$2) via q,p
 
     p 'result_collection_total_timing_data.dat' u 1:(2721.313/$2) w p pt 7 ps 1 lc 'blue' t 'real data',\
-    f(x) lw 1 lc 'red' t 'fitting->(q,p)=(0.58,0.34)',\
+    f(x) lw 1 lc 'red' t 'fitting->(q,p)=(0.65,0.35)',\
     'result_collection_total_timing_data.dat' u 1:1 w l lw 1 dt 3 lc 'black' t 'Ideal Amdahls law'
 
 #     Final set of parameters            Asymptotic Standard Error

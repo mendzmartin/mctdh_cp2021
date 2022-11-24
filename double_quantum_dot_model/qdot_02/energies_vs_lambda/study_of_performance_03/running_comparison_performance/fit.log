@@ -479,3 +479,40 @@ correlation matrix of the fit parameters:
                 q      p      
 q               1.000 
 p              -0.934  1.000 
+
+
+*******************************************************************************
+Fri Nov 18 18:41:16 2022
+
+
+FIT:    data read from 'speedup.dat' u 1:(18821/$2)
+        format = x:z
+        x range restricted to [1.00000 : 4.00000]
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=1/(q+p/x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   q             p            
+   0 5.9855359250e+00   0.00e+00  3.80e-01    1.000000e+00   1.000000e+00
+   8 9.5197651733e-03  -1.44e-04  3.80e-05    2.229562e-01   7.389732e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00951977
+rel. change during last iteration : -1.4428e-09
+
+degrees of freedom    (FIT_NDF)                        : 2
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0689919
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00475988
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+q               = 0.222956         +/- 0.02384      (10.69%)
+p               = 0.738973         +/- 0.06962      (9.421%)
+
+correlation matrix of the fit parameters:
+                q      p      
+q               1.000 
+p              -0.934  1.000 

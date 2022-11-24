@@ -187,7 +187,7 @@ set multiplot layout 1,1
     fit [1:4] f(x) 'speedup.dat' u 1:(18821/$2) via q,p
 
     p 'speedup.dat' u 1:(18821/$2) w p pt 7 ps 1 lc 'blue' t 'real data',\
-    f(x) lw 1 lc 'red' t 'fitting->(q,p)=(0.2229,0.7389)',\
+    f(x) lw 1 lc 'red' t 'fitting->(q,p)=(0.3,0.7)',\
     'speedup.dat' u 1:1 w l lw 1 dt 3 lc 'black' t ''
 
 #     Final set of parameters            Asymptotic Standard Error
